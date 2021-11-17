@@ -1,5 +1,5 @@
+from .db_data import Base
 from sqlalchemy import Column, Integer, String, Boolean, DateTime, func
-from db_data import Base
 import hashlib
 from datetime import datetime
 from sqlalchemy.orm import relationship

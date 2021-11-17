@@ -1,10 +1,5 @@
-from db_data import Base
-from sqlalchemy import (
-    Column,
-    Integer,
-    String,
-    Boolean,
-)
+from .db_data import Base
+from sqlalchemy import Column, Integer, String, Boolean
 
 
 class Tag(Base):

@@ -1,7 +1,12 @@
-from src.model.db_data import Base
-from src.model.user import User
-from src.model.post import Post
-from src.model.tag import Tag
+from src.model.entity.post import Post
+from src.model.entity.tag import Tag
+from src.model.entity.user import User
+from src.dao.user_dao import UserDao
 
 if __name__ == '__main__':
     # Base.metadata.create_all()
+
+
+    user = User("TestUser", 1234)
+    user_dao = UserDao()
+    user_dao.save_user(user)

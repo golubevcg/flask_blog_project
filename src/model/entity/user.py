@@ -1,8 +1,9 @@
 from .db_data import Base
 from sqlalchemy import Column, Integer, String, Boolean, DateTime, func
-import hashlib
 from datetime import datetime
 from sqlalchemy.orm import relationship
+import hashlib
+from src.services.validator_service import validate_input
 
 
 class User(Base):
@@ -16,6 +17,9 @@ class User(Base):
     posts_list = relationship("Post", back_populates="user")
 
     def __init__(self, login: str, password: str):
+        validate_input(login, str, "login")
+        validate_input(password, str, "password")
+
         self.login = login
         password = str(password).encode()
         self.password = hashlib.md5(password).hexdigest()

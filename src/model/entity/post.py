@@ -1,9 +1,10 @@
-from db_data import Base
-from user import User
+from .db_data import Base
+from .user import User
 from sqlalchemy import Column, String, Integer, ForeignKey, Boolean, DateTime, func
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from src.services.validator_service import validate_input
+from .posts_tags import posts_tags_association_table
 
 
 class Post(Base):
@@ -18,6 +19,12 @@ class Post(Base):
 
     user_id = Column(Integer, ForeignKey('users.id'))
     user = relationship("User", back_populates="posts_list")
+
+    tags = relationship(
+        "Tag",
+        back_populates="posts",
+        secondary=posts_tags_association_table,
+    )
 
     def __init__(self, header: str, body: str, tags: list, author: User):
         validate_input(header, str, "header")

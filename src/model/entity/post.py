@@ -13,18 +13,13 @@ class Post(Base):
     id = Column(Integer, primary_key=True)
     header = Column(String, nullable=False)
     body = Column(String, nullable=False)
-    author = Column(String, nullable=False)
     creation_date = Column(DateTime, nullable=False, server_default=func.now())
     is_deleted = Column(Boolean, nullable=False, default=False)
 
-    user_id = Column(Integer, ForeignKey('users.id'))
-    user = relationship("User", back_populates="posts_list")
+    author_id = Column(Integer, ForeignKey(User.id), nullable=False, unique=False)
+    author = relationship("User", back_populates="posts_list", lazy='joined')
 
-    tags = relationship(
-        "Tag",
-        back_populates="posts",
-        secondary=posts_tags_association_table,
-    )
+    tags = relationship("Tag", secondary=posts_tags_association_table, uselist=True, lazy='joined')
 
     def __init__(self, header: str, body: str, tags: list, author: User):
         validate_input(header, str, "header")
@@ -36,6 +31,10 @@ class Post(Base):
         self.body = body
         self.tags = tags
         self.author = author
+
         now = datetime.now()
         self.creation_date = now.strftime("%d/%m/%Y %H:%M:%S")
         self.is_deleted = False
+
+    def __str__(self):
+        return f"Pots(id:{self.id})"

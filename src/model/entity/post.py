@@ -19,7 +19,7 @@ class Post(Base):
     author_id = Column(Integer, ForeignKey(User.id), nullable=False, unique=False)
     author = relationship("User", back_populates="posts_list", lazy='joined')
 
-    tags = relationship("Tag", secondary=posts_tags_association_table, uselist=True, lazy='joined')
+    tags = relationship("Tag", secondary=posts_tags_association_table, uselist=True)
 
     def __init__(self, header: str, body: str, tags: list, author: User):
         validate_input(header, str, "header")

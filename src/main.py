@@ -12,19 +12,20 @@ from src.model.entity.db_data import Base
 
 if __name__ == '__main__':
 
-
-
-
-
-
     # POST DAO TESTS
     post_dao = PostDao()
+    tag_dao = TagDao()
+    user_dao = UserDao()
     active_tags = tag_dao.get_all_active_tags()
+
     print("active_tags:", active_tags)
     user_by_id = user_dao.get_user_by_id(30)
+
     print("user_by_id:", user_by_id)
-    post = Post("header", "body", list(active_tags), user_by_id)
+    post = Post("header5", "body", list(active_tags), user_by_id)
+
     print(post)
     post_dao.save_post(post)
+
     print(post)
 

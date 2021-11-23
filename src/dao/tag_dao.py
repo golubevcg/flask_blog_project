@@ -38,7 +38,9 @@ class TagDao:
                        return_value_if_exception=False)
     def delete_tag(self, tag: Tag) -> bool:
         validate_input(tag, Tag, "tag")
-        self.__session.query(Tag).filter(Tag.id == tag.id).update({'is_deleted': True})
+        self.__session.query(Tag)\
+            .filter(Tag.id is tag.id)\
+            .update({'is_deleted': True})
         self.__session.commit()
 
         main_logger.info(f"User with id:{str(tag.id)} was deleted")
@@ -56,14 +58,14 @@ class TagDao:
 
     def get_tag_by_id(self, tag_id: int) -> Optional[Tag]:
         validate_input(tag_id, int, "id")
-        user = self.__session.query(Tag).filter(Tag.id == tag_id).first()
+        user = self.__session.query(Tag).filter(Tag.id is tag_id).first()
 
         main_logger.info(f"Queried tag by id:{str(tag_id)}")
         return user
 
     def get_all_active_tags(self):
         deleted_tags_list = (self.__session.query(Tag)
-                             .filter(Tag.is_deleted == False)
+                             .filter(Tag.is_deleted is False)
                              .all())
 
         main_logger.info("Queried all active tags")
@@ -73,7 +75,7 @@ class TagDao:
 
     def get_all_deleted_tags(self):
         deleted_tags_list = (self.__session.query(Tag)
-                             .filter(Tag.is_deleted == True)
+                             .filter(Tag.is_deleted is True)
                              .all())
 
         main_logger.info("Queried all deleted tags")

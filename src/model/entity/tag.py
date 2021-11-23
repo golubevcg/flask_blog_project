@@ -1,4 +1,4 @@
-from .db_data import Base
+from db_data import Base
 from sqlalchemy import Column, Integer, String, Boolean
 from src.services.validator_service import validate_input
 

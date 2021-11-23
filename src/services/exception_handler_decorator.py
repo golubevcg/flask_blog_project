@@ -10,7 +10,9 @@ def parametrized(dec):
 
 
 @parametrized
-def exception_handler(func, exception=Exception, return_value_if_exception=None):
+def exception_handler(func,
+                      exception=Exception,
+                      return_value_if_exception=None):
     def inner_function(*args, **kwargs):
         try:
             func(*args, **kwargs)

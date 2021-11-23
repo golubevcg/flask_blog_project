@@ -1,4 +1,4 @@
-from .db_data import Base
+from db_data import Base
 from sqlalchemy import Column, Integer, String, Boolean, DateTime, func
 from datetime import datetime
 from sqlalchemy.orm import relationship
@@ -12,7 +12,9 @@ class User(Base):
     id = Column(Integer, primary_key=True)
     login = Column(String, nullable=False, unique=True)
     password = Column(String, nullable=False)
-    registration_date = Column(DateTime, nullable=False, server_default=func.now())
+    registration_date = Column(DateTime,
+                               nullable=False,
+                               server_default=func.now())
     is_deleted = Column(Boolean, nullable=False, default=False)
     posts_list = relationship("Post", back_populates="author", lazy='joined')
 
@@ -28,4 +30,6 @@ class User(Base):
         self.is_deleted = False
 
     def __str__(self):
-        return f"{self.login}(id:{str(self.id)}, is_deleted:{str(self.is_deleted)})"
+        return f"{self.login}" \
+               f"(id:{str(self.id)}, " \
+               f"is_deleted:{str(self.is_deleted)})"

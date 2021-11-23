@@ -1,17 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
 
+<head>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<title>golubevcg</title>
+<meta charset="UTF-8">
+</head>
 
-<head>
-    <meta charset="UTF-8">
+<header>
     <div class="container">
-        <div class="item">
-            <div class="starting-line"></div>
-        </div>
+        <div class="item"><div class="starting-line"></div></div>
         <div class="item-center header">
             <div class="logo_titles">
                 <div class="andrew_golubev">Andrew Golubev</div>
@@ -22,26 +23,32 @@
             <div style="flex:1; text-align: center;"></div>
 
             <div class="text" style="margin-left:auto;">posts</div>
-            <div class="text" style="margin-left:15px;">about</div>
+            <div class="text" >about</div>
         </div>
         <div class="item">
-            <div class="starting-line"></div>
+            <div style="display:flex; flex-direction: column; flex-grow:1;">
+                <div class="starting-line"></div>
+                <div style="display:flex; flex-direction: row; margin-left: 10px">
+                    <div class="css_mode_button">button</div>
+                </div>
+            </div>
         </div>
     </div>
-</head>
+</header>
+
 <body>
-    <!--header-->
-    <div class="container" style="margin-top: 200px;">
+    <!--posts header-->
+    <div class="container" >
         <div class="item"></div>
-        <div class="item-center text post-header" style="margin-top: -200px;">posts</div>
+        <div class="item-center text post-header">posts</div>
         <div class="item"></div>
     </div>
 
     <!--posts list-->
     <div class="container">
-        <div class="item"style="background-color: red"></div>
+        <div class="item"></div>
         <div class="item-center text posts-container">
-            <div class="item-center text" style="flex-direction: row;">
+            <div class="item-center text">
                 <div class="post">
                     <div class="text" style="margin:8px">Autodesk Maya custom reference editor</div>
                     <div style="flex:1;text-align: center;"></div>
@@ -49,33 +56,41 @@
                 </div>
             </div>
 
-<!--            <div class="item-center text post">-->
-<!--                <div class="text">Telegram API live location retrieving</div>-->
-<!--                <div style="flex:1; text-align: center;"></div>-->
-<!--                <div class="text" style="margin-left:auto;">19 Sept</div>-->
-<!--            </div>-->
+            <div class="item-center text post">
+<!--                <div class="post">-->
+                <div class="text">Telegram API live location retrieving</div>
+                <div style="flex:1; text-align: center;"></div>
+                <div class="text" style="margin-left:auto;">19 Sept</div>
+<!--                </div>-->
+            </div>
 
-<!--            <div class="item-center text post">-->
-<!--                <div class="text">Autodesk Maya viewport screenshot widget</div>-->
-<!--                <div style="flex:1; text-align: center;"></div>-->
-<!--                <div class="text" style="margin-left:auto;">01 Apr</div>-->
-<!--            </div>-->
+            <div class="item-center text post">
+<!--                <div class="post">-->
+                <div class="text">Autodesk Maya viewport screenshot widget</div>
+                <div style="flex:1; text-align: center;"></div>
+                <div class="text" style="margin-left:auto;">01 Apr</div>
+<!--                </div>-->
+            </div>
 
-<!--            <div class="item-center text post">-->
-<!--                <div class="text">Tetris inside Autodesk Maya using Python API & cmds</div>-->
-<!--                <div style="flex:1; text-align: center;"></div>-->
-<!--                <div class="text" style="margin-left:auto;">05 Jan</div>-->
-<!--            </div>-->
+            <div class="item-center text post">
+<!--                <div class="post">-->
+                <div class="text">Tetris inside Maya using Python API & cmds</div>
+                <div style="flex:1; text-align: center;"></div>
+                <div class="text" style="margin-left:auto;">05 Jan</div>
+<!--                </div>-->
+            </div>
 
-<!--            <div class="item-center text post">-->
-<!--                <div class="text">Autodesk Maya rigging receipt manager</div>-->
-<!--                <div style="flex:1; text-align: center;"></div>-->
-<!--                <div class="text" style="margin-left:auto;">10 Dec</div>-->
-<!--            </div>-->
+            <div class="item-center text post">
+<!--                <div class="post">-->
+                <div class="text">Autodesk Maya rigging receipt manager</div>
+                <div style="flex:1; text-align: center;"></div>
+                <div class="text" style="margin-left:auto;">10 Dec</div>
+<!--                </div>-->
+            </div>
 
 
         </div>
-        <div class="item" style="background-color: red"></div>
+        <div class="item"></div>
     </div>
 
 

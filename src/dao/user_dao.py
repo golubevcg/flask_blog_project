@@ -67,7 +67,7 @@ class UserDao:
 
     def get_all_active_users(self) -> list:
         active_users_list = (self.__session.query(User)
-                             .filter(User.is_deleted == False)
+                             .filter(User.is_deleted is False)
                              .all())
 
         main_logger.info("Queried all active users")
@@ -76,7 +76,7 @@ class UserDao:
 
     def get_all_deleted_users(self) -> list:
         deleted_users_list = (self.__session.query(User)
-                              .filter(User.is_deleted == True)
+                              .filter(User.is_deleted is True)
                               .all())
 
         main_logger.info("Queried all deleted users")

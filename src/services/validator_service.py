@@ -17,4 +17,5 @@ def validate_input(input_val: Any, desired_type: type, arg_name: str):
 
     if type(input_val) != desired_type:
         raise TypeError(f"Cannot return posts by {arg_name}, "
-                        f"given {arg_name} is wrong type, must be {str(desired_type)} type.")
+                        f"given {arg_name} is wrong type, "
+                        f"must be {str(desired_type)} type.")

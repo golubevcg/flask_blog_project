@@ -4,7 +4,9 @@ from typing import Any
 def validate_input(input_val: Any, desired_type: type, arg_name: str):
     if not input_val or not desired_type or not arg_name:
         raise ValueError(f"Cannot validate data, given arguments are empty."
-                         f"(input_val:{str(desired_type)}, desired_type{str(desired_type)}, arg_name{str(arg_name)}")
+                         f"(input_val:{str(desired_type)}, "
+                         f"desired_type{str(desired_type)}, "
+                         f"arg_name{str(arg_name)}")
 
     if type(arg_name) != str:
         raise TypeError(f"Cannot validate data, {arg_name} is not str.")

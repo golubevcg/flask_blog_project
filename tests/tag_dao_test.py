@@ -1,7 +1,4 @@
 import pytest
-from src.model.entity.post import Post
-from src.model.entity.tag import Tag
-from src.model.entity.user import User
 from src.dao.tag_dao import TagDao
 
 

@@ -1,8 +1,6 @@
 from .db_data import Base
 from sqlalchemy import Column, Integer, String, Boolean
-from sqlalchemy.orm import relationship
 from src.services.validator_service import validate_input
-from .posts_tags import posts_tags_association_table
 
 
 class Tag(Base):

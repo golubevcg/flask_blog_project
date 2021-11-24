@@ -20,7 +20,7 @@
             </div>
 
             <!-- center div to align about and posts to right-->
-            <div style="flex:1; text-align: center;"></div>
+            <div style="flex-grow:1;"></div>
 
             <div class="text" style="margin-left:auto;">posts</div>
             <div class="text" >about</div>
@@ -28,9 +28,11 @@
         <div class="item">
             <div style="display:flex; flex-direction: column; flex-grow:1;">
                 <div class="starting-line"></div>
-                <div style="display:flex; flex-direction: row; margin-left: 10px">
-                    <div class="css_mode_button">button</div>
+                <div style="display:flex; flex-direction: row; margin-left: 8px">
+                    <div class="text css_mode_button">dark theme</div>
                 </div>
+<!--                replace with toggle button-->
+                <div class="text css_mode_button">...</div>
             </div>
         </div>
     </div>
@@ -46,53 +48,100 @@
 
     <!--posts list-->
     <div class="container">
-        <div class="item"></div>
-        <div class="item-center text posts-container">
-            <div class="item-center text">
-                <div class="post">
-                    <div class="text" style="margin:8px">Autodesk Maya custom reference editor</div>
-                    <div style="flex:1;text-align: center;"></div>
-                    <div class="text" style="margin-left:auto;">25 Oct</div>
+        <div class="item" style="flex-grow: 1"></div>
+        <div class="item-center text posts-container" style="flex-shrink: 0;">
+            <div class="item-center text post_parent" style="margin:0; padding:0;">
+                <div class="post" style=" background-color:#f0f0f055;">
+<!--                    replace with input field, add icon-->
+                    <div class="text" style="margin:8px; color:#59585855;">Search</div>
+                    <div style="flex-grow:1;"></div>
+                    <div class="text"></div>
                 </div>
+                <div class="text" style="align-items: center; margin-left: 5px;min-width:40px;"></div>
             </div>
 
-            <div class="item-center text post">
-<!--                <div class="post">-->
-                <div class="text">Telegram API live location retrieving</div>
-                <div style="flex:1; text-align: center;"></div>
-                <div class="text" style="margin-left:auto;">19 Sept</div>
-<!--                </div>-->
+            <div class="item-center text post_parent" style="margin:0; padding:0;">
+                <div class="post" style="background-color: white;">
+                    <div class="text" style="margin:8px">Autodesk Maya custom reference editor</div>
+                    <div style="flex-grow:1;"></div>
+                    <div class="text">25 Oct</div>
+                </div>
+                <div class="text" style="align-items: center; margin-left: 5px;min-width:40px;">2021</div>
             </div>
 
-            <div class="item-center text post">
-<!--                <div class="post">-->
-                <div class="text">Autodesk Maya viewport screenshot widget</div>
-                <div style="flex:1; text-align: center;"></div>
-                <div class="text" style="margin-left:auto;">01 Apr</div>
-<!--                </div>-->
+            <div class="item-center text post_parent" style="margin:0; padding:0;">
+                <div class="post">
+                    <div class="text" style="margin:8px">Telegram API live location retrieving</div>
+                    <div style="flex-grow:1;"></div>
+                    <div class="text">19 Sept</div>
+                </div>
+                <div class="text" style="align-items: center; margin-left: 5px;min-width:40px;"></div>
             </div>
 
-            <div class="item-center text post">
-<!--                <div class="post">-->
-                <div class="text">Tetris inside Maya using Python API & cmds</div>
-                <div style="flex:1; text-align: center;"></div>
-                <div class="text" style="margin-left:auto;">05 Jan</div>
-<!--                </div>-->
+            <div class="item-center text post_parent" style="margin:0; padding:0;">
+                <div class="post" style="background-color: white;">
+                    <div class="text" style="margin:8px">Autodesk Maya viewport screenshot widget</div>
+                    <div style="flex-grow:1;"></div>
+                    <div class="text">01 Apr</div>
+                </div>
+                <div class="text" style="align-items: center; margin-left: 5px;min-width:40px;"></div>
             </div>
 
-            <div class="item-center text post">
-<!--                <div class="post">-->
-                <div class="text">Autodesk Maya rigging receipt manager</div>
-                <div style="flex:1; text-align: center;"></div>
-                <div class="text" style="margin-left:auto;">10 Dec</div>
-<!--                </div>-->
+            <div class="item-center text post_parent" style="margin:0; padding:0;">
+                <div class="post">
+                    <div class="text" style="margin:8px">Tetris inside Maya using Python API & cmds</div>
+                    <div style="flex-grow:1;"></div>
+                    <div class="text">05 Jan</div>
+                </div>
+                <div class="text" style="align-items: center; margin-left: 5px; min-width:40px">2020</div>
+            </div>
+
+            <div class="item-center text" style="margin:0; padding:0;">
+                <div class="post" style="background-color: white;">
+                    <div class="text" style="margin:8px">Autodesk Maya rigging receipt manager</div>
+                    <div style="flex-grow:1;"></div>
+                    <div class="text">10 Dec</div>
+                </div>
+                <div class="text" style="align-items: center; margin-left: 5px;min-width:40px;"></div>
             </div>
 
 
         </div>
-        <div class="item"></div>
+        <div class="item" style="flex-grow: 1"></div>
     </div>
 
 
 </body>
 </html>
+
+<!--             <div class="item-center text" style="flex-shrink: 0;">-->
+<!--                <div class="post">-->
+<!--                    <div class="text">Telegram API live location retrieving</div>-->
+<!--                    <div style="flex:1; text-align: center;"></div>-->
+<!--                    <div class="text" style="margin-left:auto;">19 Sept</div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="item-center text" style="flex-shrink: 0;">-->
+<!--                <div class="post">-->
+<!--                    <div class="text">Autodesk Maya viewport screenshot widget</div>-->
+<!--                    <div style="flex:1; text-align: center;"></div>-->
+<!--                    <div class="text" style="margin-left:auto;">01 Apr</div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="item-center text" style="flex-shrink: 0;">-->
+<!--                <div class="post">-->
+<!--                    <div class="text">Tetris inside Maya using Python API & cmds</div>-->
+<!--                    <div style="flex:1; text-align: center;"></div>-->
+<!--                    <div class="text" style="margin-left:auto;">05 Jan</div>-->
+<!--                </div>-->
+<!--            </div>-->
+
+<!--            <div class="item-center text" style="flex-shrink: 0;">-->
+<!--                <div class="post">-->
+<!--                    <div class="text">Autodesk Maya rigging receipt manager</div>-->
+<!--                    <div style="flex:1; text-align: center;"></div>-->
+<!--                    <div class="text" style="margin-left:auto;">10 Dec</div>-->
+<!--                </div>-->
+<!--            </div>-->

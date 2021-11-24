@@ -33,10 +33,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .header{
     display: flex;
-    border-radius: 0 0 6px 6px;
+    border-radius: 0 0 5px 5px;
     box-shadow: 0 4px 4px #88888870;
     align-items: flex-end;
     padding: 5px;
+    display: flex;
+    flex-grow: 1;
 }
 
 .logo_titles{
@@ -80,27 +82,20 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .posts-container {
     display: flex;
-    flex-grow: 1;
+    flex-grow: 0.75;
     flex-direction: column;
     justify-content: center;
-    align-items: start;
 }
 
 .post {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: start;
     background-color: #f0f0f0;
-    border-radius: 6px;
+    border-radius: 5px;
     box-sizing: border-box;
-    margin:5px;
-    flex: 1;
-    width:80%
-}
-
-.post:nth-child(2n){
-    background-color: white;
+    flex-grow: 1;
 }
 
 .post .text{
@@ -110,11 +105,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 .year{
     display: flex;
     flex-grow:1;
-    /*align-items: center;*/
-    /*justify-content: center;*/
 }
 
 .css_mode_button{
-    margin-top:25px;
-    /*padding-left:10px*/
+    width:20px;
+    font-size:11px;
+    color:#59585860;
+    display: flex;
+    justify-content: center;
 }

@@ -29,6 +29,7 @@ $(function(){
 
 </head>
 <header id="header"></header>
+<button onclick="myFunction()">supper_button</button>
 
 <body>
     <!--posts header-->
@@ -42,59 +43,58 @@ $(function(){
     <div class="container">
         <div class="item"></div>
         <div class="item-center text posts-container">
-            <div class="item-center text post_parent">
+            <div class="item-center text post-parent">
                 <div class="post search" style=" background-color:transparent">
-<!--                    replace with input field, add icon-->
-                    <input class="text" id="input_search" placeholder="Search"></input>
+                    <input class="text" id="input-search" placeholder="Search">
                     <div style="flex-grow:1;"></div>
                     <div class="text"></div>
                 </div>
-                <div class="text" style="align-items: center; margin-left: 5px;min-width:40px;"></div>
+                <div class="text year"></div>
             </div>
 
-            <div class="item-center text post_parent">
-                <div class="post" style="background-color: white;">
+            <div class="item-center text post-parent">
+                <div class="post">
                     <div class="text" style="margin:8px">Autodesk Maya custom reference editor</div>
                     <div style="flex-grow:1;"></div>
                     <div class="text">25 Oct</div>
                 </div>
-                <div class="text" style="align-items: center; margin-left: 5px;min-width:40px;">2021</div>
+                <div class="text year">2021</div>
             </div>
 
-            <div class="item-center text post_parent">
-                <div class="post">
+            <div class="item-center text post-parent">
+                <div class="post post-alt">
                     <div class="text" style="margin:8px">Telegram API live location retrieving</div>
                     <div style="flex-grow:1;"></div>
                     <div class="text">19 Sept</div>
                 </div>
-                <div class="text" style="align-items: center; margin-left: 5px;min-width:40px;"></div>
+                <div class="text year"></div>
             </div>
 
-            <div class="item-center text post_parent">
-                <div class="post" style="background-color: white;">
+            <div class="item-center text post-parent">
+                <div class="post">
                     <div class="text" style="margin:8px">Autodesk Maya viewport screenshot widget</div>
                     <div style="flex-grow:1;"></div>
                     <div class="text">01 Apr</div>
                 </div>
-                <div class="text" style="align-items: center; margin-left: 5px;min-width:40px;"></div>
+                <div class="text year"></div>
             </div>
 
-            <div class="item-center text post_parent">
-                <div class="post">
+            <div class="item-center text post-parent">
+                <div class="post post-alt">
                     <div class="text" style="margin:8px">Tetris inside Maya using Python API & cmds</div>
                     <div style="flex-grow:1;"></div>
                     <div class="text">05 Jan</div>
                 </div>
-                <div class="text" style="align-items: center; margin-left: 5px; min-width:40px">2020</div>
+                <div class="text year">2020</div>
             </div>
 
-            <div class="item-center text post_parent">
-                <div class="post" style="background-color: white;">
+            <div class="item-center text post-parent">
+                <div class="post">
                     <div class="text" style="margin:8px">Autodesk Maya rigging receipt manager</div>
                     <div style="flex-grow:1;"></div>
                     <div class="text">10 Dec</div>
                 </div>
-                <div class="text" style="align-items: center; margin-left: 5px;min-width:40px;"></div>
+                <div class="text year"></div>
             </div>
 
 
@@ -102,8 +102,21 @@ $(function(){
         <div class="item"></div>
     </div>
 
-
+    <!--pagination-->
+    <div class="container" >
+        <div class="item"></div>
+        <div class="item-center text pagination">1  2  3</div>
+        <div class="item"></div>
+    </div>
 </body>
 
 <footer id="footer"></footer>
 </html>
+
+<script>
+function myFunction() {
+  var element = document.body;
+  element.classList.toggle("dark-theme");
+}
+</script>
+

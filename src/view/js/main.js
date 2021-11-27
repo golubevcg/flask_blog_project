@@ -1,6 +1,7 @@
 $(function(){
-  $("#header").load("header.html");
-  $("#footer").load("footer.html");
+  $("#header").load("items/header.html");
+  $("#footer").load("items/footer.html");
+  $("#dark_theme_toggle").load("items/dark_theme_toggle.html");
 });
 
 function myFunction() {

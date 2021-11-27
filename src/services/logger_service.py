@@ -3,7 +3,7 @@ import logging.handlers as handlers
 import re
 
 logging.basicConfig(
-     filename='flask_blog.log',
+     filename='resources/flask_blog.log',
      level=logging.INFO,
      format='[%(asctime)s] {%(pathname)s:%(lineno)d} %(levelname)s',
      datefmt='%H:%M:%S'
@@ -16,7 +16,7 @@ console.setFormatter(formatter)
 
 log_handler = (handlers
                .TimedRotatingFileHandler(
-                                        'flask_blog.log',
+                                        'resources/flask_blog.log',
                                         when='D',
                                         interval=1
                                         )

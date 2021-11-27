@@ -53,7 +53,9 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 }
 
 .item-center {
+    display: flex;
     flex-grow: 1;
+    flex-direction: column;
 }
 
 .item + .item {
@@ -70,6 +72,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     box-shadow: var(--header_box_shadow);
     align-items: flex-end;
     padding: 5px;
+    height: 70px;
 }
 
 .logo_titles{
@@ -117,13 +120,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     padding:0;
 }
 
-.posts-container {
-    display: flex;
-    flex-grow: 0.6;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .post {
     display: flex;
     flex-direction: row;
@@ -136,6 +132,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border-color: transparent;
     border-style:solid;
     flex-grow: 1;
+    width:100%;
 }
 
 .post-alt{
@@ -147,6 +144,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     align-items: center;
     margin-left: 5px;
     min-width:40px;
+    display: flex;
+    flex-grow:1;
 }
 
 .post:hover{
@@ -157,11 +156,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
 
 .post .text{
     font-size: 18px;
-}
-
-.year{
-    display: flex;
-    flex-grow:1;
 }
 
 .css_mode_label{

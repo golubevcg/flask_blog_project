@@ -235,3 +235,57 @@ a:hover{
   color: var(--hover-color);
   text-decoration: none;
 }
+
+#placeholder_input{
+    width:100%;
+    background-position: 10px 15px;
+    background-repeat: no-repeat;
+    padding: 10px;
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    border-width: 1px;
+    margin-bottom:20px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    border-color: #C4C4C422;
+}
+
+input:focus, textarea:focus, select:focus{
+    outline: none;
+}
+
+#placeholder_input:hover{
+    border-color:var(--hover-color);
+    border-width: 1px;
+    border-style:solid;
+}
+
+#editor{
+    width:100%;
+    min-height:95%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    border-radius: var(--border-radius);
+}
+
+.button{
+    margin-left:auto;
+    margin-top:15px;
+    margin-bottom: 15px;
+    width:100px;
+    border-radius: var(--border-radius);
+    box-sizing: border-box;
+    border-width: 1px;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    background-color: var(--background-color);
+    border-color: #C4C4C459;
+    padding:5px;
+    color: var(--text_main_color);
+    font-family: var(--font-family);
+    font-size:18px;
+}
+
+.button:hover{
+    border-color:var(--hover-color);
+    border-width: 1px;
+}

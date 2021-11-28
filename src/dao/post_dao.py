@@ -3,7 +3,6 @@ from sqlalchemy.exc import IntegrityError
 
 from src.model.entity.post import Post
 from src.model.entity.db_data import Session
-from src.model.entity.tag import Tag
 from src.model.entity.user import User
 from src.services.logger_service import main_logger
 from src.services.validator_service import validate_input
@@ -76,32 +75,6 @@ class PostDao:
         main_logger.info(f"Querying posts with header ilike:{header}")
         self.__session.close()
         return posts_list
-
-    def get_posts_by_tag_id(self, tag_id: int) -> list:
-        validate_input(tag_id, int, "tag_id")
-        posts = (self.__session
-                 .query(Post)
-                 .join(Post.tags)
-                 .filter(Tag.id == tag_id)
-                 .all()
-                 )
-
-        main_logger.info(f"Querying posts by tag_id:{str(tag_id)}")
-        self.__session.close()
-        return posts
-
-    def get_posts_by_tag_name(self, tag_name: str) -> list:
-        validate_input(tag_name, str, "tag_name")
-        posts = (self.__session
-                 .query(Post)
-                 .join(Post.tags)
-                 .filter(Tag.name == tag_name)
-                 .all()
-                 )
-
-        main_logger.info(f"Querying posts by tag_name:{tag_name}")
-        self.__session.close()
-        return posts
 
     def get_posts_by_author_id(self, author_id: int) -> list:
         validate_input(author_id, int, "author_id")

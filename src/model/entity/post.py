@@ -7,7 +7,6 @@ from sqlalchemy import (
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from src.services.validator_service import validate_input
-from posts_tags import posts_tags_association_table
 
 
 class Post(Base):
@@ -25,20 +24,13 @@ class Post(Base):
                        unique=False)
     author = relationship("User", back_populates="posts_list", lazy='joined')
 
-    tags = relationship("Tag",
-                        secondary=posts_tags_association_table,
-                        uselist=True
-                        )
-
-    def __init__(self, header: str, body: str, tags: list, author: User):
+    def __init__(self, header: str, body: str, author: User):
         validate_input(header, str, "header")
         validate_input(body, str, "body")
-        validate_input(tags, list, "tags")
         validate_input(author, User, "author")
 
         self.header = header
         self.body = body
-        self.tags = tags
         self.author = author
 
         now = datetime.now()

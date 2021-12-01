@@ -215,7 +215,7 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     border-color:transparent;
     background-color:transparent;
     opacity: 30%;
-    background-image: url('../static/search.svg');
+    background-image: url('../search.svg');
     filter: var(--search-filter);
     background-position: 10px 15px;
     background-repeat: no-repeat;

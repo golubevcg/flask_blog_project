@@ -1,9 +1,9 @@
-from db_data import Base
-from user import User
+from .db_data import Base
+from .user import User
 from sqlalchemy import (
     Column, String, Integer,
     ForeignKey, Boolean, DateTime,
-    func)
+    func, Text)
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from src.services.validator_service import validate_input
@@ -13,8 +13,8 @@ class Post(Base):
     __tablename__ = "posts"
 
     id = Column(Integer, primary_key=True)
-    header = Column(String, nullable=False)
-    body = Column(String, nullable=False)
+    header = Column(String, nullable=False, unique=True)
+    body = Column(Text, nullable=False)
     creation_date = Column(DateTime, nullable=False, server_default=func.now())
     is_deleted = Column(Boolean, nullable=False, default=False)
 

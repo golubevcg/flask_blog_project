@@ -50,9 +50,8 @@ class PostDao:
 
     def get_all_active_posts(self) -> list:
         active_posts_list = (self.__session.query(Post)
-                             .filter(Post.is_deleted is False)
+                             .filter(Post.is_deleted == False)
                              .all())
-
         main_logger.info("Querying all active posts")
         self.__session.close()
 
@@ -104,7 +103,7 @@ class PostDao:
 
     def get_deleted_posts(self) -> list:
         deleted_posts_list = (self.__session.query(Post)
-                              .filter(Post.is_deleted is True))
+                              .filter(Post.is_deleted == True))
         self.__session.commit()
 
         main_logger.info("Querying all deleted posts")

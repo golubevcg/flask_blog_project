@@ -289,3 +289,9 @@ input:focus, textarea:focus, select:focus{
     border-color:var(--hover-color);
     border-width: 1px;
 }
+
+.creation-date{
+    padding:20px 0;
+    display: flex;
+    align-self: center;
+}

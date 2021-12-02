@@ -11,13 +11,27 @@ app.register_blueprint(post_page_app, url_prefix="/post")
 def main():
     post_dao = PostDao()
     all_posts = post_dao.get_all_active_posts()
-    return render_template("main_page.html")
+    all_posts = sorted(all_posts, key=lambda post: post.creation_date, reverse=True)
+    posts_years = [post.creation_date.year for post in all_posts]
+    temp_year = None
+    for i in range(len(posts_years)):
+        year = posts_years[i]
+        if not temp_year:
+            temp_year = year
+            continue
+
+        if year == temp_year:
+            posts_years[i] = ""
+        elif year != temp_year:
+            temp_year = year
+
+    return render_template("main_page.html", all_posts=all_posts, posts_years=posts_years)
 
 
-# @app.route("/hello/")
-# @app.route("/hello/<username>/")
-# def hello_user(username="World"):
-#     return f"Hello {username}!!"
+@app.route("/about.html")
+def about():
+    print("I'm here!")
+    return render_template("about_page.html")
 
 
 

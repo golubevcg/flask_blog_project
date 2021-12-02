@@ -27,7 +27,7 @@
 <div class="container" >
     <div class="item"></div>
     <div class="item-center" style="flex-grow: 1.35;">
-        <div id="header"></div>
+        <div>{% include "items/header.html" %}</div>
 
         <div class="text about">
             <div class="text">Andrew Golubev</div>
@@ -38,12 +38,12 @@
             <div class="text"><a href="https://github.com/golubevcg" style="color:var(--hover-color)">github.com/golubevcg</a></div>
         </div>
 
-        <footer id="footer"></footer>
+        <footer id="footer">{% include "items/footer.html" %}</footer>
     </div>
 
     <div class="item">
         <div style="display:flex; flex-direction: column; flex-grow:1;">
-            <div id="dark_theme_toggle"></div>
+            <div id="dark_theme_toggle">{% include "items/dark_theme_toggle.html" %}</div>
         </div>
     </div>
 </div>

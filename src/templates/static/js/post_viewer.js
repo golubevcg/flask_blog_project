@@ -40,14 +40,18 @@ const editor = new Editor(options);
 >    1. [x] React
 >    2. [x] Vue
 >    3. [ ] Ember`
+  //
+  viewer_content = $('#viewer_body').text();
 
-    const viewer = Editor.factory({
-      el: document.querySelector('#viewer'),
-      viewer: true,
-      height: '500px',
-      initialValue: viewer_content,
-      // plugins: [[codeSyntaxHighlight, { highlighter: Prism }]]
-    });
+  // create AJAX request to get body object?
+  console.log(viewer_content);
+  const viewer = Editor.factory({
+    el: document.querySelector('#viewer'),
+    viewer: true,
+    height: '500px',
+    initialValue: viewer_content,
+    // plugins: [[codeSyntaxHighlight, { highlighter: Prism }]]
+  });
 
   // viewer.getMarkdown();
 });

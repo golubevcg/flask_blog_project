@@ -1,10 +1,12 @@
 from flask import Flask, render_template
 from .post_page_controller import post_page_app
+from .login_page_controller import login_page_app
 from src.dao.post_dao import PostDao
 
 
 app = Flask(__name__, template_folder='../../src/templates/html', static_folder='../../src/templates/static')
 app.register_blueprint(post_page_app, url_prefix="/post")
+app.register_blueprint(login_page_app, url_prefix="/login")
 
 
 @app.route("/")

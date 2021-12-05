@@ -40,7 +40,7 @@
                     <input class="text" id="input-search" placeholder="Search">
                     {% if current_user.is_authenticated %}
                         <a href="/create_post_page">
-                            <input class="btn btn-default admin_button new_post_button text" type="submit" value="+ Add new post">
+                            <input class="btn btn-default text admin_button new_post_button" type="submit" value="+ Add new post">
                         </a>
                     {% endif %}
                     <div style="flex-grow:1;"></div>
@@ -52,8 +52,8 @@
                 <div class="text post-parent">
                     <div class="text year">
                         {% if current_user.is_authenticated %}
-                          <input class="btn btn-default admin_button edit_button text" type="submit" value="Edit" data-arg={{all_posts[i].id}} onclick="edit_post()">
-                          <input class="btn btn-default admin_button delete_button text" type="submit" value="Delete" data-arg={{all_posts[i].id}} onclick="delete_post()">
+                          <input class="btn btn-default text admin_button edit_button" type="submit" value="Edit" onclick="edit_post({{all_posts[i].id}})">
+                          <input class="btn btn-default text admin_button delete_button" type="submit" value="Delete" onclick="delete_post({{all_posts[i].id}})">
                         {% else %}
                             {{posts_years[i]}}
                         {% endif %}

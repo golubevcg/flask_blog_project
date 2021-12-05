@@ -14,10 +14,14 @@ function switch_theme() {
   element.classList.toggle("dark-theme");
 }
 
-function edit_post(){
-
+function edit_post(post_id){
+  console.log(post_id)
 }
 
-function delete_post(){
-
+function delete_post(post_id){
+  console.log(post_id)
+  if (confirm("Are you shure, that you want to delete this post?")) {
+    // txt = "You pressed OK!";
+  } else {
+  }
 }

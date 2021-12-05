@@ -4,10 +4,10 @@ from datetime import datetime
 from sqlalchemy.orm import relationship
 import hashlib
 from src.services.validator_service import validate_input
-from .db_data import db
+# from .db_data import db
+from .db_data import Base
 
-
-class User(UserMixin, db.Model):
+class User(UserMixin, Base):
     __tablename__ = "users"
 
     id = Column(Integer, primary_key=True)

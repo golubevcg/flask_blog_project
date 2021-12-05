@@ -1,13 +1,12 @@
 from flask import Blueprint, redirect, render_template, url_for
 from src.dao.post_dao import PostDao
-from .main_page_controller import db
 
 post_page_app = Blueprint("post_page_app", __name__,
                           template_folder='../../src/templates/html',
                           static_folder='../../src/templates/static'
                           )
 
-post_dao = PostDao(db)
+post_dao = PostDao()
 
 
 @post_page_app.route("/")

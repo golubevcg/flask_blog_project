@@ -17,7 +17,6 @@ from flask_login import (
 from src.services.logger_service import main_logger
 from src.model.entity.post import Post
 from src.dao.post_dao import PostDao
-from .main_page_controller import db
 import json
 
 
@@ -26,7 +25,7 @@ create_page_app = Blueprint("create_page_app", __name__,
                           static_folder='../../src/templates/static'
                           )
 
-post_dao = PostDao(db)
+post_dao = PostDao()
 
 
 @create_page_app.route("/", methods=['GET'])

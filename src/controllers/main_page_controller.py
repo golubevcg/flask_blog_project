@@ -1,7 +1,7 @@
 from flask import Flask, render_template, request, url_for, redirect, flash
 from flask_login import LoginManager, login_user, logout_user, login_required
 from flask_migrate import Migrate
-from model.entity.db_data import db
+# from model.entity.db_data import db
 from model.entity.user import User
 from model.entity.post import Post
 
@@ -24,11 +24,11 @@ login_manager = LoginManager()
 login_manager.login_view = 'login_get'
 login_manager.init_app(app)
 
-db_login = os.environ["POSTGRESQL_LOGIN"]
-db_pwd = os.environ["POSTGRESQL_PWD"]
-db_port = "5432"
-db_name = "flask_blog"
-db_host = "localhost"
+# db_login = os.environ["POSTGRESQL_LOGIN"]
+# db_pwd = os.environ["POSTGRESQL_PWD"]
+# db_port = "5432"
+# db_name = "flask_blog"
+# db_host = "localhost"
 
 # app.config['SESSION_TYPE'] = 'filesystem'
 # app.config["SESSION_TYPE"] = "filesystem"
@@ -36,26 +36,26 @@ db_host = "localhost"
 # app.config["SESSION_USE_SIGNER"] = True
 # app.config["SESSION_PERMANENT"] = True
 app.secret_key = '9OLWxND4o83j4K4iuopO'
-app.config.update(SQLALCHEMY_DATABASE_URI=f"postgresql+psycopg2://{db_login}:{db_pwd}@{db_host}:{db_port}/{db_name}",
-                  SQLALCHEMY_TRACK_MODIFICATIONS=False,
-                  )
-
-db.init_app(app)
-app.config['SQLALCHEMY_ECHO'] = True
+# app.config.update(SQLALCHEMY_DATABASE_URI=f"postgresql+psycopg2://{db_login}:{db_pwd}@{db_host}:{db_port}/{db_name}",
+#                   SQLALCHEMY_TRACK_MODIFICATIONS=False,
+#                   )
+#
+# db.init_app(app)
+# app.config['SQLALCHEMY_ECHO'] = True
 # migrate = Migrate(app, db)
 # with app.app_context():
 #     db.create_all()
 
-post_dao = PostDao(db)
-user_dao = UserDao(db)
+post_dao = PostDao()
+user_dao = UserDao()
 
 
 @login_manager.user_loader
 def load_user(user_id):
-    # user_dao = UserDao()
+    user_dao = UserDao()
     # return user_dao.get_user_by_id(user_id)
     # from model.entity.user import User
-    return User.query.get(int(user_id))
+    return user_dao.get_user_by_id(int(user_id))
 
 
 @app.route("/")

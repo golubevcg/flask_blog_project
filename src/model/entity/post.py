@@ -6,10 +6,11 @@ from sqlalchemy import (
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from src.services.validator_service import validate_input
-from .db_data import db
+# from .db_data import db
+from .db_data import Base
 
 
-class Post(db.Model):
+class Post(Base):
     __tablename__ = "posts"
 
     id = Column(Integer, primary_key=True)

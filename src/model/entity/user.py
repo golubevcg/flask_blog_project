@@ -17,7 +17,6 @@ class User(UserMixin, db.Model):
                                nullable=False,
                                server_default=func.now())
     is_deleted = Column(Boolean, nullable=False, default=False)
-    posts_list = relationship("Post", back_populates="author", lazy='joined')
 
     def __init__(self, login: str, password: str):
         validate_input(login, str, "login")

@@ -247,7 +247,7 @@ a:hover{
   text-decoration: none;
 }
 
-#placeholder_input{
+#post_header_input{
     width:100%;
     background-position: 10px 15px;
     background-repeat: no-repeat;
@@ -256,7 +256,7 @@ a:hover{
     box-sizing: border-box;
     border-width: 1px;
     margin-bottom:20px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--header_box_shadow);
     border-color: #C4C4C422;
 }
 
@@ -264,7 +264,7 @@ input:focus, textarea:focus, select:focus{
     outline: none;
 }
 
-#placeholder_input:hover{
+#post_header_input:hover{
     border-color:var(--hover-color);
     border-width: 1px;
     border-style:solid;
@@ -272,10 +272,10 @@ input:focus, textarea:focus, select:focus{
 
 #editor{
     width:100%;
-    min-height:95%;
+    min-height:90%;
     display: flex;
     flex-direction: column;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: var(--header_box_shadow);
     border-radius: var(--border-radius);
 }
 

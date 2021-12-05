@@ -10,6 +10,7 @@ import os
 import hashlib
 
 from .post_page_controller import post_page_app
+from .create_post_page_controller import create_page_app
 from src.dao.post_dao import PostDao
 from src.dao.user_dao import UserDao
 
@@ -17,6 +18,7 @@ from src.dao.user_dao import UserDao
 app = Flask(__name__, template_folder='../../src/templates/html', static_folder='../../src/templates/static')
 
 app.register_blueprint(post_page_app, url_prefix="/post")
+app.register_blueprint(create_page_app, url_prefix="/create_new_post")
 
 login_manager = LoginManager()
 login_manager.login_view = 'login_get'
@@ -39,9 +41,14 @@ app.config.update(SQLALCHEMY_DATABASE_URI=f"postgresql+psycopg2://{db_login}:{db
                   )
 
 db.init_app(app)
+app.config['SQLALCHEMY_ECHO'] = True
 # migrate = Migrate(app, db)
 # with app.app_context():
 #     db.create_all()
+
+post_dao = PostDao(db)
+user_dao = UserDao(db)
+
 
 @login_manager.user_loader
 def load_user(user_id):
@@ -53,7 +60,6 @@ def load_user(user_id):
 
 @app.route("/")
 def main():
-    post_dao = PostDao()
     all_posts = post_dao.get_all_active_posts()
     all_posts = sorted(all_posts, key=lambda post: post.creation_date, reverse=True)
     posts_years = [post.creation_date.year for post in all_posts]
@@ -93,7 +99,6 @@ def login_get():
 def login_post():
     login = request.form.get('login')
     password = request.form.get('password')
-    user_dao = UserDao()
 
     if not login or not password:
         flash('Please check your login details and try again.')

@@ -7,6 +7,8 @@ post_page_app = Blueprint("post_page_app", __name__,
                           static_folder='../../src/templates/static'
                           )
 
+post_dao = PostDao(db)
+
 
 @post_page_app.route("/")
 def main():
@@ -20,7 +22,6 @@ def post_id(post_id=None):
     if not post_id:
         return template_if_empty
 
-    post_dao = PostDao()
     post = post_dao.get_post_by_id(int(post_id))
 
     if not post:
@@ -31,3 +32,12 @@ def post_id(post_id=None):
     creation_date = post.creation_date.strftime("%d %b %Y")
     return render_template("post_page.html", header=header, body=body, creation_date=creation_date)
 
+
+@post_page_app.route("/delete_post/<int:post_id>", methods=['POST'])
+def delete_post(post_id):
+    if not post_id:
+        return ""
+
+    post_dao.delete_post_by_id(post_id)
+
+    return "Post successfully been deleted!"

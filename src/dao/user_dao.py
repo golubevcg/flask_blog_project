@@ -8,12 +8,15 @@ from src.services.exception_handler_decorator import exception_handler
 
 
 class UserDao:
+    def __init__(self, db):
+        self.__db = db
+
     @exception_handler(exception=IntegrityError,
                        return_value_if_exception=False)
     def save_user(self, user: User) -> bool:
         validate_input(user, User, "user")
-        User.add(user)
-        User.commit()
+        self.__db.session.add(user)
+        self.__db.session.commit()
         main_logger.info(f"User with id:{str(user.id)} was saved")
         return True
 
@@ -21,8 +24,8 @@ class UserDao:
                        return_value_if_exception=False)
     def update_user(self, user: User) -> bool:
         validate_input(user, User, "user")
-        User.add(user)
-        User.commit()
+        self.__db.session.add(user)
+        self.__db.session.commit()
 
         main_logger.info(f"User with id:{str(user.id)} was updated")
         return True
@@ -34,7 +37,7 @@ class UserDao:
         (User.query
          .filter(User.id == user.id)
          .update({'is_deleted': True}))
-        User.commit()
+        self.__db.session.commit()
 
         main_logger.info(f"User with id:{str(user.id)} was deleted")
         return True

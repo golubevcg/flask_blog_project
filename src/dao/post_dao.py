@@ -9,12 +9,15 @@ from src.services.exception_handler_decorator import exception_handler
 
 
 class PostDao:
+    def __init__(self, db):
+        self.__db = db
+
     @exception_handler(exception=IntegrityError,
                        return_value_if_exception=False)
     def save_post(self, post: Post) -> bool:
         validate_input(post, Post, "post")
-        Post.add(post)
-        Post.commit()
+        self.__db.session.add(post)
+        self.__db.session.commit()
 
         main_logger.info(f"Post with id:{str(post.id)} has been saved")
         return True
@@ -23,8 +26,8 @@ class PostDao:
                        return_value_if_exception=False)
     def update_post(self, post: Post) -> bool:
         validate_input(post, Post, "post")
-        Post.add(post)
-        Post.commit()
+        self.__db.session.add(post)
+        self.__db.session.commit()
 
         main_logger.info(f"Post with id:{str(post.id)} has been updated")
         return True
@@ -33,13 +36,28 @@ class PostDao:
                        return_value_if_exception=False)
     def delete_post(self, post: Post) -> bool:
         validate_input(post, Post, "post")
-        post.is_deleted = True
         post_id = post.id
-        Post.commit()
-        Post.add(post)
+        self.delete_post_by_id(post.id)
 
         main_logger.info(f"Post with id:{str(post_id)} has been deleted")
         return True
+
+    # @exception_handler(exception=IntegrityError,
+    #                    return_value_if_exception=False)
+    def delete_post_by_id(self, post_id):
+        if not post_id:
+            return False
+        # c = Post.query.filter_by(id=post_id).update({'is_deleted': True})
+        post = Post.query.filter_by(id=post_id).first()
+        print("post.header:", post)
+        post.is_deleted = True
+
+
+        # print(c)
+        self.__db.session.commit()
+        self.__db.session.flush()
+        post = Post.query.filter_by(id=post_id).first()
+        print("post.is_deleted:", post.is_deleted)
 
     def get_all_active_posts(self) -> list:
         active_posts_list = (Post.query
@@ -65,29 +83,14 @@ class PostDao:
         main_logger.info(f"Querying posts with header ilike:{header}")
         return posts_list
 
-    def get_posts_by_author_id(self, author_id: int) -> list:
-        validate_input(author_id, int, "author_id")
-        posts = (Post
-                 .query
-                 .join(Post.author)
-                 .filter(User.id == author_id)
-                 .all()
-                 )
+    def get_post_with_by_header(self, header: str) -> list:
+        validate_input(header, str, "header")
+        posts_list = (Post.query
+                      .filter(Post.header == header)
+                      .all())
 
-        main_logger.info(f"Querying posts by author_id:{str(author_id)}")
-        return posts
-
-    def get_posts_by_author_login(self, login: str) -> list:
-        validate_input(login, str, "login")
-        posts = (Post
-                 .query
-                 .join(Post.author)
-                 .filter(User.login == login)
-                 .all()
-                 )
-
-        main_logger.info(f"Querying posts by login:{login}")
-        return posts
+        main_logger.info(f"Querying posts with header ilike:{header}")
+        return posts_list
 
     def get_deleted_posts(self) -> list:
         deleted_posts_list = (Post.query

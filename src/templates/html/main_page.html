@@ -19,6 +19,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 
     <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+    {% if current_user.is_authenticated %}
+        <script src="{{ url_for('static',filename='js/edit_delete_post.js') }}"></script>
+    {% endif %}
 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/toggle.css') }}" />
@@ -39,7 +42,7 @@
                 <div class="post search" style=" background-color:transparent">
                     <input class="text" id="input-search" placeholder="Search">
                     {% if current_user.is_authenticated %}
-                        <a href="/create_post_page">
+                        <a href="/create_new_post">
                             <input class="btn btn-default text admin_button new_post_button" type="submit" value="+ Add new post">
                         </a>
                     {% endif %}

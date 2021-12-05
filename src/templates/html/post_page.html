@@ -20,6 +20,7 @@
 
     <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
     <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+    <script src="{{ url_for('static',filename='js/main.js') }}"></script>
 
 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
@@ -35,7 +36,8 @@
         <div class="text post-header">{{header}}</div>
 
         <div id="viewer" style="padding:20px 10px">{{body}}</div>
-        <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+        <script src="{{ url_for('static',filename='js/create_post_viewer.js') }}"></script>
+
 
         <div class="text creation-date">{{creation_date}}</div>
 

@@ -1,5 +1,6 @@
-from flask import Blueprint, redirect, render_template
+from flask import Blueprint, redirect, render_template, url_for
 from src.dao.post_dao import PostDao
+from .main_page_controller import db
 
 post_page_app = Blueprint("post_page_app", __name__,
                           template_folder='../../src/templates/html',

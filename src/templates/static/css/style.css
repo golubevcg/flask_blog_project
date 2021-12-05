@@ -333,3 +333,35 @@ input:focus, textarea:focus, select:focus{
     border-color:var(--hover-color);
     border-width: 1px;
 }
+
+.admin_button{
+    margin-left:5px;
+    padding:5px;
+    border-radius:4px;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.edit_button{
+    background-color: #87CEFA;
+}
+
+.edit_button:hover{
+    background-color: #b2e4ff;
+}
+
+.delete_button{
+    background-color: #e65656;
+}
+
+.delete_button:hover{
+    background-color: #ea9393;
+}
+
+.new_post_button{
+    background-color: #98e6b7;
+}
+
+.new_post_button:hover{
+    background-color: #bae5cb;
+}

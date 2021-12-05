@@ -1,12 +1,13 @@
-from .db_data import Base
 from sqlalchemy import Column, Integer, String, Boolean, DateTime, func
+from flask_login import UserMixin
 from datetime import datetime
 from sqlalchemy.orm import relationship
 import hashlib
 from src.services.validator_service import validate_input
+from .db_data import db
 
 
-class User(Base):
+class User(UserMixin, db.Model):
     __tablename__ = "users"
 
     id = Column(Integer, primary_key=True)

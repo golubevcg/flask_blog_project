@@ -1,4 +1,3 @@
-from .db_data import Base
 from .user import User
 from sqlalchemy import (
     Column, String, Integer,
@@ -7,9 +6,10 @@ from sqlalchemy import (
 from sqlalchemy.orm import relationship
 from datetime import datetime
 from src.services.validator_service import validate_input
+from .db_data import db
 
 
-class Post(Base):
+class Post(db.Model):
     __tablename__ = "posts"
 
     id = Column(Integer, primary_key=True)

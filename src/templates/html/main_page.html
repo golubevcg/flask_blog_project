@@ -38,22 +38,35 @@
                 <div class="text year"></div>
                 <div class="post search" style=" background-color:transparent">
                     <input class="text" id="input-search" placeholder="Search">
+                    {% if current_user.is_authenticated %}
+                        <a href="/create_post_page">
+                            <input class="btn btn-default admin_button new_post_button text" type="submit" value="+ Add new post">
+                        </a>
+                    {% endif %}
                     <div style="flex-grow:1;"></div>
                     <div class="text"></div>
                 </div>
             </div>
 
             {%for i in range(5)%}
-                <a href="post/{{all_posts[i].id}}">
-                    <div class="text post-parent">
-                        <div class="text year">{{posts_years[i]}}</div>
-                        <div class="post {{'post' if i % 2 == 0 else 'post-alt'}}">
-                            <div class="text" style="margin:8px">{{all_posts[i].header}}</div>
-                            <div style="flex-grow:1;"></div>
-                            <div class="text">{{all_posts[i].creation_date.strftime("%d %b")}}</div>
-                        </div>
+                <div class="text post-parent">
+                    <div class="text year">
+                        {% if current_user.is_authenticated %}
+                          <input class="btn btn-default admin_button edit_button text" type="submit" value="Edit" data-arg={{all_posts[i].id}} onclick="edit_post()">
+                          <input class="btn btn-default admin_button delete_button text" type="submit" value="Delete" data-arg={{all_posts[i].id}} onclick="delete_post()">
+                        {% else %}
+                            {{posts_years[i]}}
+                        {% endif %}
                     </div>
-                </a>
+                    <a class="post {{'post' if i % 2 == 0 else 'post-alt'}}" href="post/{{all_posts[i].id}}">
+<!--                        <div class="post {{'post' if i % 2 == 0 else 'post-alt'}}">-->
+                        <div class="text" style="margin:8px">{{all_posts[i].header}}</div>
+                        <div style="flex-grow:1;"></div>
+                        <div class="text">{{all_posts[i].creation_date.strftime("%d %b")}}</div>
+<!--                        </div>-->
+                    </a>
+
+                </div>
             {%endfor%}
 
         </list>

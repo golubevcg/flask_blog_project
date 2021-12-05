@@ -66,10 +66,14 @@ from src.dao.post_dao import PostDao
 # admin_posts = post_dao.get_posts_by_author_id(39)
 # print(admin_posts)
 
-post_dao = PostDao()
-all_posts = post_dao.get_all_active_posts()
-# print("year:", all_posts[0].creation_date.year)
-# print("month:", all_posts[0].creation_date.month)
-# print("day:", all_posts[0].creation_date.day)
-all_posts = sorted(all_posts, key=lambda post: post.creation_date, reverse=True)
-print(all_posts[0].creation_date.strftime("%d %b %Y"))
+# post_dao = PostDao()
+# all_posts = post_dao.get_all_active_posts()
+# # print("year:", all_posts[0].creation_date.year)
+# # print("month:", all_posts[0].creation_date.month)
+# # print("day:", all_posts[0].creation_date.day)
+# all_posts = sorted(all_posts, key=lambda post: post.creation_date, reverse=True)
+# print(all_posts[0].creation_date.strftime("%d %b %Y"))
+
+
+user_dao = UserDao()
+print(user_dao.get_user_by_login("admin"))

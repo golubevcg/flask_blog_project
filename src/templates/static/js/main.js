@@ -9,7 +9,15 @@ const viewer = Editor.factory({
   theme: 'light'
 });
 
-function myFunction() {
+function switch_theme() {
   var element = document.body;
   element.classList.toggle("dark-theme");
+}
+
+function edit_post(){
+
+}
+
+function delete_post(){
+
 }

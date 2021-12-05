@@ -31,8 +31,15 @@
     <div class="item-center">
         <div>{% include "items/header.html" %}</div>
 
-        <form action="" method="post"  style="display:flex; flex-direction: column; width:35%; align-self: center;padding:150px;">
-            <input class="text input-form" type="text" style="margin:5px;" placeholder="Username" name="username" value="{{request.form.username }}">
+        <form action="/login" method="post"  style="display:flex; flex-direction: column; width:35%; align-self: center;padding:150px;">
+            {% with messages = get_flashed_messages() %}
+            {% if messages %}
+                <div class="text input-form notification is-danger" style="margin-bottom:20px;">
+                    {{ messages[0] }}
+                </div>
+            {% endif %}
+            {% endwith %}
+            <input class="text input-form" type="text" style="margin:5px;" placeholder="Login" name="login" value="{{request.form.login }}">
             <input class="text input-form" type="password" style="margin:5px;" placeholder="Password" name="password" value="{{request.form.password }}">
             <input class="btn btn-default input-form login-button" type="submit" value="Login">
         </form>

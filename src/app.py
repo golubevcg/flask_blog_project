@@ -1,6 +1,7 @@
 import os
 
 from flask import Flask
+from flask_migrate import Migrate
 
 from services.db_service import db
 from controllers.create_post_page_controller import create_new_post_blueprint
@@ -30,5 +31,9 @@ main_app.config.update(
                   )
 db.init_app(main_app)
 login_manager.init_app(main_app)
+# migrate = Migrate(main_app, db, compare_type=True)
+from model.entity.post import Post
+with main_app.app_context():
+    db.create_all()
 
 main_app.run(debug=True)

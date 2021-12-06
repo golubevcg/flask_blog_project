@@ -37,8 +37,26 @@
     <div class="item-center" style="flex-grow: 1.35;">
         <div>{% include "items/header.html" %}</div>
 
-        <div class="input-group mb-3" style="padding-top:20px; flex-direction: column;">
+        <div class="input-group mb-3" style="display:flex;padding-top:18px; flex-direction:row;">
             <input class="text" id="post_header_input" placeholder="Type post header here">
+            <div style="display:flex;flex-direction:column;">
+                <div class="text buttons_mode_label" style="display:flex; flex-direction: row; margin-left: 12px; width:30px;">publish</div>
+                <div class="text css_mode_button">
+                    <label class="checkbox-ios" style="margin-left: 13px;">
+                        <input type="checkbox" id="publish_checkbox">
+                        <span class="checkbox-ios-switch"></span>
+                    </label>
+                </div>
+            </div>
+            <div style="display:flex; padding-top:0px;flex-direction:column;">
+                <div class="text buttons_mode_label" style="display:flex; flex-direction: row; margin-top:-12px;margin-left: 8px; margin-right:2px; width:30px;">link access</div>
+                <div class="text css_mode_button">
+                    <label class="checkbox-ios" style="margin-left: 3px;">
+                        <input type="checkbox" id="link_access_checkbox">
+                        <span class="checkbox-ios-switch"></span>
+                    </label>
+                </div>
+            </div>
         </div>
 
         <div id="editor" style=""></div>

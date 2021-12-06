@@ -196,6 +196,17 @@ html, body {
     padding-top: 22px;
 }
 
+.buttons_mode_label{
+    width:20px;
+    font-size:11px;
+    color: var(--text_main_color_60);
+    display: flex;
+    /*justify-content: flex-;*/
+    padding-bottom: 0;
+    /*padding-top: 22px;*/
+    padding-left:0;
+}
+
 .search:hover{
     border-width: 2px;
     border-color: transparent;
@@ -258,6 +269,7 @@ a:hover{
     margin-bottom:20px;
     box-shadow: var(--header_box_shadow);
     border-color: #C4C4C422;
+    height:50px;
 }
 
 input:focus, textarea:focus, select:focus{

@@ -9,11 +9,14 @@ from services.db_service import db
 
 class Post(db.Model):
     __tablename__ = "posts"
+    __table_args__ = {'extend_existing': True}
 
     id = Column(Integer, primary_key=True)
     header = Column(String, nullable=False, unique=True)
     body = Column(Text, nullable=False)
     creation_date = Column(DateTime, nullable=False, server_default=func.now())
+    is_published = Column(Boolean, nullable=False, default=False)
+    is_link_access = Column(Boolean, nullable=False, default=False)
     is_deleted = Column(Boolean, nullable=False, default=False)
 
     def __init__(self, header: str, body: str):

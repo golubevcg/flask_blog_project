@@ -1,13 +1,12 @@
 import os
 
 from flask import Flask
-from flask_login import LoginManager
 
 from services.db_service import db
 from controllers.create_post_page_controller import create_new_post_blueprint
 from controllers.post_page_controller import post_page_blueprint
 from controllers.main_page_controller import main_page_blueprint
-from src.dao import user_dao
+from services.login_manager_service import login_manager, load_user
 
 main_app = Flask(__name__, template_folder='templates/html', static_folder='templates/static')
 main_app.register_blueprint(main_page_blueprint, url_prefix="/")
@@ -30,15 +29,6 @@ main_app.config.update(
                   SQLALCHEMY_TRACK_MODIFICATIONS=False,
                   )
 db.init_app(main_app)
-
-login_manager = LoginManager()
-login_manager.login_view = 'login_get'
 login_manager.init_app(main_app)
-
-
-@login_manager.user_loader
-def load_user(user_id):
-    return user_dao.get_user_by_id(int(user_id))
-
 
 main_app.run(debug=True)

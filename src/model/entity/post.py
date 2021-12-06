@@ -1,12 +1,10 @@
-from .user import User
 from sqlalchemy import (
     Column, String, Integer,
-    ForeignKey, Boolean, DateTime,
+    Boolean, DateTime,
     func, Text)
-from sqlalchemy.orm import relationship
 from datetime import datetime
 from src.services.validator_service import validate_input
-from .db_data import db
+from services.db_service import db
 
 
 class Post(db.Model):

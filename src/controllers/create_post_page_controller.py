@@ -1,42 +1,25 @@
-from flask import (
-    Blueprint,
-    redirect,
-    render_template,
-    url_for,
-    request,
-    jsonify,
-)
-
-from flask_login import (
-    LoginManager,
-    login_user,
-    logout_user,
-    login_required,
-)
+from flask import Blueprint, render_template, request
+from flask_login import login_required
 
 from src.services.logger_service import main_logger
 from src.model.entity.post import Post
-from src.dao.post_dao import PostDao
-from .main_page_controller import db
-import json
+from src.dao import post_dao
 
-
-create_page_app = Blueprint("create_page_app", __name__,
-                          template_folder='../../src/templates/html',
-                          static_folder='../../src/templates/static'
+create_new_post_blueprint = Blueprint(
+                          "create_new_post_app", __name__,
+                          template_folder='../templates/html',
+                          static_folder='../templates/static'
                           )
 
-post_dao = PostDao(db)
 
-
-@create_page_app.route("/", methods=['GET'])
+@create_new_post_blueprint.route("/", methods=['GET'])
 @login_required
 def main():
     # redirect to main
     return render_template("/create_post_page.html")
 
 
-@create_page_app.route("/check_new_post_header_unique", methods=['POST'])
+@create_new_post_blueprint.route("/check_new_post_header_unique", methods=['POST'])
 @login_required
 def check_new_post_header_unique():
     header = request.get_json(silent=True)
@@ -50,7 +33,7 @@ def check_new_post_header_unique():
         return "valid header"
 
 
-@create_page_app.route("/save_new_post", methods=['POST'])
+@create_new_post_blueprint.route("/save_new_post", methods=['POST'])
 def save_post():
     post_data = request.get_json(silent=True)
     if "header" not in post_data:

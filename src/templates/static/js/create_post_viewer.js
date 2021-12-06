@@ -5,5 +5,4 @@ const viewer = toastui.Editor.factory({
   viewer: true,
   height: '500px',
   initialValue: viewer_content,
-  theme: 'light'
 });

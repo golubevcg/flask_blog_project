@@ -1,64 +1,19 @@
-from flask import Flask, render_template, request, url_for, redirect, flash
-from flask_login import LoginManager, login_user, logout_user, login_required
-from flask_migrate import Migrate
-from model.entity.db_data import db
-from model.entity.user import User
-from model.entity.post import Post
-
-
-import os
 import hashlib
 
-from .post_page_controller import post_page_app
-from .create_post_page_controller import create_page_app
-from src.dao.post_dao import PostDao
-from src.dao.user_dao import UserDao
+from flask import Blueprint, render_template, request, url_for, redirect, flash
+from flask_login import login_user, logout_user, login_required
+
+from src.dao import post_dao, user_dao
 
 
-app = Flask(__name__, template_folder='../../src/templates/html', static_folder='../../src/templates/static')
-
-app.register_blueprint(post_page_app, url_prefix="/post")
-app.register_blueprint(create_page_app, url_prefix="/create_new_post")
-
-login_manager = LoginManager()
-login_manager.login_view = 'login_get'
-login_manager.init_app(app)
-
-db_login = os.environ["POSTGRESQL_LOGIN"]
-db_pwd = os.environ["POSTGRESQL_PWD"]
-db_port = "5432"
-db_name = "flask_blog"
-db_host = "localhost"
-
-# app.config['SESSION_TYPE'] = 'filesystem'
-# app.config["SESSION_TYPE"] = "filesystem"
-# app.config["SESSION_FILE_DIR"] = "session"
-# app.config["SESSION_USE_SIGNER"] = True
-# app.config["SESSION_PERMANENT"] = True
-app.secret_key = '9OLWxND4o83j4K4iuopO'
-app.config.update(SQLALCHEMY_DATABASE_URI=f"postgresql+psycopg2://{db_login}:{db_pwd}@{db_host}:{db_port}/{db_name}",
-                  SQLALCHEMY_TRACK_MODIFICATIONS=False,
-                  )
-
-db.init_app(app)
-app.config['SQLALCHEMY_ECHO'] = True
-# migrate = Migrate(app, db)
-# with app.app_context():
-#     db.create_all()
-
-post_dao = PostDao(db)
-user_dao = UserDao(db)
+main_page_blueprint = Blueprint(
+                                 "main_page_blueprint", __name__,
+                                 template_folder='../templates/html',
+                                 static_folder='../templates/static'
+                                )
 
 
-@login_manager.user_loader
-def load_user(user_id):
-    # user_dao = UserDao()
-    # return user_dao.get_user_by_id(user_id)
-    # from model.entity.user import User
-    return User.query.get(int(user_id))
-
-
-@app.route("/")
+@main_page_blueprint.route("/")
 def main():
     all_posts = post_dao.get_all_active_posts()
     all_posts = sorted(all_posts, key=lambda post: post.creation_date, reverse=True)
@@ -78,24 +33,24 @@ def main():
     return render_template("main_page.html", all_posts=all_posts, posts_years=posts_years)
 
 
-@app.route("/about.html")
+@main_page_blueprint.route("/about.html")
 def about():
     return render_template("about_page.html")
 
 
-@app.route("/logout")
+@main_page_blueprint.route("/logout")
 @login_required
 def logout():
     logout_user()
     return redirect("/")
 
 
-@app.route("/login", methods=['GET'])
+@main_page_blueprint.route("/login", methods=['GET'])
 def login_get():
     return render_template("login_page.html")
 
 
-@app.route("/login", methods=['POST'])
+@main_page_blueprint.route("/login", methods=['POST'])
 def login_post():
     login = request.form.get('login')
     password = request.form.get('password')

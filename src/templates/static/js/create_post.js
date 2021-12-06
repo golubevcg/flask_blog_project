@@ -1,9 +1,10 @@
 
 let editor = new toastui.Editor({
-el: document.querySelector('#editor'),
-height: '500px',
-initialEditType: 'wysiwyg',
-previewStyle: 'vertical'
+    el: document.querySelector('#editor'),
+    height: '500px',
+    initialEditType: 'wysiwyg',
+    previewStyle: 'vertical',
+    theme: 'dark'
 });
 
 

@@ -1,10 +1,9 @@
 from sqlalchemy import Column, Integer, String, Boolean, DateTime, func
 from flask_login import UserMixin
 from datetime import datetime
-from sqlalchemy.orm import relationship
 import hashlib
 from src.services.validator_service import validate_input
-from .db_data import db
+from services.db_service import db
 
 
 class User(UserMixin, db.Model):

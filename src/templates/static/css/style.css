@@ -1,7 +1,7 @@
 :root {
     --start_line_bg_color: #C4C4C459;
     --header_box_shadow: 0 2px 2px #88888890;
-    --text_main_color: #4d4d4d;
+    --text_main_color: #2e2e2e;
     --text_main_color_60: #59585890;
     --font-family: 'Roboto', sans-serif;
 
@@ -13,13 +13,14 @@
     --search-filter:invert(00%);
     --create_post_border_color: rgba(155, 155, 155, 0.52);
 
-    background-color: var(--background-color);
+    color:var(--text_main_color);
+    background-color: var(--background-color)!important;
 }
 
 .dark-theme {
     --start_line_bg_color: #F5F5F5;
     --header_box_shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
-    --text_main_color: #b5b5b5;
+    --text_main_color: #cecece;
     --text_main_color_60: #b5b5b560;
     --font-family:'Roboto', sans-serif;
 
@@ -28,8 +29,9 @@
     --background-color: #2a2a2b;
     --header-border-color: #F5F5F50D;
     --search-filter:invert(100%);
-
+    color:var(--text_main_color);
     background-color: var(--background-color);
+
 }
 
 html, body {
@@ -41,8 +43,6 @@ html, body {
     vertical-align: baseline;
     height: 100%;
 }
-
-
 
 .container {
     display: flex;

@@ -11,6 +11,7 @@
     --header-border-color: white;
     --border-radius: 4px;
     --search-filter:invert(00%);
+    --create_post_border_color: rgba(155, 155, 155, 0.52);
 
     background-color: var(--background-color);
 }
@@ -260,16 +261,16 @@ a:hover{
 
 #post_header_input{
     width:100%;
-    background-position: 10px 15px;
-    background-repeat: no-repeat;
+    /*background-position: 10px 15px;*/
+    /*background-repeat: no-repeat;*/
     padding: 10px;
+    margin-bottom:15px;
     border-radius: var(--border-radius);
     box-sizing: border-box;
     border-width: 1px;
-    margin-bottom:20px;
-    box-shadow: var(--header_box_shadow);
-    border-color: #C4C4C422;
+    border-color:var(--create_post_border_color);
     height:50px;
+    border-style:solid;
 }
 
 input:focus, textarea:focus, select:focus{
@@ -287,8 +288,13 @@ input:focus, textarea:focus, select:focus{
     min-height:90%;
     display: flex;
     flex-direction: column;
-    box-shadow: var(--header_box_shadow);
+    /*box-shadow: var(--header_box_shadow);*/
     border-radius: var(--border-radius);
+    border-width: 1px;
+    border-color:var(--create_post_border_color);
+    border-style:solid;
+    /*border-color: transparent;*/
+
 }
 
 .button{
@@ -299,7 +305,7 @@ input:focus, textarea:focus, select:focus{
     border-radius: var(--border-radius);
     box-sizing: border-box;
     border-width: 1px;
-    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
+    /*box-shadow: var(--header_box_shadow);*/
     background-color: var(--background-color);
     border-color: #C4C4C459;
     padding:5px;

@@ -1,3 +1,5 @@
+import json
+
 from flask import Blueprint, render_template, request
 from flask_login import login_required
 
@@ -45,8 +47,10 @@ def save_post():
     header = post_data["header"]
     body = post_data["body"]
 
+    json_string = json.dumps(body)
+
     try:
-        post = Post(header, body)
+        post = Post(header, json_string)
         post_dao.save_post(post)
         return "Post added successfully"
     except Exception as e:

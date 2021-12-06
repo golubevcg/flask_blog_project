@@ -1,11 +1,40 @@
+let toolbarOptions = [
+    [{ 'font': [] }],
 
-let editor = new toastui.Editor({
-    el: document.querySelector('#editor'),
-    height: '500px',
-    initialEditType: 'wysiwyg',
-    previewStyle: 'vertical',
-    theme: 'dark'
+    ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
+    ['blockquote', 'code-block'],
+
+    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
+    [{ 'align': [] }],
+
+    [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
+
+    [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
+    [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
+
+    [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
+
+    [ 'link', 'image', 'video', 'formula' ],
+
+    ['clean']                                         // remove formatting button
+];
+
+hljs.configure({   // optionally configure hljs
+  languages: ['python'],
 });
+
+let options = {
+    debug: 'info',
+    modules: {
+        syntax: true,
+        toolbar: toolbarOptions
+    },
+    placeholder: 'Enter post text here...',
+    // readOnly: true,
+    theme: 'bubble',
+    tooltip:true,
+};
+let editor = new Quill(document.querySelector('#editor'), options);
 
 
 function save_post(){
@@ -43,7 +72,7 @@ function send_and_save_post(header){
       return false;
     }
 
-    let post_body = editor.getMarkdown();
+    let post_body = editor.getContents();
 
     if (!!!post_body) {
       alert("Error, given post body is empty!");

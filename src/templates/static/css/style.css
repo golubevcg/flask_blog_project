@@ -14,14 +14,13 @@
     --create_post_border_color: rgba(155, 155, 155, 0.52);
 
     color:var(--text_main_color);
-    background-color: var(--background-color)!important;
 }
 
 .dark-theme {
     --start_line_bg_color: #F5F5F5;
     --header_box_shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     --text_main_color: #cecece;
-    --text_main_color_60: #b5b5b560;
+    --text_main_color_60: #cecece60;
     --font-family:'Roboto', sans-serif;
 
     --hover-color:#00A3FF;
@@ -29,9 +28,8 @@
     --background-color: #2a2a2b;
     --header-border-color: #F5F5F50D;
     --search-filter:invert(100%);
-    color:var(--text_main_color);
-    background-color: var(--background-color);
 
+    color:var(--text_main_color);
 }
 
 html, body {
@@ -48,6 +46,7 @@ html, body {
     display: flex;
     z-index:2;
     position:relative;
+    background-color: var(--background-color);
 }
 
 .starting-line{
@@ -230,7 +229,7 @@ html, body {
     align-items: flex-end;
     opacity: 0.75;
     font-size:12px;
-    color:#59585899
+    color:var(--text_main_color_60)
 }
 
 #input-search{
@@ -361,26 +360,10 @@ input:focus, textarea:focus, select:focus{
     font-size:16px;
 }
 
-.edit_button{
-    background-color: #87CEFA;
+.admin_button:hover{
+    background-color: var(--post-alternative-row-color);
 }
 
-.edit_button:hover{
-    background-color: #b2e4ff;
-}
-
-.delete_button{
-    background-color: #e65656;
-}
-
-.delete_button:hover{
-    background-color: #ea9393;
-}
-
-.new_post_button{
-    background-color: #98e6b7;
-}
-
-.new_post_button:hover{
-    background-color: #bae5cb;
+.ql-font-roboto {
+  font-family: 'Roboto', sans-serif;
 }

@@ -62,11 +62,9 @@
                         {% endif %}
                     </div>
                     <a class="post {{'post' if i % 2 == 0 else 'post-alt'}}" href="post/{{all_posts[i].id}}">
-<!--                        <div class="post {{'post' if i % 2 == 0 else 'post-alt'}}">-->
                         <div class="text" style="margin:8px">{{all_posts[i].header}}</div>
                         <div style="flex-grow:1;"></div>
                         <div class="text">{{all_posts[i].creation_date.strftime("%d %b")}}</div>
-<!--                        </div>-->
                     </a>
 
                 </div>

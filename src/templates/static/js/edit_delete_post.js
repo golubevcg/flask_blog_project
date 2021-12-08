@@ -1,10 +1,10 @@
 function edit_post(post_id){
-  console.log(post_id)
+    location.href = '/create_new_post/' + String(post_id);
 }
 
 function delete_post(post_id){
   console.log(post_id)
-  if (confirm("Are you shure, that you want to delete this post?")) {
+  if (confirm("Are you sure, that you want to delete this post?")) {
       if (!!!post_id) {
           alert("Error, given post id is empty!");
           return false;

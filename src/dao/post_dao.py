@@ -21,17 +21,6 @@ def save_post(post: Post) -> bool:
 
 @exception_handler(exception=IntegrityError,
                    return_value_if_exception=False)
-def update_post(post: Post) -> bool:
-    validate_input(post, Post, "post")
-    db.session.add(post)
-    db.session.commit()
-
-    main_logger.info(f"Post with id:{str(post.id)} has been updated")
-    return True
-
-
-@exception_handler(exception=IntegrityError,
-                   return_value_if_exception=False)
 def delete_post(post: Post) -> bool:
     validate_input(post, Post, "post")
     post_id = post.id
@@ -93,3 +82,7 @@ def get_deleted_posts() -> list:
 
     main_logger.info("Querying all deleted posts")
     return deleted_posts_list
+
+
+def commit():
+    db.session.commit()

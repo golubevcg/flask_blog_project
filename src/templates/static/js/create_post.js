@@ -119,10 +119,8 @@ function send_and_save_post(header){
                     data: JSON.stringify(post_id),
                     headers: {"Content-Type": "application/json"},
                     success: function(result){
-                        console.log("result")
                       if (!!result) {
                             post_data["post_id"] = post_id
-                            console.log("FINAL POST_DATA:", post_data)
                             send_post_data(post_data)
                       }else{
                           alert("Error, cannot update post, post with such id does not exist!");

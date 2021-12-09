@@ -45,6 +45,8 @@ if (!!editor_content){
     editor.setContents(JSON.parse(editor_content))
 }
 
+
+
 function save_post(){
     let header = $('#post_header_input').val();
     validate_header(header)

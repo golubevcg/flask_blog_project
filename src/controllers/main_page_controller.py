@@ -64,7 +64,7 @@ def login_post():
     user = user_dao.get_user_by_login(login)
     if not user or user.password != password:
         flash('Please check your login details and try again.')
-        return redirect(url_for('login_get'))
+        return redirect(url_for('/login/login_get'))
     else:
         login_user(user)
         return redirect("/")

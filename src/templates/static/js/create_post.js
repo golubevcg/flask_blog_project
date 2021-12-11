@@ -23,7 +23,7 @@ let toolbarOptions = [
     ['clean']                                         // remove formatting button
 ];
 
-hljs.configure({   // optionally configure hljs
+hljs.configure({
   languages: ['python'],
 });
 
@@ -44,7 +44,6 @@ let editor_content = $('#editor').text();
 if (!!editor_content){
     editor.setContents(JSON.parse(editor_content))
 }
-
 
 
 function save_post(){

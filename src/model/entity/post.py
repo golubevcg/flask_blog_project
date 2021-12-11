@@ -28,6 +28,10 @@ class Post(db.Model):
         validate_input(header, str, "header")
         validate_input(body, str, "body")
 
+        header_length = len(header)
+        if header_length < 5 or header_length > 50:
+            raise Exception("Header length does not fit between 5 and 50 symbols, saving interrupted!")
+
         self.header = header
         self.body = body
 

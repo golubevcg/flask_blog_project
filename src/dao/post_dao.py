@@ -11,6 +11,11 @@ from services.db_service import db
 @exception_handler(exception=IntegrityError,
                    return_value_if_exception=False)
 def save_post(post: Post) -> bool:
+    header_length = len(post.header)
+    if header_length < 5 or header_length > 50:
+        main_logger.exception("Header length does not fit between 5 and 50 symbols, saving interrupted!")
+        return ""
+
     validate_input(post, Post, "post")
     db.session.add(post)
     db.session.commit()
@@ -42,6 +47,28 @@ def delete_post_by_id(post_id):
 def get_all_active_posts() -> list:
     active_posts_list = (Post.query
                          .filter(Post.is_deleted == False)
+                         .all())
+    main_logger.info("Querying all active posts")
+
+    return active_posts_list
+
+
+def get_all_published_posts() -> list:
+    active_posts_list = (Post.query
+                         .filter(Post.is_deleted == False)
+                         .filter(Post.is_published == True)
+                         .filter(Post.is_link_access == False)
+                         .all())
+    main_logger.info("Querying all active posts")
+
+    return active_posts_list
+
+
+def get_all_published_through_link_posts() -> list:
+    active_posts_list = (Post.query
+                         .filter(Post.is_deleted == False)
+                         .filter(Post.is_published == True)
+                         .filter(Post.is_link_access == True)
                          .all())
     main_logger.info("Querying all active posts")
 

@@ -80,6 +80,11 @@ def save_post():
         return ""
 
     header = post_data["header"]
+    header_length = len(header)
+    if header_length < 5 or header_length > 50:
+        main_logger.exception("Header length does not fit between 5 and 50 symbols, saving interrupted!")
+        return ""
+
     body = post_data["body"]
     is_published = post_data["is_published"]
     is_link_access = post_data["is_link_access"]
@@ -93,7 +98,7 @@ def save_post():
             main_logger.exception(f"Cannot update post with such id, "
                                   f"because no post with this id was founded. "
                                   f"(post_id = {str(post_id)}")
-            return
+            return ""
 
     json_string = json.dumps(body)
 

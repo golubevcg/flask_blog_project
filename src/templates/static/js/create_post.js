@@ -57,6 +57,12 @@ function validate_header(header){
       return false;
     }
 
+    console.log("header.length", header.length,100<header.length<5)
+    if (header.length<5 || header.length>50) {
+      alert("Error, header length must be between 5 and 50 symbols!");
+      return false;
+    }
+
     const queryString = window.location.pathname;
     let split = queryString.split("/")
 

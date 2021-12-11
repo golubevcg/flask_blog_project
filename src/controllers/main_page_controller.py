@@ -15,7 +15,8 @@ main_page_blueprint = Blueprint(
 
 @main_page_blueprint.route("/")
 def main():
-    all_posts = post_dao.get_all_active_posts()
+    all_posts = post_dao.get_all_published_posts()
+    print("ALL_POSTS:", all_posts)
     all_posts = sorted(all_posts, key=lambda post: post.creation_date, reverse=True)
     posts_years = [post.creation_date.year for post in all_posts]
     temp_year = None

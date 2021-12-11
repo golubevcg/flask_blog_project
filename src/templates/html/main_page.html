@@ -52,7 +52,7 @@
                 </div>
             </div>
 
-            {%for i in range(5)%}
+            {%for i in range(all_posts| length)%}
                 <div class="text post-parent">
                     <div class="text year">
                         {% if current_user.is_authenticated %}

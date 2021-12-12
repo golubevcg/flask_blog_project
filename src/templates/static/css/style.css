@@ -214,7 +214,7 @@ html, body {
 .pagination:hover{
   color: var(--hover-color);
   text-decoration: none;
-  cursor: pointer;
+  /*cursor: pointer;*/
 }
 
 .my-footer{

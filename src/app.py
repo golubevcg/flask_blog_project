@@ -37,9 +37,6 @@ login_manager.init_app(main_app)
 
 csrf = CSRFProtect(main_app)
 
-# migrate = Migrate(main_app, db, compare_type=True)
-from model.entity.post import Post
-# with main_app.app_context():
-#     db.create_all()
+migrate = Migrate(main_app, db, compare_type=True)
 
 main_app.run(debug=True)

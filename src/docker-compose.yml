@@ -4,9 +4,9 @@ services:
   pg:
     image: postgres
     environment:
-      POSTGRES_DB: blog
-      POSTGRES_USER: blog
-      POSTGRES_PASSWORD: password
+      POSTGRES_DB: flask_blog
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD:
     ports:
       - "5432:5432"
     volumes:

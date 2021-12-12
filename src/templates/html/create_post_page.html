@@ -38,6 +38,7 @@
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/toggle.css">
 
+    <meta name="csrf-token" content="{{ csrf_token() }}">
 </head>
 <body>
 
@@ -47,7 +48,6 @@
         <div>{% include "items/header.html" %}</div>
 
         <div class="input-group mb-3" style="display:flex;padding-top:18px; flex-direction:row;">
-            <meta name="csrf-token" content="{{ csrf_token() }}">
 
             <input class="text" id="post_header_input" placeholder="Type post header here"
                      {%if post %}value="{{post.header}}"{% endif %}>

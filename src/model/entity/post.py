@@ -45,3 +45,11 @@ class Post(db.Model):
     def __str__(self):
         return f"Post(id:{self.id})"
 
+    def to_dict(self):
+        return {"header": self.header,
+                "body": self.body,
+                "id": str(self.id),
+                "is_deleted": self.is_deleted,
+                "is_published": self.is_published,
+                "creation_date": self.creation_date.strftime("%d %b"),
+                "is_link_access": self.is_link_access}

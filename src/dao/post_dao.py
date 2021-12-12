@@ -75,7 +75,7 @@ def get_all_published_posts_from_page(page_num: int) -> list:
                          .filter(Post.is_published == True)
                          .filter(Post.is_link_access == False)
                          .order_by(desc(Post.creation_date))
-                         .paginate(page=page_num, per_page=5)
+                         .paginate(page=page_num, per_page=10)
                          .items
                          )
 

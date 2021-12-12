@@ -17,6 +17,7 @@ main_page_blueprint = Blueprint(
 
 
 @main_page_blueprint.route("/")
+@main_page_blueprint.route("/<page>")
 def main(page=1):
     all_posts = post_dao.get_all_published_posts_from_page(1)
 
@@ -34,9 +35,13 @@ def main(page=1):
             temp_year = year
 
     posts_amount = post_dao.get_posts_amount()
-    pages_amount = int( math.ceil(posts_amount // 5) )
+    pages_amount = int( math.ceil(posts_amount // 10) )
 
-    return render_template("main_page.html", all_posts=all_posts, posts_years=posts_years, pages_amount=pages_amount)
+    return render_template("main_page.html",
+                           all_posts=all_posts,
+                           posts_years=posts_years,
+                           pages_amount=pages_amount,
+                           page=page)
 
 
 @main_page_blueprint.route("/about.html")
@@ -90,12 +95,7 @@ def get_posts_from_page_num(page_num):
     posts_on_page = post_dao.get_all_published_posts_from_page(page_num)
     posts_years = [post.creation_date.year for post in posts_on_page]
 
-    posts_on_page = [{"header": post.header,
-                      "body": post.body,
-                      "id": str(post.id),
-                      "is_deleted": post.is_deleted,
-                      "is_published": post.is_published,
-                      "is_link_access": post.is_link_access} for post in posts_on_page]
+    posts_on_page = [post.to_dict() for post in posts_on_page]
 
     temp_year = None
     for i in range(len(posts_years)):
@@ -110,7 +110,7 @@ def get_posts_from_page_num(page_num):
             temp_year = year
 
     posts_amount = post_dao.get_posts_amount()
-    pages_amount = int(math.ceil(posts_amount // 5))
+    pages_amount = int(math.ceil(posts_amount // 10))
     result = {"all_posts": posts_on_page, "post_years": posts_years, "pages_amount": pages_amount}
     result = json.dumps(result)
 

@@ -1,7 +1,7 @@
 :root {
     --start_line_bg_color: #C4C4C459;
     --header_box_shadow: 0 2px 2px #88888890;
-    --text_main_color: #2e2e2e;
+    --text_main_color: #1f1f1f;
     --text_main_color_60: #59585890;
     --font-family: 'Roboto', sans-serif;
 
@@ -129,8 +129,8 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 150px 0 180px 0;
-    margin-bottom:135px;
+    margin: 100px 0 180px 0;
+    margin-bottom:80px;
     font-size:35px;
     text-align:center;
 }
@@ -203,22 +203,25 @@ html, body {
     font-size:11px;
     color: var(--text_main_color_60);
     display: flex;
-    /*justify-content: flex-;*/
     padding-bottom: 0;
-    /*padding-top: 22px;*/
     padding-left:0;
+}
+
+.search{
+    opacity: 50%;
 }
 
 .search:hover{
     border-width: 2px;
+    /*border-color: var(--text_main_color_60);*/
     border-color: transparent;
     border-style: solid;
+    opacity: 100%;
 }
 
 .pagination{
     justify-content: center;
     margin-top: 25px;
-    /*opacity: 50%;*/
     padding-bottom: 50px;
     color: var(--text_main_color_60);
 }
@@ -226,6 +229,7 @@ html, body {
 .pagination:hover{
   color: var(--hover-color);
   text-decoration: none;
+  cursor: pointer;
 }
 
 .my-footer{
@@ -248,7 +252,7 @@ html, body {
     filter: var(--search-filter);
     background-position: 10px 15px;
     background-repeat: no-repeat;
-    padding: 12px 12px 4px 35px;
+    padding: 12px 12px 10px 35px;
 }
 
 input:focus, textarea:focus, select:focus{

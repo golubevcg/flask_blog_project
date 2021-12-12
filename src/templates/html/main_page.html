@@ -20,6 +20,7 @@
 
     <script src="{{ url_for('static',filename='js/ajax_before_setup.js') }}"></script>
     <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/post_search.js') }}"></script>
     <script src="{{ url_for('static',filename='js/page_changer.js') }}"></script>
     {% if current_user.is_authenticated %}
         <script src="{{ url_for('static',filename='js/edit_delete_post.js') }}"></script>
@@ -27,11 +28,13 @@
 
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}" />
     <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/toggle.css') }}" />
+
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+    <meta id="is_authenticated" content="{{current_user.is_authenticated}}">
 </head>
 <body>
 
-<div class="container" >
-    <meta name="csrf-token" content="{{ csrf_token() }}">
+<div class="container" id="container">
     <div class="item"></div>
     <div class="item-center">
         <div>{% include "items/header.html" %}</div>
@@ -53,7 +56,7 @@
                 </div>
             </div>
 
-            <div class="posts-block">
+            <div id="posts-block">
                 {%for i in range(all_posts| length)%}
                     <div class="text post-parent post_div">
                         <div class="text year">
@@ -64,7 +67,7 @@
                                 {{posts_years[i]}}
                             {% endif %}
                         </div>
-                        <a class="post {{'post' if i % 2 == 0 else 'post-alt'}}" href="post/{{all_posts[i].id}}">
+                        <a class="post {{'post-alt' if i % 2 == 0 else 'post'}}" href="post/{{all_posts[i].id}}">
                             <div class="text" style="margin:8px">{{all_posts[i].header}}</div>
                             <div style="flex-grow:1;"></div>
                             <div class="text">{{all_posts[i].creation_date.strftime("%d %b")}}</div>
@@ -78,8 +81,13 @@
 
         <div class="text pagination">
             {%for i in range(1, pages_amount+1)%}
-                <div class="pagination" style="cursor: pointer;" onclick="change_post_page({{i}})">{{i}}</div>
-                <div>&nbsp;</div>
+                {%if i==1%}
+                    <div class="pagination" style="color:var(--text_main_color);opacity: 100%;" onclick="change_post_page({{i}})">{{i}}</div>
+                    <div>&nbsp;</div>
+                {%else%}
+                    <div class="pagination" onclick="change_post_page({{i}})">{{i}}</div>
+                    <div>&nbsp;</div>
+                {%endif%}
             {%endfor%}
         </div>
 

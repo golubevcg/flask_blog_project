@@ -20,6 +20,7 @@
 
     <script src="{{ url_for('static',filename='js/ajax_before_setup.js') }}"></script>
     <script src="{{ url_for('static',filename='js/main.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/page_changer.js') }}"></script>
     {% if current_user.is_authenticated %}
         <script src="{{ url_for('static',filename='js/edit_delete_post.js') }}"></script>
     {% endif %}
@@ -52,29 +53,35 @@
                 </div>
             </div>
 
-            {%for i in range(all_posts| length)%}
-                <div class="text post-parent">
-                    <div class="text year">
-                        {% if current_user.is_authenticated %}
-                          <input class="btn btn-default text admin_button edit_button" type="submit" value="Edit" onclick="edit_post({{all_posts[i].id}})">
-                          <input class="btn btn-default text admin_button delete_button" type="submit" value="Delete" onclick="delete_post({{all_posts[i].id}})">
-                        {% else %}
-                            {{posts_years[i]}}
-                        {% endif %}
+            <div class="posts-block">
+                {%for i in range(all_posts| length)%}
+                    <div class="text post-parent post_div">
+                        <div class="text year">
+                            {% if current_user.is_authenticated %}
+                              <input class="btn btn-default text admin_button edit_button" type="submit" value="Edit" onclick="edit_post({{all_posts[i].id}})">
+                              <input class="btn btn-default text admin_button delete_button" type="submit" value="Delete" onclick="delete_post({{all_posts[i].id}})">
+                            {% else %}
+                                {{posts_years[i]}}
+                            {% endif %}
+                        </div>
+                        <a class="post {{'post' if i % 2 == 0 else 'post-alt'}}" href="post/{{all_posts[i].id}}">
+                            <div class="text" style="margin:8px">{{all_posts[i].header}}</div>
+                            <div style="flex-grow:1;"></div>
+                            <div class="text">{{all_posts[i].creation_date.strftime("%d %b")}}</div>
+                        </a>
                     </div>
-                    <a class="post {{'post' if i % 2 == 0 else 'post-alt'}}" href="post/{{all_posts[i].id}}">
-                        <div class="text" style="margin:8px">{{all_posts[i].header}}</div>
-                        <div style="flex-grow:1;"></div>
-                        <div class="text">{{all_posts[i].creation_date.strftime("%d %b")}}</div>
-                    </a>
-
-                </div>
-            {%endfor%}
+                {%endfor%}
+            </div>
 
         </list>
 
 
-        <div class="text pagination">1  2  3</div>
+        <div class="text pagination">
+            {%for i in range(1, pages_amount+1)%}
+                <div class="pagination" style="cursor: pointer;" onclick="change_post_page({{i}})">{{i}}</div>
+                <div>&nbsp;</div>
+            {%endfor%}
+        </div>
 
 
         <footer id="footer">{% include "items/footer.html" %}</footer>

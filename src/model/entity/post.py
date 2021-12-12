@@ -44,3 +44,4 @@ class Post(db.Model):
 
     def __str__(self):
         return f"Post(id:{self.id})"
+

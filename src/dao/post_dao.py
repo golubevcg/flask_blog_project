@@ -1,5 +1,6 @@
 from typing import Optional
 from sqlalchemy.exc import IntegrityError
+from sqlalchemy import desc
 
 from src.model.entity.post import Post
 from src.services.logger_service import main_logger
@@ -47,6 +48,7 @@ def delete_post_by_id(post_id):
 def get_all_active_posts() -> list:
     active_posts_list = (Post.query
                          .filter(Post.is_deleted == False)
+                         .order_by(desc(Post.creation_date))
                          .all())
     main_logger.info("Querying all active posts")
 
@@ -58,10 +60,40 @@ def get_all_published_posts() -> list:
                          .filter(Post.is_deleted == False)
                          .filter(Post.is_published == True)
                          .filter(Post.is_link_access == False)
-                         .all())
-    main_logger.info("Querying all active posts")
+                         .order_by(desc(Post.creation_date))
+                         .all()
+                         )
+
+    main_logger.info("Querying published posts")
 
     return active_posts_list
+
+
+def get_all_published_posts_from_page(page_num: int) -> list:
+    active_posts_list = (Post.query
+                         .filter(Post.is_deleted == False)
+                         .filter(Post.is_published == True)
+                         .filter(Post.is_link_access == False)
+                         .order_by(desc(Post.creation_date))
+                         .paginate(page=page_num, per_page=5)
+                         .items
+                         )
+
+    main_logger.info("Querying published posts on page: %s" % str(page_num))
+
+    return active_posts_list
+
+
+def get_posts_amount():
+    posts_amount = (Post.query
+                    .filter(Post.is_deleted == False)
+                    .filter(Post.is_published == True)
+                    .filter(Post.is_link_access == False)
+                    .count())
+
+    main_logger.info("Querying posts amount.")
+
+    return posts_amount
 
 
 def get_all_published_through_link_posts() -> list:
@@ -69,6 +101,7 @@ def get_all_published_through_link_posts() -> list:
                          .filter(Post.is_deleted == False)
                          .filter(Post.is_published == True)
                          .filter(Post.is_link_access == True)
+                         .order_by(desc(Post.creation_date))
                          .all())
     main_logger.info("Querying all active posts")
 
@@ -87,6 +120,7 @@ def get_post_with_header_like(header: str) -> list:
     validate_input(header, str, "header")
     posts_list = (Post.query
                   .filter(Post.header.ilike(header))
+                  .order_by(desc(Post.creation_date))
                   .all())
 
     main_logger.info(f"Querying posts with header ilike:{header}")
@@ -97,6 +131,7 @@ def get_post_with_by_header(header: str) -> list:
     validate_input(header, str, "header")
     posts_list = (Post.query
                   .filter(Post.header == header)
+                  .order_by(desc(Post.creation_date))
                   .all())
 
     main_logger.info(f"Querying posts with header ilike:{header}")
@@ -105,6 +140,7 @@ def get_post_with_by_header(header: str) -> list:
 
 def get_deleted_posts() -> list:
     deleted_posts_list = (Post.query
+                          .order_by(desc(Post.creation_date))
                           .filter(Post.is_deleted == True))
 
     main_logger.info("Querying all deleted posts")

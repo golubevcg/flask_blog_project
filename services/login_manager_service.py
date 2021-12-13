@@ -1,5 +1,5 @@
 from flask_login import LoginManager
-from src.dao import user_dao
+from dao import user_dao
 
 login_manager = LoginManager()
 login_manager.login_view = 'login_get'

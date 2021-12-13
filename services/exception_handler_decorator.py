@@ -1,4 +1,4 @@
-from src.services.logger_service import main_logger
+from services.logger_service import main_logger
 
 
 def parametrized(dec):

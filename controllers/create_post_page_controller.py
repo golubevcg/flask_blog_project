@@ -3,9 +3,9 @@ import json
 from flask import Blueprint, render_template, request
 from flask_login import login_required
 
-from src.services.logger_service import main_logger
-from src.model.entity.post import Post
-from src.dao import post_dao
+from services.logger_service import main_logger
+from model.entity.post import Post
+from dao import post_dao
 
 create_new_post_blueprint = Blueprint(
                           "create_new_post_app", __name__,
@@ -71,6 +71,7 @@ def check_post_id_is_valid():
 
 
 @create_new_post_blueprint.route("/save_new_post", methods=['POST'])
+@login_required
 def save_post():
     post_data = request.get_json(silent=True)
     if "header" not in post_data:

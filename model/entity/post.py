@@ -3,7 +3,7 @@ from sqlalchemy import (
     Boolean, DateTime,
     func, Text)
 from datetime import datetime
-from src.services.validator_service import validate_input
+from services.validator_service import validate_input
 from services.db_service import db
 
 

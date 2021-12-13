@@ -1,12 +1,11 @@
 import hashlib
 import math
-import json
 
 from flask import Blueprint, render_template, request, url_for, redirect, flash
 from flask_login import login_user, logout_user, login_required
 
-from src.services.logger_service import main_logger
-from src.dao import post_dao, user_dao
+from services.logger_service import main_logger
+from dao import post_dao, user_dao
 
 
 main_page_blueprint = Blueprint(

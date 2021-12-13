@@ -1,5 +1,7 @@
 from flask import Blueprint, redirect, render_template
-from src.dao import post_dao
+
+from dao import post_dao
+from flask_login import login_required
 
 
 post_page_blueprint = Blueprint(
@@ -33,6 +35,7 @@ def post_id(post_id=None):
 
 
 @post_page_blueprint.route("/delete_post/<int:post_id>", methods=['POST'])
+@login_required
 def delete_post(post_id):
     if not post_id:
         return ""

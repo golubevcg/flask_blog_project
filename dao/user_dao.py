@@ -1,10 +1,10 @@
 from typing import Optional
 from sqlalchemy.exc import IntegrityError
 
-from src.model.entity.user import User
-from src.services.validator_service import validate_input
-from src.services.logger_service import main_logger
-from src.services.exception_handler_decorator import exception_handler
+from model.entity.user import User
+from services.validator_service import validate_input
+from services.logger_service import main_logger
+from services.exception_handler_decorator import exception_handler
 from services.db_service import db
 
 

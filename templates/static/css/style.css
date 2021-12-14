@@ -3,7 +3,7 @@
     --header_box_shadow: 0 2px 2px #88888890;
     --text_main_color: #1f1f1f;
     --text_main_color_60: #59585890;
-    --font-family: 'Roboto', sans-serif;
+    --font-family: 'roboto';
 
     --hover-color:#00A3FF;
     --post-alternative-row-color:#f0f0f0;
@@ -21,7 +21,7 @@
     --header_box_shadow: 0 4px 4px rgba(0, 0, 0, 0.2);
     --text_main_color: #cecece;
     --text_main_color_60: #cecece60;
-    --font-family:'Roboto', sans-serif;
+    /*--font-family:'Roboto', sans-serif;*/
 
     --hover-color:#00A3FF;
     --post-alternative-row-color: #323234;
@@ -101,6 +101,7 @@ html, body {
     font-size:30px;
     color:var(--text_main_color);
     font-family: var(--font-family);
+    /*--font-family:'Roboto', sans-serif;*/
     padding-left:4px;
 }
 

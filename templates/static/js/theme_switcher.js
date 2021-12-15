@@ -1,13 +1,10 @@
 // theme update function called when theme switcher clicked
 function switch_theme() {
     let switch_state = document.getElementById("theme-switcher-checkbox").checked;
-    let updated_theme = ""
-    if (switch_state){
+    let updated_theme = "light"
+    if (switch_state) {
         updated_theme = "dark"
-    }else{
-        updated_theme = "light"
     }
-
     localStorage["theme"] =  updated_theme;
     let element = document.body;
     element.classList.toggle("dark-theme");
@@ -17,7 +14,7 @@ function switch_theme() {
 $( document ).ready(function() {
   if (storageAvailable('localStorage')) {
     let theme = localStorage["theme"]
-    if (theme && theme === "dark") {
+    if(theme && theme === "dark" || !!!theme) {
       document.getElementById("theme-switcher-checkbox").checked = true;
       switch_theme()
     }

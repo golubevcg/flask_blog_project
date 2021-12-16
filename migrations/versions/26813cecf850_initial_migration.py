@@ -40,10 +40,8 @@ def upgrade():
     )
     # ### end Alembic commands ###
 
+    # INIT SEED DATA
     sql_cache = open("db_cache/flask_blog_public_posts.sql")
-    from services.logger_service import main_logger
-    main_logger.info("-----SEEDING INIT DB DATA!")
-    main_logger.info(sql_cache.read())
     op.execute(sql_cache.read())
 
 def downgrade():

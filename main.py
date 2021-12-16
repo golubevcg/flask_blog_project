@@ -10,16 +10,16 @@ from controllers.post_page_controller import post_page_blueprint
 from controllers.main_page_controller import main_page_blueprint
 from services.login_manager_service import login_manager
 
-main_app = Flask(__name__, template_folder='templates/html', static_folder='templates/static')
-main_app.register_blueprint(main_page_blueprint, url_prefix="/")
-main_app.register_blueprint(post_page_blueprint, url_prefix="/post")
-main_app.register_blueprint(create_new_post_blueprint, url_prefix="/create_new_post")
+app = Flask(__name__, template_folder='templates/html', static_folder='templates/static')
+app.register_blueprint(main_page_blueprint, url_prefix="/")
+app.register_blueprint(post_page_blueprint, url_prefix="/post")
+app.register_blueprint(create_new_post_blueprint, url_prefix="/create_new_post")
 
-db_login = 'postgres'
-db_pwd = '123'
-db_port = "5432"
-db_name = "flask_blog"
-db_host = "localhost"
+# db_login = 'postgres'
+# db_pwd = '123'
+# db_port = "5432"
+# db_name = "flask_blog"
+# db_host = "localhost"
 
 # main_app.config["SESSION_TYPE"] = "filesystem"
 # main_app.config["SESSION_FILE_DIR"] = "session"
@@ -32,11 +32,11 @@ db_host = "localhost"
 #                       )
 
 CONFIG_OBJ = "config.%s" % os.getenv("CONFIG_NAME", "DevelopmentConfig")
-main_app.config.from_object(CONFIG_OBJ)
-db.init_app(main_app)
-migrate = Migrate(main_app, db, compare_type=True)
+app.config.from_object(CONFIG_OBJ)
+db.init_app(app)
+migrate = Migrate(app, db, compare_type=True)
 
-login_manager.init_app(main_app)
-csrf = CSRFProtect(main_app)
+login_manager.init_app(app)
+csrf = CSRFProtect(app)
 
-main_app.run(debug=True, host=main_app.config["HOST"], port=main_app.config["PORT"])
+app.run(debug=True, host=app.config["HOST"], port=app.config["PORT"])

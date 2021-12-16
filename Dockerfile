@@ -8,11 +8,11 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY ./entrypoint.sh /etc/entrypoint.sh
-RUN chmod +x /etc/entrypoint.sh
+COPY prestart.sh /etc/entrypoint.sh
+RUN chmod +x /etc/prestart.sh
 
 COPY . .
 
-ENTRYPOINT ["/etc/entrypoint.sh"]
+ENTRYPOINT ["/etc/prestart.sh"]
 
 CMD python app.py

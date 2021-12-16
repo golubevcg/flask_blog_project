@@ -2,7 +2,7 @@
 
 echo Run migrations
 
-flask db upgrade
+FLASK_APP=main flask db upgrade
 
 echo migrations ok
 

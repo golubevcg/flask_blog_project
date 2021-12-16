@@ -8843,3 +8843,79 @@ Querying posts amount.
 192.168.31.15 - - [16/Dec/2021 00:47:20] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
 [00:47:20] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
 192.168.31.15 - - [16/Dec/2021 00:47:20] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[03:45:28] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:82} INFO
+Querying published posts on page: 1
+[03:45:28] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:94} INFO
+Querying posts amount.
+[03:45:28] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:28] "GET / HTTP/1.1" 200 -
+[03:45:28] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:28] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[03:45:28] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:28] "GET /static/css/style.css HTTP/1.1" 200 -
+[03:45:28] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:28] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[03:45:28] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:28] "GET /static/js/theme_switcher.js HTTP/1.1" 200 -
+[03:45:32] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:82} INFO
+Querying published posts on page: 1
+[03:45:32] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:94} INFO
+Querying posts amount.
+[03:45:32] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:32] "GET / HTTP/1.1" 200 -
+[03:45:32] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:32] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[03:45:32] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:32] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[03:45:32] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:32] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[03:45:32] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:32] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[03:45:34] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:34] "GET /about.html HTTP/1.1" 200 -
+[03:45:34] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:34] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[03:45:34] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:34] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[03:45:34] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:34] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[03:45:35] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:82} INFO
+Querying published posts on page: 1
+[03:45:35] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:94} INFO
+Querying posts amount.
+[03:45:35] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:35] "GET / HTTP/1.1" 200 -
+[03:45:35] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:35] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[03:45:35] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:35] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[03:45:35] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[03:45:35] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:35] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[03:45:36] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:115} INFO
+Querying post with id:3
+[03:45:36] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:36] "GET /post/3 HTTP/1.1" 200 -
+[03:45:36] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:36] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[03:45:36] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:36] "GET /static/js/post_viewer.js HTTP/1.1" 200 -
+[03:45:36] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:36] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[03:45:36] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:36] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[03:45:44] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:82} INFO
+Querying published posts on page: 1
+[03:45:44] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:94} INFO
+Querying posts amount.
+[03:45:44] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:44] "GET / HTTP/1.1" 200 -
+[03:45:44] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:44] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[03:45:44] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:44] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[03:45:44] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:44] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[03:45:44] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+127.0.0.1 - - [16/Dec/2021 03:45:44] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -

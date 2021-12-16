@@ -13,7 +13,21 @@ services:
     volumes:
       - ./:/var/app
     depends_on:
-      - pg
+      pg:
+        condition: service_healthy
+
+  flask_blog_prod:
+    build:
+      context: .
+      dockerfile: docker-build/flask_blog_prod/Dockerfile
+    environment:
+      CONFIG_NAME: ProductionConfig
+      SQLALCHEMY_DATABASE_URI: postgresql+psycopg2://postgres:123@pg:5432/flask_blog
+    ports:
+      - "5080:80"
+    depends_on:
+      pg:
+        condition: service_healthy
 
   pg:
     image: postgres
@@ -21,10 +35,15 @@ services:
       POSTGRES_DB: flask_blog
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123
-    ports:
-      - "5432:5432"
+    healthcheck:
+      test: [ "CMD-SHELL", "pg_isready" ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+#    ports:
+#      - "5432:5432"
     volumes:
-      - db-data:/var/lib/postgresql/data/
+      - db-data:/var/lib/postgresql/data/ # persist data even if container shuts down
 
 volumes:
   db-data:

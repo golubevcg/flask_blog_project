@@ -19,6 +19,7 @@ class ProductionConfig(BaseConfig):
     TESTING = False
     ENV = "production"
     HOST = "0.0.0.0"
+    SECRET_KEY = os.getenv("SECRET_KEY", "9OLWxND4o83j4K4iuopO")
 
 
 class DevelopmentConfig(BaseConfig):

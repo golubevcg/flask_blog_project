@@ -8919,3 +8919,52 @@ Querying posts amount.
 127.0.0.1 - - [16/Dec/2021 03:45:44] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
 [03:45:44] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
 127.0.0.1 - - [16/Dec/2021 03:45:44] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:58:17] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+ * Restarting with stat
+[23:58:17] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} WARNING
+ * Debugger is active!
+[23:58:17] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+ * Debugger PIN: 118-596-918
+[23:58:17] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} WARNING
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[23:58:17] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+ * Running on http://192.168.31.15:5000/ (Press CTRL+C to quit)
+[23:58:35] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+192.168.31.15 - - [16/Dec/2021 23:58:35] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[23:58:35] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+192.168.31.15 - - [16/Dec/2021 23:58:35] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[23:58:35] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+192.168.31.15 - - [16/Dec/2021 23:58:35] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[23:58:35] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+192.168.31.15 - - [16/Dec/2021 23:58:35] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[23:58:35] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+192.168.31.15 - - [16/Dec/2021 23:58:35] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[23:58:35] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+192.168.31.15 - - [16/Dec/2021 23:58:35] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[23:58:52] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+192.168.31.15 - - [16/Dec/2021 23:58:52] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[23:58:52] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+192.168.31.15 - - [16/Dec/2021 23:58:52] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[23:58:52] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+192.168.31.15 - - [16/Dec/2021 23:58:52] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[23:58:52] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+192.168.31.15 - - [16/Dec/2021 23:58:52] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[23:58:52] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+192.168.31.15 - - [16/Dec/2021 23:58:52] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[23:58:53] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+192.168.31.15 - - [16/Dec/2021 23:58:53] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[23:58:59] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+192.168.31.15 - - [16/Dec/2021 23:58:59] "[35m[1mGET / HTTP/1.1[0m" 500 -
+[23:58:59] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+192.168.31.15 - - [16/Dec/2021 23:58:59] "GET /?__debugger__=yes&cmd=resource&f=style.css HTTP/1.1" 200 -
+[23:58:59] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+192.168.31.15 - - [16/Dec/2021 23:58:59] "GET /?__debugger__=yes&cmd=resource&f=debugger.js HTTP/1.1" 200 -
+[23:58:59] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+192.168.31.15 - - [16/Dec/2021 23:58:59] "GET /?__debugger__=yes&cmd=resource&f=console.png HTTP/1.1" 200 -
+[23:58:59] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+192.168.31.15 - - [16/Dec/2021 23:58:59] "GET /?__debugger__=yes&cmd=resource&f=ubuntu.ttf HTTP/1.1" 200 -
+[00:19:38] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+ * Detected change in 'C:\\Users\\golub\\Documents\\flask_blog_project\\main.py', reloading
+[00:19:39] {C:\Users\golub\Documents\flask_blog_project\venv\lib\site-packages\werkzeug\_internal.py:225} INFO
+ * Restarting with stat

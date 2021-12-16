@@ -74,14 +74,14 @@ def login_post():
 
     if not login or not password:
         flash('Please check your login details and try again.')
-        return redirect(url_for('login_get'))
+        return render_template("login_page.html")
 
     password = str(password).encode()
     password = hashlib.md5(password).hexdigest()
     user = user_dao.get_user_by_login(login)
     if not user or user.password != password:
         flash('Please check your login details and try again.')
-        return redirect(url_for('/login/login_get'))
+        return render_template("login_page.html")
     else:
         login_user(user)
         return redirect("/")

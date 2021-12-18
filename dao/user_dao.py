@@ -76,6 +76,3 @@ def get_all_deleted_users() -> list:
 
     main_logger.info("Queried all deleted users")
     return deleted_users_list
-
-def commit():
-    db.session.commit()

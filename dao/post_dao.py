@@ -29,10 +29,8 @@ def save_post(post: Post) -> bool:
                    return_value_if_exception=False)
 def delete_post(post: Post) -> bool:
     validate_input(post, Post, "post")
-    post_id = post.id
     delete_post_by_id(post.id)
 
-    main_logger.info(f"Post with id:{str(post_id)} has been deleted")
     return True
 
 
@@ -43,6 +41,7 @@ def delete_post_by_id(post_id):
         return False
     Post.query.filter_by(id=post_id).update({'is_deleted': True})
     db.session.commit()
+    main_logger.info(f"Post with id {post_id} marked as deleted.")
 
 
 def get_all_active_posts() -> list:
@@ -50,8 +49,8 @@ def get_all_active_posts() -> list:
                          .filter(Post.is_deleted == False)
                          .order_by(desc(Post.creation_date))
                          .all())
-    main_logger.info("Querying all active posts")
 
+    main_logger.info("Querying all active posts")
     return active_posts_list
 
 
@@ -80,7 +79,6 @@ def get_all_published_posts_from_page(page_num: int) -> list:
                          )
 
     main_logger.info("Querying published posts on page: %s" % str(page_num))
-
     return active_posts_list
 
 
@@ -146,6 +144,3 @@ def get_deleted_posts() -> list:
     main_logger.info("Querying all deleted posts")
     return deleted_posts_list
 
-
-def commit():
-    db.session.commit()

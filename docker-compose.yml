@@ -21,7 +21,7 @@ services:
       context: .
       dockerfile: docker-build/flask_blog_prod/Dockerfile
     environment:
-      CONFIG_NAME: ProductionConfig
+      CONFIG_NAME: DevelopmentConfig
       SQLALCHEMY_DATABASE_URI: postgresql+psycopg2://postgres:123@pg:5432/flask_blog
     ports:
       - "5080:80"

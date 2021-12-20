@@ -8,7 +8,7 @@ COPY requirements.txt .
 
 RUN pip install -r requirements.txt
 
-COPY prestart.sh /etc/entrypoint.sh
+COPY prestart.sh /etc/prestart.sh
 RUN chmod +x /etc/prestart.sh
 
 COPY . .

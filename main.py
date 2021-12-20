@@ -26,4 +26,4 @@ login_manager.init_app(app)
 csrf = CSRFProtect(app)
 
 if __name__ == '__main__':
-    app.run(debug=True, host=app.config["HOST"], port=app.config["PORT"])
+    app.run(host=app.config["HOST"], port=app.config["PORT"])

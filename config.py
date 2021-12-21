@@ -19,7 +19,6 @@ class ProductionConfig(BaseConfig):
     TESTING = False
     ENV = "production"
     HOST = "0.0.0.0"
-    PORT = 80
 
 
 class DevelopmentConfig(BaseConfig):

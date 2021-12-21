@@ -24,7 +24,7 @@ services:
       CONFIG_NAME: ProductionConfig
       SQLALCHEMY_DATABASE_URI: postgresql+psycopg2://postgres:123@pg:5432/flask_blog
     ports:
-      - "5080:80"
+      - "80:80"
     depends_on:
       pg:
         condition: service_healthy
@@ -40,8 +40,6 @@ services:
       interval: 10s
       timeout: 5s
       retries: 5
-#    ports:
-#      - "5432:5432"
     volumes:
       - db-data:/var/lib/postgresql/data/ # persist data even if container shuts down
 

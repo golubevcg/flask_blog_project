@@ -18,7 +18,8 @@ class ProductionConfig(BaseConfig):
     DEBUG = False
     TESTING = False
     ENV = "production"
-    HOST = "10.235.70.56"
+    HOST = "0.0.0.0"
+    POST = "22"
 
 
 class DevelopmentConfig(BaseConfig):

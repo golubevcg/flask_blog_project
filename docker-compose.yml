@@ -23,7 +23,7 @@ services:
       CONFIG_NAME: ProductionConfig
       SQLALCHEMY_DATABASE_URI: postgresql+psycopg2://postgres:123@pg:5432/flask_blog
     ports:
-      - "22:22"
+      - "80:80"
     depends_on:
       - pg
 

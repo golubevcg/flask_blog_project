@@ -144,3 +144,5 @@ def get_deleted_posts() -> list:
     main_logger.info("Querying all deleted posts")
     return deleted_posts_list
 
+def commit():
+    db.session.commit()

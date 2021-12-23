@@ -21,7 +21,7 @@ app.config.from_object(CONFIG_OBJ)
 
 db.init_app(app)
 with app.app_context():
-    db.session().execute('ALTER DATABASE posts SET datestyle TO "ISO, DMY";ALTER DATABASE users SET datestyle TO "ISO, DMY";')
+    db.session().execute('ALTER DATABASE flask_blog SET datestyle TO "ISO, DMY";')
     db.session.commit()
 
 migrate = Migrate(app, db, compare_type=True)

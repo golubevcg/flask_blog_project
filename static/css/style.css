@@ -352,14 +352,6 @@ input:focus, textarea:focus, select:focus{
     background-color: var(--post-alternative-row-color);
 }
 
-.ql-container {
-    font-size: 16px !important;
-    font-family: 'JetBrains Mono', monospace !important;
-    font-weight: normal;
-}
-
-.ql-container {
-    font-size: 16px !important;
-    font-family: 'JetBrains Mono', monospace !important;
-    font-weight: 100;
+.note-editable {
+    font-family: "JetBrains Mono";
 }

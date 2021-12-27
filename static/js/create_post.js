@@ -4,7 +4,8 @@
 
 $(document).ready(function() {
     $('#editor').summernote({
-        dialogsInBody: true
+        dialogsInBody: true,
+        fontName: ['JetBrains Mono']
     });
 });
 

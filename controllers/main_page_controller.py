@@ -2,7 +2,7 @@ import hashlib
 import math
 
 from flask import Blueprint, render_template, request, url_for, redirect, flash
-from flask_login import login_user, logout_user, login_required
+from flask_login import login_user, logout_user, login_required, current_user
 
 from services.logger_service import main_logger
 from dao import post_dao, user_dao
@@ -18,6 +18,9 @@ main_page_blueprint = Blueprint(
 @main_page_blueprint.route("/")
 @main_page_blueprint.route("/<page>")
 def main(page=1):
+
+    is_authenticated = current_user.is_authenticated
+
     if type(page) != int:
         try:
             page = int(page)
@@ -25,7 +28,10 @@ def main(page=1):
             main_logger.exception(e)
             return
 
-    all_posts = post_dao.get_all_published_posts_from_page(page)
+    if is_authenticated:
+        all_posts = post_dao.get_all_posts_from_page(page)
+    else:
+        all_posts = post_dao.get_all_published_posts_from_page(page)
 
     posts_years = [post.creation_date.year for post in all_posts]
     temp_year = None

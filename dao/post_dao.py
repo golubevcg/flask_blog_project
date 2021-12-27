@@ -68,6 +68,16 @@ def get_all_published_posts() -> list:
     return active_posts_list
 
 
+def get_all_posts_from_page(page_num: int) -> list:
+    all_posts_list = (Post.query
+                      .order_by(desc(Post.creation_date))
+                      .paginate(page=page_num, per_page=10)
+                      .items
+                      )
+    main_logger.info("Querying all posts on page: %s" % str(page_num))
+    return all_posts_list
+
+
 def get_all_published_posts_from_page(page_num: int) -> list:
     active_posts_list = (Post.query
                          .filter(Post.is_deleted == False)
@@ -143,6 +153,7 @@ def get_deleted_posts() -> list:
 
     main_logger.info("Querying all deleted posts")
     return deleted_posts_list
+
 
 def commit():
     db.session.commit()

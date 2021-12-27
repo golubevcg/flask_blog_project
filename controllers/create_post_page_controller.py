@@ -87,6 +87,8 @@ def save_post():
         return ""
 
     body = post_data["body"]
+    body = body.strip("\"")
+
     is_published = post_data["is_published"]
     is_link_access = post_data["is_link_access"]
     is_deleted = post_data["is_deleted"]
@@ -101,7 +103,7 @@ def save_post():
                                   f"(post_id = {str(post_id)}")
             return ""
 
-    json_string = json.dumps(body)
+    # json_string = json.dumps(body)
 
     try:
         if post:
@@ -109,7 +111,7 @@ def save_post():
                 return
 
             post.header = header
-            post.body = json_string
+            post.body = body
             post.is_published = is_published
             post.is_link_access = is_link_access
             post.is_deleted = is_deleted
@@ -120,7 +122,7 @@ def save_post():
 
             post = Post(
                         header,
-                        json_string,
+                        body,
                         is_published=is_published,
                         is_link_access=is_link_access,
                         is_deleted=is_deleted

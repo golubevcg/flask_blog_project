@@ -9,7 +9,6 @@ services:
       SQLALCHEMY_DATABASE_URI: postgresql+psycopg2://postgres:123@pg:5432/flask_blog
     ports:
       - "5050:5000"
-#    this only for developement mounted current folder to
     volumes:
       - ./:/var/app
     depends_on:

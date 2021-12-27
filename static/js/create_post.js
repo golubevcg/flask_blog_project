@@ -1,50 +1,12 @@
-var FontAttributor = Quill.import('attributors/class/font');
-FontAttributor.whitelist = ['roboto'];
-Quill.register(FontAttributor, true);
+// var FontAttributor = Quill.import('attributors/class/font');
+// FontAttributor.whitelist = ['roboto'];
 
-let toolbarOptions = [
-    [{ 'font': [] }],
 
-    ['bold', 'italic', 'underline', 'strike'],        // toggled buttons
-    ['blockquote', 'code-block'],
-
-    [{ 'list': 'ordered'}, { 'list': 'bullet' }],
-    [{ 'align': [] }],
-
-    [{ 'script': 'sub'}, { 'script': 'super' }],      // superscript/subscript
-
-    [{ 'size': ['small', false, 'large', 'huge'] }],  // custom dropdown
-    [{ 'header': [1, 2, 3, 4, 5, 6, false] }],
-
-    [{ 'color': [] }, { 'background': [] }],          // dropdown with defaults from theme
-
-    [ 'link', 'image', 'video', 'formula' ],
-
-    ['clean']                                         // remove formatting button
-];
-
-hljs.configure({
-  languages: ['python'],
+$(document).ready(function() {
+    $('#editor').summernote({
+        dialogsInBody: true
+    });
 });
-
-let options = {
-    debug: 'info',
-    modules: {
-        syntax: true,
-        toolbar: toolbarOptions
-    },
-    placeholder: 'Enter post text here...',
-    theme: 'bubble',
-    tooltip:true,
-};
-
-let editor = new Quill(document.querySelector('#editor'), options);
-
-let editor_content = $('#editor').text();
-if (!!editor_content){
-    editor.setContents(JSON.parse(editor_content))
-}
-
 
 function save_post(){
     let header = $('#post_header_input').val();
@@ -57,7 +19,6 @@ function validate_header(header){
       return false;
     }
 
-    console.log("header.length", header.length,100<header.length<5)
     if (header.length<5 || header.length>50) {
       alert("Error, header length must be between 5 and 50 symbols!");
       return false;
@@ -93,7 +54,8 @@ function send_and_save_post(header){
       return false;
     }
 
-    let post_body = editor.getContents();
+    let post_body = $('#editor').summernote('code');
+    console.log("type(post_body)=", typeof(post_body))
     let is_published = $('#publish_checkbox').prop('checked')
     let is_link_access = $('#link_access_checkbox').prop('checked')
     let is_deleted = $('#is_deleted').prop('checked')

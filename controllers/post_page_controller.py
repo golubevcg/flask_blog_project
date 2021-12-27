@@ -30,6 +30,11 @@ def post_id(post_id=None):
 
     header = post.header
     body = post.body
+    body = body.strip("\"")
+
+
+
+
     creation_date = post.creation_date.strftime("%d %b %Y")
     return render_template("post_page.html", header=header, body=body, creation_date=creation_date)
 

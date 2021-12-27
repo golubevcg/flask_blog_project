@@ -10,7 +10,6 @@ from controllers.post_page_controller import post_page_blueprint
 from controllers.main_page_controller import main_page_blueprint
 from services.login_manager_service import login_manager
 
-
 app = Flask(__name__)
 app.register_blueprint(main_page_blueprint, url_prefix="/")
 app.register_blueprint(post_page_blueprint, url_prefix="/post")
@@ -30,4 +29,4 @@ login_manager.init_app(app)
 csrf = CSRFProtect(app)
 
 if __name__ == '__main__':
-    app.run(host=app.config["HOST"], port=app.config["PORT"])
+    app.run(host=app.config["HOST"], port=app.config["PORT"], debug=True)

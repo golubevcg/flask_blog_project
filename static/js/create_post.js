@@ -1,12 +1,21 @@
-// var FontAttributor = Quill.import('attributors/class/font');
-// FontAttributor.whitelist = ['roboto'];
-
 
 $(document).ready(function() {
-    $('#editor').summernote({
-        dialogsInBody: true,
-        fontName: ['JetBrains Mono']
-    });
+    let post_body = $('#editor').text();
+    $('#editor').empty();
+
+    if (!!!post_body){
+        $('#editor').summernote({
+            dialogsInBody: true,
+            fontName: ['JetBrains Mono']
+        });
+    }else{
+        $('#editor').summernote({
+            dialogsInBody: true,
+            fontName: ['JetBrains Mono'],
+        });
+        $('#editor').summernote('editor.pasteHTML', post_body);
+    }
+
 });
 
 function save_post(){

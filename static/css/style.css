@@ -16,7 +16,6 @@
     color:var(--text_main_color) !important;
     background-color: var(--background-color);
     font:var(--text_main_color) !important;
-    font-family: "JetBrains Mono", monospace !important;
     font-weight: lighter;
 }
 
@@ -366,4 +365,7 @@ input:focus, textarea:focus, select:focus{
     border-width: 0 1px 0 1px;
     border-style: solid;
     border-color: var(--viewer_border_color);
+    font-family: "JetBrains Mono", monospace !important;
+    font-weight: lighter;
+    color:var(--text_main_color) !important;
 }

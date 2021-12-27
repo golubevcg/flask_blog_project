@@ -11,7 +11,7 @@
     --header-border-color: white;
     --border-radius: 4px;
     --create_post_border_color: rgba(155, 155, 155, 0.52);
-    --viewer_border_color:#86868625;
+    --viewer_border_color:#86868630;
 
     color:var(--text_main_color) !important;
     background-color: var(--background-color);
@@ -33,13 +33,11 @@
     --header-border-color: #F5F5F50D;
     --border-radius: 4px;
     --create_post_border_color: rgba(155, 155, 155, 0.52);
-    --viewer_border_color:#86868625;
+    --viewer_border_color:#86868630;
     font-weight: lighter;
 
-    /*background-color: var(--background-color);*/
-    /*color:var(--text_main_color);*/
-    /*font:var(--text_main_color);*/
-    /*font-family:var(--font-family);*/
+    background-color: var(--background-color);
+    color:var(--text_main_color);
 }
 
 html, body {
@@ -139,7 +137,7 @@ html, body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    margin: 90px 0 60px 0;
+    margin: 90px 0;
     font-size:45px;
     text-align:center;
 }

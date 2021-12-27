@@ -32,7 +32,6 @@ services:
       POSTGRES_DB: flask_blog
       POSTGRES_USER: postgres
       POSTGRES_PASSWORD: 123
-
     volumes:
       - db-data:/var/lib/postgresql/data/ # persist data even if container shuts down
 

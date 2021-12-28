@@ -8,6 +8,7 @@ function switch_theme() {
     localStorage["theme"] =  updated_theme;
     let element = document.body;
     element.classList.toggle("dark-theme");
+
 }
 
 // set checked state based on current theme in local storage

@@ -370,9 +370,3 @@ input:focus, textarea:focus, select:focus{
     font-weight: lighter;
     color:var(--text_main_color) !important;
 }
-
-#viewer > *:not(pre.ql-syntax) {
-    font-family: "JetBrains Mono", monospace !important;
-    font-weight: lighter;
-    color:var(--text_main_color) !important;
-}

@@ -8,12 +8,14 @@ $(document).ready(function() {
             dialogsInBody: true,
             fontName: ['JetBrains Mono']
         });
+        $('#editor').summernote('color', "var(--text_main_color)");
     }else{
         $('#editor').summernote({
             dialogsInBody: true,
             fontName: ['JetBrains Mono'],
         });
         $('#editor').summernote('editor.pasteHTML', post_body);
+        $('#editor').summernote('color', "var(--text_main_color)");
     }
 
 });

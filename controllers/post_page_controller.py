@@ -17,23 +17,22 @@ def main():
     return redirect("/")
 
 
-@post_page_blueprint.route("/<post_id>")
-def post_id(post_id=None):
+@post_page_blueprint.route("/<post_header>")
+def post_page(post_header=None):
     template_if_empty = render_template("post_page.html", header="This post was lost in space!", body="", creation_date="")
-    if not post_id:
+    if not post_header:
         return template_if_empty
 
-    post = post_dao.get_post_by_id(int(post_id))
+    post_header = post_header.replace("_", " ")
+    post = post_dao.get_post_with_header_like(post_header)
 
     if not post:
         return template_if_empty
+    post = post[0]
 
     header = post.header
     body = post.body
     body = body.strip("\"")
-
-
-
 
     creation_date = post.creation_date.strftime("%d %b %Y")
     return render_template("post_page.html", header=header, body=body, creation_date=creation_date)

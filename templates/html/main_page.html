@@ -55,16 +55,12 @@
         <list>
             <div class="text post-parent">
                 <div style="flex-grow:1;width:100%"></div>
-<!--                <div style="flex-grow:1;width:100%"></div>-->
-
                 <div class="" style=" background-color:transparent;display:flex;justify-content: flex-end;margin:5px;">
                     {% if current_user.is_authenticated %}
                         <a href="/create_new_post">
                             <input class="btn btn-default text admin_button new_post_button" type="submit" value="+ Add new post">
                         </a>
                     {% endif %}
-<!--                    <div style="flex-grow:1;"></div>-->
-<!--                    <div class="text"></div>-->
                 </div>
             </div>
 
@@ -79,7 +75,7 @@
                                 {{posts_years[i]}}
                             {% endif %}
                         </div>
-                        <a class="post {{'post-alt' if i % 2 == 0 else 'post'}}" href="post/{{all_posts[i].id}}">
+                        <a class="post {{'post-alt' if i % 2 == 0 else 'post'}}" href="post/{{all_posts[i].header.lower().replace(" ", "_")}}">
                             <div class="text" style="margin:8px">{{all_posts[i].header}}</div>
                             <div style="flex-grow:1;"></div>
                             <div class="text">{{all_posts[i].creation_date.strftime("%d %b")}}</div>

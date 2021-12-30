@@ -2330,3 +2330,946 @@ Querying posts amount.
 172.17.205.69 - - [29/Dec/2021 23:27:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
 172.17.205.69 - - [29/Dec/2021 23:27:25] "[36mGET /static/js/edit_delete_post.js HTTP/1.1[0m" 304 -
 172.17.205.69 - - [29/Dec/2021 23:27:25] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:27:52] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:27:52] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:123} INFO
+Querying post with id:13
+[23:27:52] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:27:52] "GET /create_new_post/13 HTTP/1.1" 200 -
+[23:27:52] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:27:52] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[23:27:52] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[23:27:52] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:27:52] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+172.17.205.69 - - [29/Dec/2021 23:27:52] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:27:52] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:27:52] "[36mGET /static/js/edit_delete_post.js HTTP/1.1[0m" 304 -
+[23:27:52] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:27:52] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:27:52] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:27:52] "[36mGET /static/js/create_post.js HTTP/1.1[0m" 304 -
+[23:28:12] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:28:12] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:77} INFO
+Querying all posts on page: 1
+[23:28:12] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[23:28:12] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:12] "GET / HTTP/1.1" 200 -
+[23:28:12] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:12] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[23:28:12] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:12] "[36mGET /static/js/edit_delete_post.js HTTP/1.1[0m" 304 -
+[23:28:12] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:12] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:28:12] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:12] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:28:12] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:12] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:28:15] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:28:15] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:123} INFO
+Querying post with id:12
+[23:28:15] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:15] "GET /create_new_post/12 HTTP/1.1" 200 -
+[23:28:15] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:15] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[23:28:15] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:15] "[36mGET /static/js/edit_delete_post.js HTTP/1.1[0m" 304 -
+[23:28:15] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:28:15] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:15] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:28:15] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:15] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:28:15] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:15] "[36mGET /static/js/create_post.js HTTP/1.1[0m" 304 -
+[23:28:29] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:28:29] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:77} INFO
+Querying all posts on page: 1
+[23:28:29] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[23:28:29] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:29] "GET / HTTP/1.1" 200 -
+[23:28:29] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:29] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[23:28:29] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:29] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:28:29] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[23:28:29] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:29] "[36mGET /static/js/edit_delete_post.js HTTP/1.1[0m" 304 -
+[23:28:29] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:29] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+172.17.205.69 - - [29/Dec/2021 23:28:29] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:28:30] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:28:30] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:123} INFO
+Querying post with id:13
+[23:28:30] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:30] "GET /create_new_post/13 HTTP/1.1" 200 -
+[23:28:30] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:30] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[23:28:30] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:30] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:28:30] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[23:28:30] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:30] "[36mGET /static/js/edit_delete_post.js HTTP/1.1[0m" 304 -
+[23:28:30] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:30] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+172.17.205.69 - - [29/Dec/2021 23:28:30] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:28:31] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:31] "[36mGET /static/js/create_post.js HTTP/1.1[0m" 304 -
+[23:28:46] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:28:46] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:77} INFO
+Querying all posts on page: 1
+[23:28:46] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[23:28:46] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:46] "GET / HTTP/1.1" 200 -
+[23:28:47] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:47] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[23:28:47] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[23:28:47] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:47] "[36mGET /static/js/edit_delete_post.js HTTP/1.1[0m" 304 -
+172.17.205.69 - - [29/Dec/2021 23:28:47] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:28:47] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:47] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:28:47] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:47] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:28:48] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:28:48] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:tetris in maya with pyside python api and cmds
+[23:28:48] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:48] "GET /post/tetris_in_maya_with_pyside_python_api_and_cmds HTTP/1.1" 200 -
+[23:28:48] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:48] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:28:48] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:48] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:28:48] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:48] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:28:51] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:28:51] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:77} INFO
+Querying all posts on page: 1
+[23:28:51] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[23:28:51] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:51] "GET / HTTP/1.1" 200 -
+[23:28:51] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[23:28:51] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:51] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+172.17.205.69 - - [29/Dec/2021 23:28:51] "[36mGET /static/js/edit_delete_post.js HTTP/1.1[0m" 304 -
+[23:28:51] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:28:51] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:51] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:28:51] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:51] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:28:54] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:28:54] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:retrieving live location in telegram bot
+[23:28:54] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:54] "GET /post/retrieving_live_location_in_telegram_bot HTTP/1.1" 200 -
+[23:28:54] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:54] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:28:54] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:54] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:28:54] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:54] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:28:56] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:28:56] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:77} INFO
+Querying all posts on page: 1
+[23:28:56] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[23:28:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:56] "GET / HTTP/1.1" 200 -
+[23:28:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:56] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[23:28:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:28:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:56] "[36mGET /static/js/edit_delete_post.js HTTP/1.1[0m" 304 -
+[23:28:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:56] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:28:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:56] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:28:59] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:28:59] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:59] "GET /login HTTP/1.1" 200 -
+[23:28:59] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:28:59] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:59] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:28:59] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:28:59] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:29:03] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:59} INFO
+Queried user by login:admin
+[23:29:03] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:29:03] "[32mPOST /login HTTP/1.1[0m" 302 -
+[23:29:03] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:29:03] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:77} INFO
+Querying all posts on page: 1
+[23:29:03] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[23:29:03] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:29:03] "GET / HTTP/1.1" 200 -
+[23:29:03] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:29:03] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[23:29:03] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[23:29:03] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:29:03] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+172.17.205.69 - - [29/Dec/2021 23:29:03] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:29:03] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:29:03] "[36mGET /static/js/edit_delete_post.js HTTP/1.1[0m" 304 -
+[23:29:03] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:29:03] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:29:05] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:29:05] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:123} INFO
+Querying post with id:12
+[23:29:05] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:29:05] "GET /create_new_post/12 HTTP/1.1" 200 -
+[23:29:05] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:29:05] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[23:29:05] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:29:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:29:05] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[23:29:05] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:29:05] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:29:05] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:29:05] "[36mGET /static/js/edit_delete_post.js HTTP/1.1[0m" 304 -
+172.17.205.69 - - [29/Dec/2021 23:29:05] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:29:05] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:29:05] "[36mGET /static/js/create_post.js HTTP/1.1[0m" 304 -
+[23:44:34] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+ * Restarting with stat
+[23:44:35] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} WARNING
+ * Debugger is active!
+[23:44:35] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+ * Debugger PIN: 601-655-941
+[23:44:35] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} WARNING
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[23:44:35] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+ * Running on http://172.17.205.69:5000/ (Press CTRL+C to quit)
+[23:44:38] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:44:38] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:77} INFO
+Querying all posts on page: 1
+[23:44:38] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[23:44:38] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:38] "GET / HTTP/1.1" 200 -
+[23:44:39] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:39] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:44:39] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:39] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:44:39] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[23:44:39] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:39] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+172.17.205.69 - - [29/Dec/2021 23:44:39] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[23:44:39] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:39] "[36mGET /static/js/edit_delete_post.js HTTP/1.1[0m" 304 -
+[23:44:42] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:44:42] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:123} INFO
+Querying post with id:14
+[23:44:42] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:42] "GET /create_new_post/14 HTTP/1.1" 200 -
+[23:44:42] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:42] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[23:44:42] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:42] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:44:42] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:42] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:44:42] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[23:44:42] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:42] "[36mGET /static/js/edit_delete_post.js HTTP/1.1[0m" 304 -
+[23:44:42] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:42] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+172.17.205.69 - - [29/Dec/2021 23:44:42] "[36mGET /static/js/create_post.js HTTP/1.1[0m" 304 -
+[23:44:50] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:44:50] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:123} INFO
+Querying post with id:14
+[23:44:50] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:50] "POST /create_new_post/check_post_with_this_id_exists HTTP/1.1" 200 -
+[23:44:50] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:44:50] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:123} INFO
+Querying post with id:14
+[23:44:50] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:50] "POST /create_new_post/save_new_post HTTP/1.1" 200 -
+[23:44:51] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:44:51] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:77} INFO
+Querying all posts on page: 1
+[23:44:51] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[23:44:51] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:51] "GET / HTTP/1.1" 200 -
+[23:44:51] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:51] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[23:44:51] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:51] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:44:51] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:51] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:44:51] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:51] "[36mGET /static/js/edit_delete_post.js HTTP/1.1[0m" 304 -
+[23:44:51] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:51] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:44:56] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:44:56] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:testpostttt
+[23:44:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:56] "GET /post/testpostttt HTTP/1.1" 200 -
+[23:44:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:44:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[23:44:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:56] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+172.17.205.69 - - [29/Dec/2021 23:44:56] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:44:59] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:44:59] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:77} INFO
+Querying all posts on page: 1
+[23:44:59] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[23:44:59] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:59] "GET / HTTP/1.1" 200 -
+[23:44:59] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:59] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[23:44:59] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:59] "[36mGET /static/js/edit_delete_post.js HTTP/1.1[0m" 304 -
+[23:44:59] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:44:59] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:45:00] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:45:00] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:45:00] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:45:00] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:45:02] {C:\Users\golub\Documents\flask_blog_project\dao\user_dao.py:49} INFO
+Queried user by id:1
+[23:45:02] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:45:02] "[32mGET /logout HTTP/1.1[0m" 302 -
+[23:45:02] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[23:45:02] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[23:45:02] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:45:02] "GET / HTTP/1.1" 200 -
+[23:45:02] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:45:02] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[23:45:02] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:45:02] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:45:02] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:45:02] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:45:02] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:45:02] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:45:07] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:testpostttt
+[23:45:07] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:45:07] "GET /post/testpostttt HTTP/1.1" 200 -
+[23:45:08] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:45:08] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:45:08] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:45:08] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:45:08] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:45:08] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[23:45:10] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[23:45:10] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[23:45:10] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:45:10] "GET / HTTP/1.1" 200 -
+[23:45:10] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:45:10] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[23:45:10] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:45:10] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[23:45:10] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:45:10] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[23:45:10] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [29/Dec/2021 23:45:10] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:44:44] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+ * Restarting with stat
+[14:44:44] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} WARNING
+ * Debugger is active!
+[14:44:44] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+ * Debugger PIN: 601-655-941
+[14:44:45] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} WARNING
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[14:44:45] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+ * Running on http://172.17.205.69:5000/ (Press CTRL+C to quit)
+[14:44:52] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:44:52] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:44:52] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:44:52] "GET / HTTP/1.1" 200 -
+[14:44:53] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:44:53] "GET /static/css/style.css HTTP/1.1" 200 -
+[14:44:53] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:44:53] "GET /static/css/toggle.css HTTP/1.1" 200 -
+[14:44:53] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:44:53] "GET /static/js/ajax_before_setup.js HTTP/1.1" 200 -
+[14:44:53] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:44:53] "GET /static/js/theme_switcher.js HTTP/1.1" 200 -
+[14:44:53] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:44:53] "GET /static/favicon.ico HTTP/1.1" 200 -
+[14:44:55] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:tetris in maya with pyside python api and cmds
+[14:44:55] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:44:55] "GET /post/tetris_in_maya_with_pyside_python_api_and_cmds HTTP/1.1" 200 -
+[14:44:55] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:44:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[14:44:55] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:44:55] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:44:55] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:44:55] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:45:06] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:45:06] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[14:45:06] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:45:06] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:45:50] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:tetris in maya with pyside python api and cmds
+[14:45:50] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:45:50] "GET /post/tetris_in_maya_with_pyside_python_api_and_cmds HTTP/1.1" 200 -
+[14:45:50] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:45:50] "GET /static/css/style.css HTTP/1.1" 200 -
+[14:45:50] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[14:45:50] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:45:50] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+172.17.205.69 - - [30/Dec/2021 14:45:50] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:45:51] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:45:51] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[14:47:00] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:tetris in maya with pyside python api and cmds
+[14:47:00] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:47:00] "GET /post/tetris_in_maya_with_pyside_python_api_and_cmds HTTP/1.1" 200 -
+[14:47:00] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:47:00] "GET /static/css/style.css HTTP/1.1" 200 -
+[14:47:00] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[14:47:00] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:47:00] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+172.17.205.69 - - [30/Dec/2021 14:47:00] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:47:01] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:47:01] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[14:47:13] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:47:13] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:47:13] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:47:13] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[14:50:56] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:tetris in maya with pyside python api and cmds
+[14:50:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:50:56] "GET /post/tetris_in_maya_with_pyside_python_api_and_cmds HTTP/1.1" 200 -
+[14:50:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:50:56] "GET /static/css/style.css HTTP/1.1" 200 -
+[14:50:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[14:50:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:50:56] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+172.17.205.69 - - [30/Dec/2021 14:50:56] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:50:58] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:50:58] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[14:51:21] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:tetris in maya with pyside python api and cmds
+[14:51:21] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:51:21] "GET /post/tetris_in_maya_with_pyside_python_api_and_cmds HTTP/1.1" 200 -
+[14:51:22] {C:\Users\golub\Documents\flask_blog_project\controllers\main_page_controller.py:28} ERROR
+Traceback (most recent call last):
+  File "C:\Users\golub\Documents\flask_blog_project\controllers\main_page_controller.py", line 26, in main
+    page = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+invalid literal for int() with base 10: 'favicon.ico'
+Traceback (most recent call last):
+  File "C:\Users\golub\Documents\flask_blog_project\controllers\main_page_controller.py", line 26, in main
+    page = int(page)
+ValueError: invalid literal for int() with base 10: 'favicon.ico'
+[14:51:22] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:51:22] "[35m[1mGET /favicon.ico HTTP/1.1[0m" 500 -
+[14:51:25] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[14:51:25] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:51:25] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+172.17.205.69 - - [30/Dec/2021 14:51:25] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[14:51:40] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:51:40] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:51:40] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:51:40] "GET / HTTP/1.1" 200 -
+[14:51:40] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:51:40] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[14:51:40] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[14:51:40] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[14:51:40] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:51:40] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+172.17.205.69 - - [30/Dec/2021 14:51:40] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+172.17.205.69 - - [30/Dec/2021 14:51:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[14:52:00] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:52:00] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:52:00] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:52:00] "GET / HTTP/1.1" 200 -
+[14:52:00] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:52:00] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[14:52:00] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:52:00] "GET /static/css/style.css HTTP/1.1" 200 -
+[14:52:00] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[14:52:00] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:52:00] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+172.17.205.69 - - [30/Dec/2021 14:52:00] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:52:01] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:52:01] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[14:52:07] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:52:07] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:52:07] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:52:07] "GET / HTTP/1.1" 200 -
+[14:52:07] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:52:07] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[14:52:07] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:52:07] "GET /static/css/style.css HTTP/1.1" 200 -
+[14:52:07] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:52:07] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:52:07] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:52:07] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:52:08] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:52:08] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[14:52:46] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:52:46] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:52:46] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:52:46] "GET / HTTP/1.1" 200 -
+[14:52:46] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:52:46] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[14:52:46] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:52:46] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:52:46] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:52:46] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:52:47] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:52:47] "GET /static/css/style.css HTTP/1.1" 200 -
+[14:52:47] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:52:47] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[14:53:55] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:53:55] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:53:55] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:53:55] "GET / HTTP/1.1" 200 -
+[14:53:55] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:53:55] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[14:53:55] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:53:55] "GET /static/css/style.css HTTP/1.1" 200 -
+[14:53:55] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:53:55] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:53:55] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:53:55] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:53:55] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:53:55] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[14:53:56] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:53:56] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:53:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:53:56] "GET / HTTP/1.1" 200 -
+[14:53:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:53:56] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[14:53:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:53:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[14:53:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:53:56] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:53:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:53:56] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:53:57] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:53:57] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[14:53:57] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:53:57] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:53:57] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:53:57] "GET / HTTP/1.1" 200 -
+[14:53:57] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:53:57] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:53:57] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[14:53:57] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:53:57] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[14:53:57] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:53:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+172.17.205.69 - - [30/Dec/2021 14:53:57] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:53:57] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:53:57] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[14:54:05] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:54:05] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:54:05] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:54:05] "GET / HTTP/1.1" 200 -
+[14:54:05] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:54:05] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[14:54:05] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:54:05] "GET /static/css/style.css HTTP/1.1" 200 -
+[14:54:05] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:54:05] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:54:05] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:54:05] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:54:06] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:54:06] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[14:54:09] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:54:09] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:54:09] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:54:09] "GET / HTTP/1.1" 200 -
+[14:54:09] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:54:09] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[14:54:09] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:54:09] "GET /static/css/style.css HTTP/1.1" 200 -
+[14:54:09] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:54:09] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:54:09] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:54:09] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:54:09] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:54:09] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[14:55:15] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+ * Restarting with stat
+[14:55:16] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} WARNING
+ * Debugger is active!
+[14:55:16] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+ * Debugger PIN: 601-655-941
+[14:55:16] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} WARNING
+ * Running on all addresses.
+   WARNING: This is a development server. Do not use it in a production deployment.
+[14:55:16] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+ * Running on http://172.17.205.69:5000/ (Press CTRL+C to quit)
+[14:55:20] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:55:20] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:55:20] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:55:20] "GET / HTTP/1.1" 200 -
+[14:55:21] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:55:21] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:55:21] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:55:21] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:55:21] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:55:21] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[14:55:21] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:55:21] "GET /static/css/style.css HTTP/1.1" 200 -
+[14:55:21] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:55:21] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[14:55:23] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:55:23] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:55:23] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:55:23] "GET / HTTP/1.1" 200 -
+[14:55:23] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:55:23] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[14:55:23] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:55:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[14:55:23] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:55:23] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:55:23] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:55:23] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:55:35] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:55:35] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[14:55:35] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:55:35] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:56:57] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:56:57] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:56:57] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:56:57] "GET / HTTP/1.1" 200 -
+[14:56:57] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:56:57] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[14:56:57] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[14:56:57] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:56:57] "GET /static/css/style.css HTTP/1.1" 200 -
+172.17.205.69 - - [30/Dec/2021 14:56:57] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:56:57] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:56:57] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:56:57] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:56:57] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[14:57:32] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:57:32] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:57:32] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:57:32] "GET / HTTP/1.1" 200 -
+[14:57:32] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:57:32] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[14:57:32] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:57:32] "GET /static/css/style.css HTTP/1.1" 200 -
+[14:57:32] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:57:32] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:57:32] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:57:32] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:57:32] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:57:32] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[14:57:49] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:57:49] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:57:49] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:57:49] "GET / HTTP/1.1" 200 -
+[14:57:49] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:57:49] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[14:57:49] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[14:57:49] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:57:49] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+172.17.205.69 - - [30/Dec/2021 14:57:49] "GET /static/css/style.css HTTP/1.1" 200 -
+[14:57:49] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:57:49] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:57:49] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:57:49] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[14:57:50] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:57:50] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:57:50] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:57:50] "GET / HTTP/1.1" 200 -
+[14:57:50] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:57:50] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[14:57:50] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:57:50] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[14:57:50] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:57:50] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:57:50] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:57:50] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:57:50] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:57:50] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[14:58:47] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:58:47] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:58:47] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:58:47] "GET / HTTP/1.1" 200 -
+[14:58:47] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:58:47] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[14:58:47] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:58:47] "GET /static/css/style.css HTTP/1.1" 200 -
+[14:58:47] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:58:47] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:58:47] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:58:47] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:58:48] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:58:48] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[14:59:15] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[14:59:15] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[14:59:15] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:59:15] "GET / HTTP/1.1" 200 -
+[14:59:15] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:59:15] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[14:59:15] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:59:15] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[14:59:15] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:59:15] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:59:15] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:59:15] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:59:16] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:tetris in maya with pyside python api and cmds
+[14:59:16] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:59:16] "GET /post/tetris_in_maya_with_pyside_python_api_and_cmds HTTP/1.1" 200 -
+[14:59:16] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:59:16] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[14:59:16] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:59:16] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:59:16] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:59:16] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:59:20] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:59:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[14:59:20] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:59:20] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:59:43] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:tetris in maya with pyside python api and cmds
+[14:59:43] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:59:43] "GET /post/tetris_in_maya_with_pyside_python_api_and_cmds HTTP/1.1" 200 -
+[14:59:43] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:59:43] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[14:59:43] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:59:43] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[14:59:43] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:59:43] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[14:59:45] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 14:59:45] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[15:00:05] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:tetris in maya with pyside python api and cmds
+[15:00:05] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:00:05] "GET /post/tetris_in_maya_with_pyside_python_api_and_cmds HTTP/1.1" 200 -
+[15:00:05] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:00:05] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[15:00:05] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:00:05] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[15:00:05] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:00:05] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[15:00:07] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:00:07] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[15:01:00] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:tetris in maya with pyside python api and cmds
+[15:01:00] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:01:00] "GET /post/tetris_in_maya_with_pyside_python_api_and_cmds HTTP/1.1" 200 -
+[15:01:00] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:01:00] "GET /static/css/style.css HTTP/1.1" 200 -
+[15:01:00] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:01:00] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[15:01:00] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:01:00] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[15:01:02] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:01:02] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[15:01:22] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:tetris in maya with pyside python api and cmds
+[15:01:22] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:01:22] "GET /post/tetris_in_maya_with_pyside_python_api_and_cmds HTTP/1.1" 200 -
+[15:01:22] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:01:22] "GET /static/css/style.css HTTP/1.1" 200 -
+[15:01:22] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:01:22] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[15:01:22] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:01:22] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[15:01:23] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:01:23] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[15:01:44] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:tetris in maya with pyside python api and cmds
+[15:01:44] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:01:44] "GET /post/tetris_in_maya_with_pyside_python_api_and_cmds HTTP/1.1" 200 -
+[15:01:44] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:01:44] "GET /static/css/style.css HTTP/1.1" 200 -
+[15:01:44] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[15:01:44] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:01:44] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+172.17.205.69 - - [30/Dec/2021 15:01:44] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[15:01:45] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:01:45] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[15:02:17] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[15:02:17] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[15:02:17] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:02:17] "GET / HTTP/1.1" 200 -
+[15:02:17] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:02:17] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[15:02:17] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:02:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[15:02:17] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:02:17] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[15:02:17] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:02:17] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[15:02:23] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:tetris in maya with pyside python api and cmds
+[15:02:23] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:02:23] "GET /post/tetris_in_maya_with_pyside_python_api_and_cmds HTTP/1.1" 200 -
+[15:02:23] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:02:23] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[15:02:23] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+[15:02:23] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:02:23] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+172.17.205.69 - - [30/Dec/2021 15:02:23] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[15:02:54] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:tetris in maya with pyside python api and cmds
+[15:02:54] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:02:54] "GET /post/tetris_in_maya_with_pyside_python_api_and_cmds HTTP/1.1" 200 -
+[15:02:55] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:02:55] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[15:02:55] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:02:55] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[15:02:55] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:02:55] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[15:02:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:02:56] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[15:03:17] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:tetris in maya with pyside python api and cmds
+[15:03:17] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:17] "GET /post/tetris_in_maya_with_pyside_python_api_and_cmds HTTP/1.1" 200 -
+[15:03:17] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:17] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[15:03:17] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:17] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[15:03:17] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:17] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[15:03:19] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:19] "[36mGET /static/favicon.ico HTTP/1.1[0m" 304 -
+[15:03:20] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[15:03:20] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[15:03:20] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:20] "GET / HTTP/1.1" 200 -
+[15:03:20] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:20] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[15:03:20] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:20] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[15:03:20] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:20] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[15:03:20] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:20] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[15:03:22] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:retrieving live location in telegram bot
+[15:03:22] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:22] "GET /post/retrieving_live_location_in_telegram_bot HTTP/1.1" 200 -
+[15:03:22] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:22] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[15:03:22] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:22] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[15:03:22] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:22] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[15:03:40] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[15:03:40] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[15:03:40] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:40] "GET / HTTP/1.1" 200 -
+[15:03:40] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:40] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[15:03:40] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:40] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[15:03:40] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:40] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[15:03:40] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:40] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[15:03:46] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:retrieving live location in telegram bot
+[15:03:46] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:46] "GET /post/retrieving_live_location_in_telegram_bot HTTP/1.1" 200 -
+[15:03:46] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:46] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[15:03:46] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:46] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[15:03:46] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:46] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[15:03:56] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:91} INFO
+Querying published posts on page: 1
+[15:03:56] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:102} INFO
+Querying posts amount.
+[15:03:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:56] "GET / HTTP/1.1" 200 -
+[15:03:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:56] "[36mGET /static/js/ajax_before_setup.js HTTP/1.1[0m" 304 -
+[15:03:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:56] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[15:03:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:56] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[15:03:56] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:56] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -
+[15:03:57] {C:\Users\golub\Documents\flask_blog_project\dao\post_dao.py:134} INFO
+Querying posts with header ilike:tetris in maya with pyside python api and cmds
+[15:03:57] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:57] "GET /post/tetris_in_maya_with_pyside_python_api_and_cmds HTTP/1.1" 200 -
+[15:03:57] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:57] "[36mGET /static/css/style.css HTTP/1.1[0m" 304 -
+[15:03:57] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:57] "[36mGET /static/css/toggle.css HTTP/1.1[0m" 304 -
+[15:03:57] {C:\Users\golub\AppData\Local\Programs\Python\Python39\lib\site-packages\werkzeug\_internal.py:225} INFO
+172.17.205.69 - - [30/Dec/2021 15:03:57] "[36mGET /static/js/theme_switcher.js HTTP/1.1[0m" 304 -

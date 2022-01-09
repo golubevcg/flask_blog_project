@@ -45,74 +45,70 @@
     </script>
 </head>
 <body>
-<script src="{{ url_for('static',filename='js/theme_switcher.js') }}"></script>
+    <script src="{{ url_for('static',filename='js/theme_switcher.js') }}"></script>
 
-<div class="container" id="container">
-    <div class="item"></div>
-    <div class="item-center">
-        <div>{% include "items/header.html" %}</div>
+    <div class="container" id="container">
+        <div class="item"></div>
 
-        <div class="text post-header">posts</div>
+        <div class="item-center">
+            <div>{% include "items/header.html" %}</div>
 
-        <list>
-            <div class="text post-parent">
-                <div style="flex-grow:1;width:100%"></div>
-                <div class="" style=" background-color:transparent;display:flex;justify-content: flex-end;margin:5px;">
-                    {% if current_user.is_authenticated %}
-                        <a href="/create_new_post">
-                            <input class="btn btn-default text admin_button new_post_button" type="submit" value="+ Add new post">
-                        </a>
-                    {% endif %}
-                </div>
-            </div>
+            <div class="text post-header">posts</div>
 
-            <div id="posts-block">
-                {%for i in range(all_posts| length)%}
-                    <div class="text post-parent post_div">
-                        <div class="text year">
-                            {% if current_user.is_authenticated %}
-                              <input class="btn btn-default text admin_button edit_button" type="submit" value="Edit" onclick="edit_post({{all_posts[i].id}})">
-                              <input class="btn btn-default text admin_button delete_button" type="submit" value="Delete" onclick="delete_post({{all_posts[i].id}})">
-                            {% else %}
-                                {{posts_years[i]}}
-                            {% endif %}
-                        </div>
-                        <a class="post {{'post-alt' if i % 2 == 0 else 'post'}}" href="post/{{all_posts[i].header.lower().replace(" ", "_")}}">
-                            <div class="text" style="margin:8px">{{all_posts[i].header}}</div>
-                            <div style="flex-grow:1;"></div>
-                            <div class="text">{{all_posts[i].creation_date.strftime("%d %b")}}</div>
-                        </a>
+            <list>
+                <div class="text post-parent">
+                    <div style="flex-grow:1;width:100%"></div>
+                    <div class="" style=" background-color:transparent;display:flex;justify-content: flex-end;margin:5px;">
+                        {% if current_user.is_authenticated %}
+                            <a href="/create_new_post">
+                                <input class="btn btn-default text admin_button new_post_button" type="submit" value="+ Add new post">
+                            </a>
+                        {% endif %}
                     </div>
+                </div>
+
+                <div id="posts-block">
+                    {%for i in range(all_posts| length)%}
+                        <div class="text post-parent post_div">
+                            <div class="text year">
+                                {% if current_user.is_authenticated %}
+                                  <input class="btn btn-default text admin_button edit_button" type="submit" value="Edit" onclick="edit_post({{all_posts[i].id}})">
+                                  <input class="btn btn-default text admin_button delete_button" type="submit" value="Delete" onclick="delete_post({{all_posts[i].id}})">
+                                {% else %}
+                                    {{posts_years[i]}}
+                                {% endif %}
+                            </div>
+                            <a class="post {{'post-alt' if i % 2 == 0 else 'post'}}" href="post/{{all_posts[i].header.lower().replace(" ", "_")}}">
+                                <div class="text" style="margin:8px">{{all_posts[i].header}}</div>
+                                <div style="flex-grow:1;"></div>
+                                <div class="text">{{all_posts[i].creation_date.strftime("%d %b")}}</div>
+                            </a>
+                        </div>
+                    {%endfor%}
+                </div>
+
+            </list>
+
+            <div class="text pagination">
+                {%for i in range(1, pages_amount+1)%}
+                    {%if i==page_num%}
+                        <div class="pagination" style="color:var(--text_main_color);opacity: 100%;"><a href="/{{i}}">{{i}}</a></div>
+                        <div>&nbsp;</div>
+                    {%else%}
+                        <div class="pagination"><a href="/{{i}}">{{i}}</a></div>
+                        <div>&nbsp;</div>
+                    {%endif%}
                 {%endfor%}
             </div>
 
-        </list>
-
-
-        <div class="text pagination">
-            {%for i in range(1, pages_amount+1)%}
-                {%if i==page_num%}
-                    <div class="pagination" style="color:var(--text_main_color);opacity: 100%;"><a href="/{{i}}">{{i}}</a></div>
-                    <div>&nbsp;</div>
-                {%else%}
-                    <div class="pagination"><a href="/{{i}}">{{i}}</a></div>
-                    <div>&nbsp;</div>
-                {%endif%}
-            {%endfor%}
+            <footer id="footer">{% include "items/footer.html" %}</footer>
         </div>
 
-
-        <footer id="footer">{% include "items/footer.html" %}</footer>
-    </div>
-
-    <div class="item">
-        <div style="display:flex; flex-direction: column; flex-grow:1;">
-            <div id="dark_theme_toggle">{% include "items/dark_theme_toggle.html" %}</div>
+        <div class="item">
+            <div style="display:flex; flex-direction: column; flex-grow:1;">
+                <div id="dark_theme_toggle">{% include "items/dark_theme_toggle.html" %}</div>
+            </div>
         </div>
     </div>
-</div>
-
-<div class="starting-line"></div>
-
 </body>
 </html>

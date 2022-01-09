@@ -40,6 +40,10 @@
     font-family: var(--font-family);
 }
 
+#viewer a{
+    overflow-wrap: break-word;
+}
+
 html, body {
     margin: 0;
     padding: 0;
@@ -48,31 +52,31 @@ html, body {
     font-size: 100%;
     vertical-align: baseline;
     height: 100%;
+    width: 100%;
     background-color: var(--background-color);
+    z-index: 1;
 }
 
 .container {
     display: flex;
     z-index:2;
-    position:relative;
     background-color: var(--background-color);
 }
 
-.starting-line{
-    background-color: var(--start_line_bg_color);
+.start-line{
     height: 10px;
     min-height: 10px;
     width: 100%;
     position:absolute;
-    top:0;
-    z-index:1;
+    z-index:2;
 }
 
 .item {
     display: flex;
-    height: 70px;
     flex-grow: 1;
     background-color: transparent;
+    position:relative;
+    z-index:3;
 }
 
 .item-center {

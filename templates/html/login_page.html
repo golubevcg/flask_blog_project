@@ -34,36 +34,35 @@
     </script>
 </head>
 <body>
-<script src="{{ url_for('static',filename='js/theme_switcher.js') }}"></script>
-<div class="container" >
-    <div class="item"></div>
-    <div class="item-center">
-        <div>{% include "items/header.html" %}</div>
+    <script src="{{ url_for('static',filename='js/theme_switcher.js') }}"></script>
+    <div class="container" >
+        <div class="item"></div>
+        <div class="item-center">
+            <div>{% include "items/header.html" %}</div>
 
-        <form action="/login" method="post"  style="display:flex; flex-direction: column; width:35%; align-self: center;padding:150px;">
-            <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
-            {% with messages = get_flashed_messages() %}
-            {% if messages %}
-                <div class="text input-form notification is-danger" style="margin-bottom:20px;">
-                    {{ messages[0] }}
-                </div>
-            {% endif %}
-            {% endwith %}
-            <input class="text input-form" type="text" style="margin:5px;" placeholder="Login" name="login" value="{{request.form.login }}">
-            <input class="text input-form" type="password" style="margin:5px;" placeholder="Password" name="password" value="{{request.form.password }}">
-            <input class="btn btn-default input-form login-button" type="submit" value="Login">
-        </form>
-        <footer id="footer">{% include "items/footer.html" %}</footer>
-    </div>
+            <form action="/login" method="post"  style="display:flex; flex-direction: column; width:35%; align-self: center;padding:150px;">
+                <input type="hidden" name="csrf_token" value="{{ csrf_token() }}" />
+                {% with messages = get_flashed_messages() %}
+                {% if messages %}
+                    <div class="text input-form notification is-danger" style="margin-bottom:20px;">
+                        {{ messages[0] }}
+                    </div>
+                {% endif %}
+                {% endwith %}
+                <input class="text input-form" type="text" style="margin:5px;" placeholder="Login" name="login" value="{{request.form.login }}">
+                <input class="text input-form" type="password" style="margin:5px;" placeholder="Password" name="password" value="{{request.form.password }}">
+                <input class="btn btn-default input-form login-button" type="submit" value="Login">
+            </form>
+            <footer id="footer">{% include "items/footer.html" %}</footer>
+        </div>
 
-    <div class="item">
-        <div style="display:flex; flex-direction: column; flex-grow:1;">
-            <div id="dark_theme_toggle">{% include "items/dark_theme_toggle.html" %}</div>
+        <div class="item">
+            <div style="display:flex; flex-direction: column; flex-grow:1;">
+                <div id="dark_theme_toggle">{% include "items/dark_theme_toggle.html" %}</div>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="starting-line"></div>
 
 </body>
 </html>

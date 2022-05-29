@@ -23,7 +23,8 @@ all wrapped in docker container.
 
 To launch use:\
 docker-compose build flask_blog_prod \
-docker-compose up flask_blog_prod
+docker-compose up flask_blog_prod \
+or (docker-compose run -d -p 80:80 flask_blog_prod)
 
 application will launch on http://127.0.0.1:5080/ 
 

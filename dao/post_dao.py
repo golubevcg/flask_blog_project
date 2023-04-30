@@ -5,7 +5,7 @@ from sqlalchemy import desc
 from model.entity.post import Post
 from services.logger_service import main_logger
 from services.validator_service import validate_input
-from services.warning_handler_decorator import exception_handler
+from services.exception_handler_decorator import exception_handler
 from services.db_service import db
 
 

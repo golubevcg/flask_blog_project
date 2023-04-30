@@ -4,7 +4,7 @@ from sqlalchemy.exc import IntegrityError
 from model.entity.user import User
 from services.validator_service import validate_input
 from services.logger_service import main_logger
-from services.warning_handler_decorator import exception_handler
+from services.exception_handler_decorator import exception_handler
 from services.db_service import db
 
 

@@ -13,11 +13,7 @@ services:
       - ./:/var/app
     depends_on:
       - pg
-    restart_policy:
-      condition: on-failure
-      delay: 5s
-      max_attempts: 3
-      window: 120s
+    restart: on-failure:5 
 
   flask_blog_prod:
     build:
@@ -30,11 +26,7 @@ services:
       - "80:80"
     depends_on:
       - pg
-    restart_policy:
-      condition: on-failure
-      delay: 5s
-      max_attempts: 3
-      window: 120s
+    restart: on-failure:5 
 
   pg:
     image: postgres

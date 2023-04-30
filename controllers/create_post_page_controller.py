@@ -31,11 +31,11 @@ def edit_existing_post_page(post_id: int):
     try:
         post_id = int(post_id)
     except Exception as e:
-        main_logger.exception(e)
+        main_logger.warning(e)
 
     post = post_dao.get_post_by_id(post_id)
     if not post:
-        main_logger.exception(f"Edit post error, cannot find post with this id:{str(id)}")
+        main_logger.warning(f"Edit post error, cannot find post with this id:{str(id)}")
         return
 
     return render_template("/create_post_page.html", post=post)
@@ -83,7 +83,7 @@ def save_post():
     header = post_data["header"]
     header_length = len(header)
     if header_length < 5 or header_length > 50:
-        main_logger.exception("Header length does not fit between 5 and 50 symbols, saving interrupted!")
+        main_logger.warning("Header length does not fit between 5 and 50 symbols, saving interrupted!")
         return ""
 
     body = post_data["body"]
@@ -98,7 +98,7 @@ def save_post():
         post_id = post_data["post_id"]
         post = post_dao.get_post_by_id(post_id)
         if not post:
-            main_logger.exception(f"Cannot update post with such id, "
+            main_logger.warning(f"Cannot update post with such id, "
                                   f"because no post with this id was founded. "
                                   f"(post_id = {str(post_id)}")
             return ""
@@ -130,5 +130,5 @@ def save_post():
             post_dao.save_post(post)
         return "Post added successfully"
     except Exception as e:
-        main_logger.exception(e)
+        main_logger.warning(e)
         return ""

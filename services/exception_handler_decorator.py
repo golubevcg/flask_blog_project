@@ -17,6 +17,6 @@ def exception_handler(func,
         try:
             func(*args, **kwargs)
         except exception as e:
-            main_logger.exception(e)
+            main_logger.warning(e)
             return return_value_if_exception
     return inner_function

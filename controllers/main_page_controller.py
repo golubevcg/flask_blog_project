@@ -25,7 +25,7 @@ def main(page=1):
         try:
             page = int(page)
         except Exception as e:
-            main_logger.exception(e)
+            main_logger.warning(e)
             return
 
     if is_authenticated:

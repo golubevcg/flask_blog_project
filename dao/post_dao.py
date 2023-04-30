@@ -5,7 +5,7 @@ from sqlalchemy import desc
 from model.entity.post import Post
 from services.logger_service import main_logger
 from services.validator_service import validate_input
-from services.exception_handler_decorator import exception_handler
+from services.warning_handler_decorator import exception_handler
 from services.db_service import db
 
 
@@ -14,7 +14,7 @@ from services.db_service import db
 def save_post(post: Post) -> bool:
     header_length = len(post.header)
     if header_length < 5 or header_length > 50:
-        main_logger.exception("Header length does not fit between 5 and 50 symbols, saving interrupted!")
+        main_logger.warning("Header length does not fit between 5 and 50 symbols, saving interrupted!")
         return ""
 
     validate_input(post, Post, "post")

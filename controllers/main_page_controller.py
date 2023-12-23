@@ -56,9 +56,9 @@ def main(page=1):
                            page_num=page)
 
 
-@main_page_blueprint.route("/about.html")
-def about():
-    return render_template("about_page.html")
+@main_page_blueprint.route("/contacts.html")
+def contacts():
+    return render_template("contacts_page.html")
 
 
 @main_page_blueprint.route("/logout")

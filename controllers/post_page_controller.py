@@ -2,6 +2,7 @@ from flask import Blueprint, redirect, render_template
 
 from dao import post_dao
 from flask_login import login_required
+import random
 
 
 post_page_blueprint = Blueprint(
@@ -35,7 +36,16 @@ def post_page(post_header=None):
     body = body.strip("\"")
 
     creation_date = post.creation_date.strftime("%d %b %Y")
-    return render_template("post_page.html", header=header, body=body, creation_date=creation_date)
+
+    random_duck_index = random.randint(1, 4)
+
+    return render_template(
+        "post_page.html", 
+        header=header, 
+        body=body, 
+        creation_date=creation_date,
+        is_post_page=True,
+        random_duck_index=random_duck_index)
 
 
 @post_page_blueprint.route("/delete_post/<int:post_id>", methods=['POST'])

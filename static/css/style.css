@@ -71,7 +71,7 @@ html, body {
 
 .item {
     display: flex;
-    flex-grow: 1.1;
+    flex-grow: 1;
     background-color: transparent;  
     position:relative;
     z-index:3;
@@ -80,12 +80,9 @@ html, body {
 
 .item-center {
     display: flex;
-    flex-grow: 1;
+    flex-grow: 0;
+    flex-basis:40%;
     flex-direction: column;
-}
-
-.posts-years{
-    color:#49BEFF;
 }
 
 .item + .item {
@@ -190,6 +187,7 @@ html, body {
 }
 
 .year {
+    color:#49BEFF;
     background-color:transparent;
     align-items: center;
     margin: 0 20px;

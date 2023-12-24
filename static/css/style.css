@@ -1,6 +1,5 @@
 :root {
     --start_line_bg_color: #C4C4C459;
-    --header_box_shadow: 0 2px 2px #88888890;
     --text_main_color: #1f1f1f;
     --text_main_color_60: #59585890;
     --font-family: 'Roboto Condensed', sans-serif;
@@ -22,7 +21,6 @@
 
 .dark-theme {
     --start_line_bg_color: #F5F5F5;
-    --header_box_shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
     --text_main_color: #A9A9B3;
     --text_main_color_60: #cecece60;
     --font-family: 'Roboto', sans-serif;
@@ -73,20 +71,22 @@ html, body {
 
 .item {
     display: flex;
-    flex-grow: 1;
-    background-color: transparent;
+    flex-grow: 1.1;
+    background-color: transparent;  
     position:relative;
     z-index:3;
+    flex-direction: column;
 }
 
 .item-center {
     display: flex;
     flex-grow: 1;
     flex-direction: column;
-    padding: 0 5px;
-    max-width:800px;
 }
 
+.posts-years{
+    color:#49BEFF;
+}
 
 .item + .item {
   margin-left: 2%;
@@ -95,42 +95,36 @@ html, body {
 .header{
     display: flex;
     flex-grow:0.9;
-    border-width:0 1px 1px 1px;
-    border-color: var(--header-border-color);
-    border-style: solid;
     background-color: var(--background-color);
     border-radius: 0 0 var(--border-radius) var(--border-radius);
-    box-shadow: var(--header_box_shadow);
     /* align-items: flex-end; */
     align-items: flex-end;
     justify-content: space-between;
+    min-height: 75px;
 }
 
 .links {
-    background-color: #37383C;
-    border: 1px solid #00A3FF;
+    min-height:75px;
+    background-color: #313236;
     border-top: 0;
-    border-bottom-left-radius: 5px;
-    border-bottom-right-radius: 5px;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
     font-weight: 300;
-    font-size:10px;
-    padding-top:25px;
     padding-left:15px;
     padding-right:15px;   
-    padding-bottom:2px;
+    justify-content: flex-end;
+    align-items: flex-end;
 }
 
 .andrew_golubev{
     flex-grow:1;
-    font-size:25px;
+    font-size:20px;
     color:var(--text_main_color);
     font-family: var(--font-family);
     font-weight: 300;
     padding-left:4px;
-    padding-right:20px;
+    padding-right:10px;
     padding-bottom:5px;
     text-align: right;
 }
@@ -156,11 +150,13 @@ html, body {
 .post-header {
     display: flex;
     flex-direction: column;
-    align-items: center;
     justify-content: center;
-    margin: 90px 0;
-    font-size:45px;
-    text-align:center;
+    font-size:100px;
+    text-align:left;
+    background-color:#37383C;
+    font-weight:550;
+    min-height: 260px;
+    padding: 0px;
 }
 
 .contacts {
@@ -190,10 +186,7 @@ html, body {
     border-style:solid;
     flex-grow: 1;
     width:100%;
-}
-
-.post-alt{
-    background-color: var(--post-alternative-row-color);
+    color:#A9A9B3;
 }
 
 .year {
@@ -206,10 +199,17 @@ html, body {
     font-size:20px;
 }
 
-.post:hover{
-    border-color:var(--hover-color);
-    border-width: 2px;
-    border-style:solid;
+.post_header_text{
+    display: flex;
+    color: var(--text_main_color);
+    font-family: var(--font-family);
+    font-size:20px;
+    padding: 5px;
+    background-color: transparent;
+}
+
+.post_header_text:hover{
+    color:#49BEFF;
 }
 
 .post .text{
@@ -285,6 +285,7 @@ a:hover{
     border-color:var(--create_post_border_color);
     height:50px;
     border-style:solid;
+    min-height: 75px;
 }
 
 input:focus, textarea:focus, select:focus{
@@ -302,7 +303,6 @@ input:focus, textarea:focus, select:focus{
     min-height:90%;
     display: flex;
     flex-direction: column;
-    /*box-shadow: var(--header_box_shadow);*/
     border-radius: var(--border-radius);
     border-width: 1px;
     border-color:var(--create_post_border_color);
@@ -319,7 +319,6 @@ input:focus, textarea:focus, select:focus{
     border-radius: var(--border-radius);
     box-sizing: border-box;
     border-width: 1px;
-    /*box-shadow: var(--header_box_shadow);*/
     background-color: var(--background-color);
     border-color: #C4C4C459;
     padding:5px;

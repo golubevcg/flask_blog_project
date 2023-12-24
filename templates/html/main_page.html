@@ -48,66 +48,89 @@
     <script src="{{ url_for('static',filename='js/theme_switcher.js') }}"></script>
 
     <div class="container" id="container">
-        <div class="item"></div>
+        <div class="item">
+            <!-- left item -->
+            <div style="background-color:#2B2C2F;min-height:75px;"></div>
+            <div style="background-color:#37383C;min-height:260px;"> </div>
+        </div>
 
         <div class="item-center">
             <div>{% include "items/header.html" %}</div>
 
             <div class="text post-header">posts</div>
 
-            <list>
-                <div class="text post-parent">
-                    <div style="flex-grow:1;width:100%"></div>
-                    <div class="" style=" background-color:transparent;display:flex;justify-content: flex-end;margin:5px;">
-                        {% if current_user.is_authenticated %}
-                            <a href="/create_new_post">
-                                <input class="btn btn-default text admin_button new_post_button" type="submit" value="+ Add new post">
-                            </a>
-                        {% endif %}
-                    </div>
-                </div>
-
-                <div id="posts-block">
-                    {%for i in range(all_posts| length)%}
-                        <div class="text post-parent post_div">
-                            <div class="text year">
+            <!-- posts block -->
+            <div class="posts_div" style="display:flex;height:60vh;">
+                <!-- colored column div with years -->
+                <div style="display:flex;flex-basis:40%;background-color:#303034;justify-content:end;">
+                    <list>
+                        <!-- new post hidden button -->
+                        <div class="text post-parent">
+                            <div style="flex-grow:1;width:100%"></div>
+                            <div class="" style=" background-color:transparent;display:flex;justify-content: flex-end;margin:5px;">
                                 {% if current_user.is_authenticated %}
-                                  <input class="btn btn-default text admin_button edit_button" type="submit" value="Edit" onclick="edit_post({{all_posts[i].id}})">
-                                  <input class="btn btn-default text admin_button delete_button" type="submit" value="Delete" onclick="delete_post({{all_posts[i].id}})">
-                                {% else %}
-                                    {{posts_years[i]}}
+                                    <a href="/create_new_post">
+                                        <input class="btn btn-default text admin_button new_post_button" type="submit" value="+ Add new post">
+                                    </a>
                                 {% endif %}
                             </div>
-                            <a class="post {{'post-alt' if i % 2 == 0 else 'post'}}" href="post/{{all_posts[i].header.lower().replace(" ", "_")}}">
-                                <div class="text" style="margin:8px">{{all_posts[i].header}}</div>
-                                <div style="flex-grow:1;"></div>
-                                <div class="text">{{all_posts[i].creation_date.strftime("%d %b")}}</div>
-                            </a>
                         </div>
-                    {%endfor%}
+        
+                        
+        
+                        <div class="posts-years" id="posts-block">
+                            {%for i in range(all_posts| length)%}
+                                <div class="text post-parent post_div">
+                                    <div class="text year">
+                                        {% if current_user.is_authenticated %}
+                                          <input class="btn btn-default text admin_button edit_button" type="submit" value="Edit" onclick="edit_post({{all_posts[i].id}})">
+                                          <input class="btn btn-default text admin_button delete_button" type="submit" value="Delete" onclick="delete_post({{all_posts[i].id}})">
+                                        {% else %}
+                                            {{posts_years[i]}}
+                                        {% endif %}
+                                    </div>
+                                </div>
+                            {%endfor%}
+                        </div>
+                    </list>
                 </div>
-
-            </list>
-
-            <div class="text pagination">
-                {%for i in range(1, pages_amount+1)%}
-                    {%if i==page_num%}
-                        <div class="pagination" style="color:var(--text_main_color);opacity: 100%;"><a href="/{{i}}">{{i}}</a></div>
-                        <div>&nbsp;</div>
-                    {%else%}
-                        <div class="pagination"><a href="/{{i}}">{{i}}</a></div>
-                        <div>&nbsp;</div>
-                    {%endif%}
-                {%endfor%}
+                
+                <!-- colored column div with post -->
+                <div style="display:flex;flex-basis:60%;justify-content:start;">
+                    <list>
+                        <div id="posts-block">
+                            {%for i in range(all_posts| length)%}
+                                <div class="text post-parent post_div">
+                                    <a class="post" href="post/{{all_posts[i].header.lower().replace(" ", "_")}}">
+                                        <div class="text" style="margin:8px">{{all_posts[i].header}}</div>
+                                    </a>
+                                </div>
+                            {%endfor%}
+                        </div>
+                    </list>
+                </div>
+                
             </div>
 
-            <footer id="footer">{% include "items/footer.html" %}</footer>
+
+
+            <div class="posts_div" style="display:flex;">
+                <div style="display:flex;flex-basis:40%;background-color:#303034">
+                </div>
+                
+                <div style="display:flex;flex-basis:60%;justify-content: center;">
+                    <footer id="footer">{% include "items/footer.html" %}</footer>
+                </div>
+                
+            </div>
         </div>
 
         <div class="item">
-            <div style="display:flex; flex-direction: column; flex-grow:1;">
+            <!-- right item -->
+            <div style="background-color:#2B2C2F;min-height:75px;">
                 <div id="dark_theme_toggle">{% include "items/dark_theme_toggle.html" %}</div>
             </div>
+            <div style="background-color:#37383C;min-height:260px;"></div>
         </div>
     </div>
 </body>

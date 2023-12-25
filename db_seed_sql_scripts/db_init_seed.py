@@ -9,3 +9,10 @@ with app.app_context():
         db.session().execute(sql_users_init.read())
         db.session.commit()
         sql_users_init.close()
+
+    # debug=True
+    # if debug:
+    #     sql_test_posts_data = open("db_seed_sql_scripts/db_init_test_data.sql")
+    #     db.session().execute(sql_test_posts_data.read())
+    #     db.session.commit()
+    #     sql_test_posts_data.close()

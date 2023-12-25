@@ -51,7 +51,7 @@
         <div class="item">
             <!-- left item -->
             <div style="background-color:#2B2C2F;min-height:75px;"></div>
-            <div style="background-color:#37383C;min-height:260px;"> </div>
+            <div class="post-header" style="background-color:#37383C;min-height:260px;"> </div>
         </div>
 
         <div class="item-center">
@@ -61,8 +61,7 @@
 
             <!-- posts block -->
             <!-- <div class="posts_div" style="display:flex;height:60vh;"> -->
-            <div class="posts_div" style="display: flex; height: 60vh; border-left: 1px solid #6a6a71; border-right: 1px solid #6a6a71;">
-
+            <div class="posts_div" style="display: flex; border-left: 1px solid #6a6a71; border-right: 1px solid #6a6a71;flex-grow:1;">
                 <!-- colored column div with years -->
                 <div style="display:flex;flex-basis:40%;background-color:#303034;justify-content:end;">
                     <list>
@@ -92,35 +91,40 @@
                             {%endfor%}
                         </div>
                     </list>
+                    
                 </div>
                 
                 <!-- colored column div with post -->
-                <div style="display:flex;flex-basis:60%;justify-content:start;">
-                    <list>
-                        <div id="posts-block">
-                            {%for i in range(all_posts| length)%}
-                                <div class="post_header_text post-parent post_div">
-                                    <a class="post" href="post/{{all_posts[i].header.lower().replace(" ", "_")}}">
-                                        <div class="post_header_text" style="margin:8px">{{all_posts[i].header}}</div>
-                                    </a>
-                                </div>
-                            {%endfor%}
-                        </div>
-                    </list>
+                <div style="display:flex;flex-basis:60%;justify-content:start;flex-direction: column;">
+                    <div style="display:flex;flex-grow: 1;">
+                        <list>
+                            <div id="posts-block">
+                                {%for i in range(all_posts| length)%}
+                                    <div class="post_header_text post-parent post_div">
+                                        <a class="post" href="post/{{all_posts[i].header.lower().replace(" ", "_")}}">
+                                            <div class="post_header_text" style="margin:8px">{{all_posts[i].header}}</div>
+                                        </a>
+                                    </div>
+                                {%endfor%}
+                            </div>
+                        </list>
+                    </div>
+                    <div class="text pagination">
+                        {%for i in range(1, pages_amount+1)%}
+                            {%if i==page_num%}
+                                <div class="pagination" style="color:var(--text_main_color);opacity: 100%;"><a href="/{{i}}">{{i}}</a></div>
+                                <div>&nbsp;</div>
+                            {%else%}
+                                <div class="pagination"><a href="/{{i}}">{{i}}</a></div>
+                                <div>&nbsp;</div>
+                            {%endif%}
+                        {%endfor%}
+                    </div>
+                    <div style="flex-grow: 0;">
+                        <!-- insert footer here -->
+                        <footer id="footer">{% include "items/footer.html" %}</footer>
+                    </div>
                 </div>
-                <!-- insert footer here -->
-            </div>
-
-
-
-            <div class="posts_div" style="display:flex;">
-                <div style="display:flex;flex-basis:40%;background-color:#303034">
-                </div>
-                
-                <div style="display:flex;flex-basis:60%;justify-content: center;">
-                    <footer id="footer">{% include "items/footer.html" %}</footer>
-                </div>
-                
             </div>
         </div>
 
@@ -129,7 +133,7 @@
             <div style="background-color:#2B2C2F;min-height:75px;">
                 <div id="dark_theme_toggle">{% include "items/dark_theme_toggle.html" %}</div>
             </div>
-            <div style="background-color:#37383C;min-height:260px;"></div>
+            <div class="post-header" style="background-color:#37383C;min-height:260px;"></div>
         </div>
     </div>
 </body>

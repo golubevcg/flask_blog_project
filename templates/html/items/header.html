@@ -1,6 +1,6 @@
 <div class="header">
     <div class="ducks" style="display: flex; justify-content: space-between; align-items: flex-end; flex-basis: 40%;">
-        {% if is_post_page %}
+        {% if load_single_duck %}
             <div class="left-ducks" style="display: flex; align-items: flex-end;">
                 <div style="width: 60px; padding-left: 20px;"></div>
                 <div style="width: 35px; margin-left: 15px;">
@@ -8,21 +8,21 @@
             <div class="right-ducks" style="display: flex; align-items: flex-end;">
                 <div style="width: 35px;">
                 <div style="width: 35px; margin-right: 10px;">
-                <img src="{{ url_for('static', filename='duck_' ~ random_duck_index ~ '.png') }}" style="width: 65px;" alt="The leader">
+                <img class="duck-img" src="{{ url_for('static', filename='duck_' ~ random_duck_index ~ '.png') }}" style="width: 65px;" alt="The leader">
             </div>
         {% else %}
             <div class="left-ducks" style="display: flex; align-items: flex-end;">
                 <div style="width: 60px; padding-left: 20px;"></div>
-                <img src="{{ url_for('static',filename='duck_1.png') }}" style="width: 35px; margin-left: 15px;" alt="An excellent duckling">
+                <img class="duck-img" src="{{ url_for('static',filename='duck_1.png') }}" style="width: 35px; margin-left: 15px;" alt="An excellent duckling">
             </div>
             <div class="right-ducks" style="display: flex; align-items: flex-end;">
-                <img src="{{ url_for('static',filename='duck_2.png') }}" style="width: 35px;" alt="A fantastic duckling">
-                <img src="{{ url_for('static',filename='duck_3.png') }}" style="width: 35px; margin-right: 10px;" alt="What a great duckling">
-                <img src="{{ url_for('static',filename='duck_4.png') }}" style="width: 65px;" alt="The leader">
+                <img class="duck-img" src="{{ url_for('static',filename='duck_2.png') }}" style="width: 35px;" alt="A fantastic duckling">
+                <img class="duck-img" src="{{ url_for('static',filename='duck_3.png') }}" style="width: 35px; margin-right: 10px;" alt="What a great duckling">
+                <img class="duck-img" src="{{ url_for('static',filename='duck_4.png') }}" style="width: 65px;" alt="The leader">
             </div>
         {% endif %}
     </div>
-    <div style="display:flex;flex-basis:60%;align-items: flex-end;">
+    <div style="display:flex;flex-basis:60%;align-items:flex-end;">
         <div class="andrew_golubev"><a href="/">//andrew golubev</a></div>
         <div class="links">
             <div class="text" style="padding-right:10px;"><a href="/">posts</a></div>

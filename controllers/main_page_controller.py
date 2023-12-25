@@ -1,5 +1,6 @@
 import hashlib
 import math
+import random
 
 from flask import Blueprint, render_template, request, url_for, redirect, flash
 from flask_login import login_user, logout_user, login_required, current_user
@@ -58,7 +59,12 @@ def main(page=1):
 
 @main_page_blueprint.route("/contacts.html")
 def contacts():
-    return render_template("contacts_page.html")
+    random_duck_index = random.randint(1, 4)
+
+    return render_template(
+        "contacts_page.html",
+        load_single_duck=True,
+        random_duck_index=random_duck_index)
 
 
 @main_page_blueprint.route("/logout")

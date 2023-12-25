@@ -36,7 +36,6 @@ def post_page(post_header=None):
     body = body.strip("\"")
 
     creation_date = post.creation_date.strftime("%d %b %Y")
-
     random_duck_index = random.randint(1, 4)
 
     return render_template(
@@ -44,7 +43,7 @@ def post_page(post_header=None):
         header=header, 
         body=body, 
         creation_date=creation_date,
-        is_post_page=True,
+        load_single_duck=True,
         random_duck_index=random_duck_index)
 
 

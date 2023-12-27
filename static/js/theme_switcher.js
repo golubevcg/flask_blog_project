@@ -3,7 +3,7 @@ function switch_theme() {
     // Determine the current theme
     let current_theme = localStorage.getItem("theme");
     // Toggle the theme between 'light' and 'dark'
-    let updated_theme = (current_theme === "dark") ? "light" : "dark";
+    let updated_theme = (current_theme === "dark") ? "root" : "dark";
     
     // Update the theme in localStorage
     localStorage.setItem("theme", updated_theme);

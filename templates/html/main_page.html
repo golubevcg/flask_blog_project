@@ -66,7 +66,7 @@ x
 
             <!-- posts block -->
             <!-- <div class="posts_div" style="display:flex;height:60vh;"> -->
-            <div class="posts_div" style="display: flex; border-left: 1px solid #6a6a71; border-right: 1px solid #6a6a71;flex-grow:1;">
+            <div class="posts_div" style="display: flex; border-left: 1px solid #50687a; border-right: 1px solid #50687a;flex-grow:1;">
                 <!-- colored column div with years -->
                 <div style="display:flex;flex-basis:40%;background-color:#303034;justify-content:end;">
                     <list>
@@ -97,18 +97,22 @@ x
                 <!-- colored column div with post -->
                 <div style="display:flex;flex-basis:60%;justify-content:start;flex-direction: column;">
                     <div style="display:flex;flex-grow: 1;">
-                        <list>
+                        <list style="width:100%">
                             <div id="posts-block">
                                 {%for i in range(all_posts| length)%}
                                     <div class="post_header_text post-parent" style="height:55px;">
-                                        <a class="post" href="post/{{all_posts[i].header.lower().replace(" ", "_")}}">
+                                        {% if posts_years[i] and i != 0 %}
+                                            <a class="post" style="border-width: 1px 0px 0px 0px;border-style:solid;border-color: #263d4d;"href="post/{{all_posts[i].header.lower().replace(" ", "_")}}">
+                                        {%else%}
+                                            <a class="post" href="post/{{all_posts[i].header.lower().replace(" ", "_")}}">
+                                        {% endif %}
                                             {% if current_user.is_authenticated %}
                                                 <input class="btn btn-default text admin_button edit_button" type="submit" value="Edit" onclick="edit_post({{all_posts[i].id}})">
                                                 <input class="btn btn-default text admin_button delete_button" type="submit" value="Delete" onclick="delete_post({{all_posts[i].id}})">
                                             {% endif %}
-                                            <div class="post_header_text" style="margin:8px; margin-left:20px; padding: 0px;">
-                                                {{all_posts[i].header}}
-                                            </div>
+                                                <div class="post_header_text" style="margin:8px; margin-left:20px; padding: 0px;">
+                                                    {{all_posts[i].header}}
+                                                </div>
                                         </a>
                                     </div>
                                 {%endfor%}
@@ -141,7 +145,7 @@ x
             </div>
             <script>
                 document.getElementById('clickable_lamp_image').addEventListener('mouseover', function() {
-                    this.src = '/static/natron_bulb_na.png';
+                    this.src = '/static/natron_bulb_na_glow.png';
                 });
     
                 document.getElementById('clickable_lamp_image').addEventListener('mouseout', function() {

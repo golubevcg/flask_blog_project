@@ -53,10 +53,10 @@ x
     <div class="container" id="container">
         <div class="item">
             <!-- left item -->
-            <div style="background-color:#2B2C2F;min-height:75px;display: flex; align-items: flex-end;justify-content: flex-end;">
+            <div style="min-height:75px;display: flex; align-items: flex-end;justify-content: flex-end;">
                 <img class="duck-img" src="{{ url_for('static',filename='duck_1.png') }}" style="width: 35px; margin-left: 5px;padding-right:50px;" alt="An excellent duckling">
             </div>
-            <div class="post-header" style="background-color:#37383C;min-height:260px;"> </div>
+            <div class="post-header"> </div>
         </div>
 
         <div class="item-center">
@@ -66,9 +66,9 @@ x
 
             <!-- posts block -->
             <!-- <div class="posts_div" style="display:flex;height:60vh;"> -->
-            <div class="posts_div" style="display: flex; border-left: 1px solid #50687a; border-right: 1px solid #50687a;flex-grow:1;">
+            <div class="posts_div" style="display: flex; border-left: 1px solid;border-color: var(--border-color); border-right: 1px solid var(--border-color);flex-grow:1;">
                 <!-- colored column div with years -->
-                <div style="display:flex;flex-basis:40%;background-color:#303034;justify-content:end;">
+                <div class="years_bg_div">
                     <list>
                         <!-- new post hidden button -->
                         <div class="text post-parent">
@@ -102,7 +102,7 @@ x
                                 {%for i in range(all_posts| length)%}
                                     <div class="post_header_text post-parent" style="height:55px;">
                                         {% if posts_years[i] and i != 0 %}
-                                            <a class="post" style="border-width: 1px 0px 0px 0px;border-style:solid;border-color: #263d4d;"href="post/{{all_posts[i].header.lower().replace(" ", "_")}}">
+                                            <a class="post" style="border-width: 1px 0px 0px 0px;border-style:solid;border-radius:0px;border-color: var(--border-color);"href="post/{{all_posts[i].header.lower().replace(" ", "_")}}">
                                         {%else%}
                                             <a class="post" href="post/{{all_posts[i].header.lower().replace(" ", "_")}}">
                                         {% endif %}
@@ -140,7 +140,7 @@ x
 
         <div class="item">
             <!-- right item -->
-            <div style="background-color:#2B2C2F;min-height:75px;display:flex;align-items:flex-end;">
+            <div style="min-height:75px;display:flex;align-items:flex-end;">
                 <img id="clickable_lamp_image" src="{{ url_for('static', filename='natron_bulb_na_ng.png') }}" style="width: 65px;padding-left: 5px;cursor: pointer;" onclick="switch_theme()" alt="Switch Theme">
             </div>
             <script>
@@ -152,7 +152,7 @@ x
                     this.src = '/static/natron_bulb_na_ng.png';
                 });
             </script>
-            <div class="post-header" style="background-color:#37383C;min-height:260px;"></div>
+            <div class="post-header"></div>
         </div>
     </div>
 </body>

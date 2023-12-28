@@ -160,7 +160,7 @@ html, body {
     font-size:100px;
     text-align:left;
     background-color:var(--post-header-color);
-    font-weight:550;
+    font-weight:300;
     min-height: 260px;
     padding: 0px;
 }
@@ -306,6 +306,10 @@ input:focus, textarea:focus, select:focus{
     border-style:solid;
 }
 
+.note-editor{
+    width: 100%;
+}
+
 #editor{
     width:100%;
     min-height:90%;
@@ -391,9 +395,6 @@ input:focus, textarea:focus, select:focus{
 }
 
 #viewer {
-    border-width: 0 1px 0 1px;
-    border-style: solid;
-    border-color: var(--viewer_border_color);
     font-family: "JetBrains Mono", monospace !important;
     font-weight: lighter;
     color:var(--text_main_color) !important;

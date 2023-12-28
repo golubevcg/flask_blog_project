@@ -6,7 +6,8 @@ $(document).ready(function() {
     if (!!!post_body){
         $('#editor').summernote({
             dialogsInBody: true,
-            fontName: ['JetBrains Mono']
+            fontName: ['JetBrains Mono'],
+            width: '100%'
         });
         $('#editor').summernote('color', "var(--text_main_color)");
     }else{
@@ -16,6 +17,7 @@ $(document).ready(function() {
         });
         $('#editor').summernote('editor.pasteHTML', post_body);
         $('#editor').summernote('color', "var(--text_main_color)");
+        $('#editor').summernote('width', "100%");
     }
 
 });

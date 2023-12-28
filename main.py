@@ -15,6 +15,8 @@ app.register_blueprint(main_page_blueprint, url_prefix="/")
 app.register_blueprint(post_page_blueprint, url_prefix="/post")
 app.register_blueprint(create_new_post_blueprint, url_prefix="/create_new_post")
 
+from controllers import exception_page_controller
+
 CONFIG_OBJ = "config.%s" % os.getenv("CONFIG_NAME", "DevelopmentConfig")
 app.config.from_object(CONFIG_OBJ)
 

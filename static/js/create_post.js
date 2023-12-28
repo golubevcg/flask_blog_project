@@ -2,24 +2,31 @@
 $(document).ready(function() {
     let post_body = $('#editor').text();
     $('#editor').empty();
+    let current_theme = localStorage.getItem("theme");
+    let text_color; // Declare text_color here
 
-    if (!!!post_body){
-        $('#editor').summernote({
-            dialogsInBody: true,
-            fontName: ['JetBrains Mono'],
-            width: '100%'
-        });
-        $('#editor').summernote('color', "var(--text_main_color)");
-    }else{
-        $('#editor').summernote({
-            dialogsInBody: true,
-            fontName: ['JetBrains Mono'],
-        });
-        $('#editor').summernote('editor.pasteHTML', post_body);
-        $('#editor').summernote('color', "var(--text_main_color)");
-        $('#editor').summernote('width', "100%");
+    if (current_theme === "light") {
+        text_color = "#474747"; // Assign value to text_color
+    } else {
+        text_color = "#A9A9B3"; // Assign value to text_color
     }
 
+    if (!post_body) {
+        $('#editor').summernote({
+            dialogsInBody: true,
+            fontName: ['JetBrains Mono'],
+            width: '100%',
+            color: text_color // Use text_color
+        });
+    } else {
+        $('#editor').summernote({
+            dialogsInBody: true,
+            fontName: ['JetBrains Mono'],
+            width: '100%',
+            color: text_color // Use text_color
+        });
+        $('#editor').summernote('editor.pasteHTML', post_body);
+    }
 });
 
 function save_post(){

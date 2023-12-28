@@ -408,7 +408,6 @@ input:focus, textarea:focus, select:focus{
         display: flex;
         flex-grow: 10;
         flex-direction: column;
-        padding: 0 5px;
         max-width:800px;
     }
 }

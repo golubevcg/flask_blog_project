@@ -1,3 +1,10 @@
+// Immediately apply the theme on page load
+if (localStorage.getItem("theme") === "light") {
+    document.documentElement.classList.add("light-theme");
+} else {
+    document.documentElement.classList.remove("light-theme");
+}
+
 function switch_theme() {
     // Determine the current theme
     let current_theme = localStorage.getItem("theme");
@@ -11,8 +18,8 @@ function switch_theme() {
 
     // Apply the new theme
     if (updated_theme === "light") {
-        document.body.classList.add("light-theme");
+        document.documentElement.classList.add("light-theme");
     } else {
-        document.body.classList.remove("light-theme");
+        document.documentElement.classList.remove("light-theme");
     }
 }

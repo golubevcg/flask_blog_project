@@ -59,7 +59,7 @@ def main(page=1):
 
 @main_page_blueprint.route("/contacts.html")
 def contacts():
-    random_duck_index = random.randint(1, 4)
+    random_duck_index = random.randint(2, 4)
 
     return render_template(
         "contacts_page.html",

@@ -2,8 +2,6 @@
     <div class="ducks" style="display: flex; justify-content: space-between; align-items: flex-end; flex-basis: 40%;">
         {% if load_single_duck %}
             <div class="right-ducks" style="display: flex; align-items: flex-end;">
-                <div style="width: 35px;">
-                <div style="width: 35px; margin-right: 10px;">
                 <img class="duck-img" src="{{ url_for('static', filename='duck_' ~ random_duck_index ~ '.png') }}" style="width: 65px;" alt="The leader">
             </div>
         {% else %}

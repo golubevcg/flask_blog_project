@@ -3,14 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>Andrew Golubev</title>
-
-    <script>
-        // Immediately apply the theme on page load
-        if (localStorage.getItem("theme") === "dark") {
-            document.documentElement.classList.add("dark-theme");
-        }
-    </script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap" rel="stylesheet">
@@ -43,7 +35,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-x
+
       gtag('config', 'G-EDBDMLQ22M');
     </script>
 </head>
@@ -141,15 +133,15 @@ x
         <div class="item">
             <!-- right item -->
             <div style="min-height:75px;display:flex;align-items:flex-end;">
-                <img id="clickable_lamp_image" src="{{ url_for('static', filename='natron_bulb_na_ng.png') }}" style="width: 65px;padding-left: 5px;cursor: pointer;" onclick="switch_theme()" alt="Switch Theme">
+                <img id="clickable_lamp_image" src="{{ url_for('static', filename='natron_bulb_na_ng2.png') }}" style="width: 65px;padding-left: 5px;cursor: pointer;" onclick="switch_theme()" alt="Switch Theme">
             </div>
             <script>
                 document.getElementById('clickable_lamp_image').addEventListener('mouseover', function() {
-                    this.src = '/static/natron_bulb_na_glow.png';
+                    this.src = '/static/natron_bulb_na_glow2.png';
                 });
     
                 document.getElementById('clickable_lamp_image').addEventListener('mouseout', function() {
-                    this.src = '/static/natron_bulb_na_ng.png';
+                    this.src = '/static/natron_bulb_na_ng2.png';
                 });
             </script>
             <div class="post-header"></div>

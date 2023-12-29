@@ -77,9 +77,7 @@
     <div class="container" id="container">
         <!-- left item -->
         <div class="item">
-            <div style="min-height:75px;display: flex; align-items: flex-end;justify-content: flex-end;">
-                <img class="duck-img" src="{{ url_for('static',filename='duck_1.png') }}" style="width: 35px; margin-left: 5px;padding-right:50px;" alt="An excellent duckling">
-            </div>
+            <div style="min-height:35px;display: flex; align-items: flex-end;justify-content: flex-end;"></div>
             <div class="post-header"> </div>
         </div>
 
@@ -144,22 +142,12 @@
             <footer id="footer">{% include "items/footer.html" %}</footer>
         </div>
 
-
         <!-- right item -->
         <div class="item">
             <!-- right item -->
-            <div style="min-height:75px;display:flex;align-items:flex-end;">
-                <img id="clickable_lamp_image" src="{{ url_for('static', filename='natron_bulb_na_ng2.png') }}" style="width: 65px;padding-left: 5px;cursor: pointer;" onclick="switch_theme()" alt="Switch Theme">
+            <div style="min-height:35px;display:flex;align-items:flex-end;">
+                <img id="clickable_lamp_image" src="{{ url_for('static', filename='switch_7.png') }}" style="width:23px; padding-left:10px; padding-bottom:5px; cursor:pointer;" onclick="switch_theme()" alt="Switch Theme">
             </div>
-            <script>
-                document.getElementById('clickable_lamp_image').addEventListener('mouseover', function() {
-                    this.src = '/static/natron_bulb_na_glow2.png';
-                });
-    
-                document.getElementById('clickable_lamp_image').addEventListener('mouseout', function() {
-                    this.src = '/static/natron_bulb_na_ng2.png';
-                });
-            </script>
             <div class="post-header"></div>
         </div>
     </div>

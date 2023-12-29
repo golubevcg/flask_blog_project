@@ -1,22 +1,10 @@
 <div class="header">
-    <div class="ducks" style="display: flex; justify-content: space-between; align-items: flex-end; flex-basis: 40%;">
-        {% if load_single_duck %}
-            <div class="right-ducks" style="display: flex; align-items: flex-end;">
-                <img class="duck-img" src="{{ url_for('static', filename='duck_' ~ random_duck_index ~ '.png') }}" style="width: 65px;" alt="The leader">
-            </div>
-        {% else %}
-            <div class="right-ducks" style="display: flex; align-items: flex-end;">
-                <img class="duck-img" src="{{ url_for('static',filename='duck_2.png') }}" style="width: 35px;" alt="A fantastic duckling">
-                <img class="duck-img" src="{{ url_for('static',filename='duck_3.png') }}" style="width: 35px; margin-right: 10px;" alt="What a great duckling">
-                <img class="duck-img" src="{{ url_for('static',filename='duck_4.png') }}" style="width: 65px;" alt="The leader">
-            </div>
-        {% endif %}
-    </div>
+    <div class="ducks" style="display: flex; justify-content: space-between; align-items: flex-end; flex-basis: 40%;"></div>
     <div style="display:flex;flex-basis:60%;align-items:flex-end;">
-        <div class="andrew_golubev"><a href="/">//andrew golubev</a></div>
+        <div class="andrew_golubev" style="text-wrap: nowrap;"><a href="/">//andrew golubev</a></div>
         <div class="links">
-            <div class="text" style="padding-right:10px;"><a href="/">posts</a></div>
-            <div class="text"><a href="../contacts.html">contacts</a></div>
+            <div class="text" style="padding-right:15px; border-right: solid 1px var(--border-color);"><a href="/">posts</a></div>
+            <div class="text" style="padding-left:8px"><a href="../contacts.html">contacts</a></div>
         </div>
     </div>
 </div>
